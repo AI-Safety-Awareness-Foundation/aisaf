@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Expected Value Org
+title: AI Safety Awareness Foundation
 # email:
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
 #   line in _config.yml. It will appear in your document head meta (for
 #   Google search results) and in your feed.xml site description.
-twitter_username: chisness
-github_username: chisness
+# twitter_username: chisness
+# github_username: chisness
 minimal_mistakes_skin: default
 search: false
 
@@ -58,36 +58,31 @@ plugins:
   - jekyll-include-cache
 
 # author:
-#   name   : "Max Chiswick"
+#   name   : "AUTHOR"
 #   avatar : "/assets/images/bio-photo.jpg"
-#   bio    : "I played high-volume online poker professionally until 2013, including playing 3 million hands in 2009. 
-#   Then I studied AI poker for my master's degree, with a thesis on abstracting large games to small games to make them solvable. 
-#   The purpose of this tutorial is to share what I learned from those two experiences."
+#   bio    : "BIO"
 #   links:
-#     - label: "Personal website"
-#       icon: "fas fa-fw fa-link"
-#       url: "https://www.maxchiswick.com"
+#     - label: "LINK1"
+#       icon: "ICON1"
+#       url: "URL1"
 #     - label: "Twitter"
 #       icon: "fab fa-fw fa-twitter-square"
 #       url: "https://twitter.com/chisness"
-#     - label: "GitHub"
-#       icon: "fab fa-fw fa-github"
-#       url: "https://github.com/chisness/aipokertutorial"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/AI-Safety-Awareness-Foundation"
 #     - label: "Instagram"
 #       icon: "fab fa-fw fa-instagram"
 #       url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/chisness"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/chisness/"
-#     - label: "Instagram"
-#       icon: "fab fa-fw fa-instagram"
-#       url: "https://instagram.com/"
+      url: "https://github.com/AI-Safety-Awareness-Foundation"
 
 defaults:
   #_posts
@@ -119,5 +114,5 @@ defaults:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-0QKKBWY53T"
+    tracking_id: "G-W941TQ0DX3"
     anonymize_ip: false # default
