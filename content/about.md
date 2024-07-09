@@ -5,4 +5,4 @@ showDate: false
 showWordCount: false
 showReadingTime: false
 ---
-About Page
+About Page coming soon

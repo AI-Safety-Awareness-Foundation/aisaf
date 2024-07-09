@@ -18,7 +18,7 @@
 [[main]]
  pre = "github"
  name = "GitHub"
- url = "https://github.com/AI-Safety-Awareness-Foundation"
+ url = "https://aisafetyawarenessfoundation.org"
  weight = 30
 
 #[[main]]
