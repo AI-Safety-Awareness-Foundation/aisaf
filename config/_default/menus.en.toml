@@ -16,6 +16,11 @@
  weight = 10
 
 [[main]]
+ name = "Contact"
+ pageRef = "contact"
+ weight = 15
+
+[[main]]
  pre = "github"
  name = "GitHub"
  url = "https://aisafetyawarenessfoundation.org"
