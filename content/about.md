@@ -3,6 +3,7 @@ title: "About"
 showDate: false
 showWordCount: false
 showReadingTime: false
+showNextPrev: false
 ---
 **Changlin Li**
 
