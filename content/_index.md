@@ -31,7 +31,9 @@ We are running events to spread awareness about AI safety, including hands-on wo
 
 ## Useful Links
 
- - AIS Fundamentals Course
+- Soon...
+
+ <!-- - AIS Fundamentals Course
  - ARENA Course
  - Our materials?
- - Other links?
+ - Other links? -->
