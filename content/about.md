@@ -1,8 +1,20 @@
 ---
 title: "About"
-# description: "This is a demo of adding content to the homepage."
 showDate: false
 showWordCount: false
 showReadingTime: false
 ---
-About Page coming soon
+**Changlin Li**
+
+ - Info soon...
+ - [GitHub](https://github.com/changlinli/)
+
+**Max Chiswick: A**
+
+ - Info soon...
+ - [LinkedIn](https://linkedin.com/in/maxchiswick)
+
+**Mackenzie Mikkelsen: A**
+
+ - Info soon...
+ - [LinkedIn](https://www.linkedin.com/in/mackenziemikkelsen/)
