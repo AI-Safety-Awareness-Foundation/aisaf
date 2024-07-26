@@ -9,12 +9,12 @@ showReadingTime: false
  - Info soon...
  - [GitHub](https://github.com/changlinli/)
 
-**Max Chiswick: A**
+**Max Chiswick**
 
  - Info soon...
  - [LinkedIn](https://linkedin.com/in/maxchiswick)
 
-**Mackenzie Mikkelsen: A**
+**Mackenzie Mikkelsen**
 
  - Info soon...
  - [LinkedIn](https://www.linkedin.com/in/mackenziemikkelsen/)
