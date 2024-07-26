@@ -1,9 +1,6 @@
 ---
-title: "AI Safety Awareness Foundation Homepage"
-# description: "This is a demo of adding content to the homepage."
+title: "Welcome to the AI Safety Awareness Foundation (AISAF)"
 ---
-Welcome to the AI Safety Awareness Foundation (AISAF). 
-
 Superhuman AI might be coming soon. And we aren't ready. 
 
 <iframe src="https://www.metaculus.com/questions/question_embed/3648/?theme=dark" style="height:430px; width:100%; max-width:550px"></iframe>
