@@ -1,7 +1,8 @@
 ---
 title: "Welcome to the AI Safety Awareness Foundation (AISAF)"
 ---
-Superhuman AI might be coming soon. And we aren't ready. 
+
+## Superhuman AI might be coming soon. And we aren't ready. 
 
 The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and how to ensure its safety.
 
@@ -31,6 +32,4 @@ We are currently running hands-on workshops to help people:
 
 **Past events:**
 
- <details>Info soon...
-  <summary>7/20/24 in Bellevue, WA</summary>
-</details>
+- [7/20/24 in Bellevue, WA](https://www.meetup.com/ai-safety-awareness-group-seattle/events/302166784/)
