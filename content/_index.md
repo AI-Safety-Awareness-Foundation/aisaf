@@ -3,6 +3,8 @@ title: "Welcome to the AI Safety Awareness Foundation (AISAF)"
 ---
 Superhuman AI might be coming soon. And we aren't ready. 
 
+<iframe src="https://manifold.markets/embed/ManifoldAI/agi-when-resolves-to-the-year-in-wh-d5c5ad8e4708" title="AGI When? [High Quality Turing Test]" frameborder="0" style="position: relative; left:50%; transform: translateX(-50%); width:90%; height:18rem; max-width: 35rem;"></iframe>
+
 The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and how to ensure its safety.
 
 We particularly focus on the following three areas:
