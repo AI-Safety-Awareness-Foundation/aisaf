@@ -1,5 +1,5 @@
 ---
-title: My title!
+title: UW eScience Institute AI Safety Meetup
 workshopdate: Aug 10th, 2024
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: past
