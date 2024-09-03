@@ -1,5 +1,5 @@
 ---
-title: My title!
+title: Bellevue Library AI Safety Meetup
 workshopdate: July 20th, 2024
 workshoplocation: Bellevue Library, Bellevue, WA
 temporalstatus: past
