@@ -1,6 +1,6 @@
 ---
 title: AI and AI Safety Forecasting Seminar
-workshopdate: September 26th, 2024, 6 p.m. - 9 p.m. PDT
+workshopdate: September 24th, 2024, 6 p.m. - 9 p.m. PDT
 workshoplocation: University of Washington, Seattle, WA (exact building TBD)
 temporalstatus: future
 detailstobedetermined: false
