@@ -11,4 +11,5 @@ hugo_stats.json
 *.swp
 *.swo
 
+#DS Store
 .DS_Store
