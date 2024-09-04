@@ -1,6 +1,6 @@
 ---
-title: My title!
-workshopdate: September 26th, 2024, 6 p.m. - 9 p.m. PDT
+title: AISAF Seattle Meetup 2
+workshopdate: Thurs September 26th, 2024, 6 p.m. - 9 p.m. PDT
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: future
 detailstobedetermined: false

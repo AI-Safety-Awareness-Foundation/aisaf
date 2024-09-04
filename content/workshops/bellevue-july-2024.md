@@ -1,6 +1,6 @@
 ---
-title: My title!
-workshopdate: July 20th, 2024
+title: AISAF Bellevue Meetup
+workshopdate: Saturday Jul 20th, 2024
 workshoplocation: Bellevue Library, Bellevue, WA
 temporalstatus: past
 detailstobedetermined: false
