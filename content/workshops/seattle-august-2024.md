@@ -1,6 +1,6 @@
 ---
-title: AISAF Seattle Meetup
-workshopdate: 2024-08-10
+title: UW eScience Institute AI Safety Meetup
+workshopdate: Aug 10th, 2024
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: past
 ---

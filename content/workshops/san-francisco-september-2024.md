@@ -1,6 +1,6 @@
 ---
 title: AISAF SF Meetup
-workshopdate: 2024-Fall
+workshopdate: Fall 2024
 workshoplocation: San Francisco, CA
 temporalstatus: future
 detailstobedetermined: true
