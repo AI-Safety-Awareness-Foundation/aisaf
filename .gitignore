@@ -10,3 +10,6 @@ hugo_stats.json
 # Temporary vim files
 *.swp
 *.swo
+
+#DS Store
+.DS_Store
