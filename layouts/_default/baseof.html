@@ -2,6 +2,7 @@
 <html lang="en" charset="utf-8">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ block "title" . }}AI Safety Awareness Foundation{{ end }}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,13 +20,7 @@
       h4 { font-size: 24px; font-weight: 400; }
       h5 { font-size: 20px; font-weight: 500; }
       h6 { font-size: 16px; font-weight: 500; }
-      a.nav-item {
-        text-decoration: inherit;
-        color: inherit;
-        padding: 10px;
-      }
       .top-bar {
-        /* background-color: #ffffff; */
         padding: 10px 0;
         width: 100%;
       }
@@ -36,6 +31,25 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
+      }
+      .nav-menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .nav-item {
+        text-decoration: inherit;
+        color: inherit;
+        padding: 10px;
+      }
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
       }
       .header-link {
         text-decoration: none;
@@ -55,6 +69,30 @@
       .italic-emphasis {
         font-style: italic;
       }
+      @media screen and (max-width: 768px) {
+        h1 { font-size: 32px; }
+        h2 { font-size: 28px; }
+        h3 { font-size: 24px; }
+        h4 { font-size: 20px; }
+        h5 { font-size: 18px; }
+        h6 { font-size: 16px; }
+        .nav-menu {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #ffffff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nav-menu.active {
+          display: flex;
+        }
+        .menu-toggle {
+          display: block;
+        }
+      }
     </style>
     {{ block "additional_styles" . }}{{ end }}
   </head>
@@ -64,18 +102,23 @@
         <h4 style="margin: 10px;">
           <a href="/" class="header-link">AI Safety Awareness Foundation</a>
         </h4>
-        <div>
-          <ul style="display: flex; flex-direction: row; list-style-type: none;">
-            <li><a href="/#our-workshops" class="nav-item">Our Workshops</a></li>
-            <li><a href="/about" class="nav-item">About the Team</a></li>
-            <li><a href="/contact" class="nav-item">Contact Us</a></li>
-          </ul>
-        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-menu">
+          <li><a href="/#our-workshops" class="nav-item">Our Workshops</a></li>
+          <li><a href="/about" class="nav-item">About the Team</a></li>
+          <li><a href="/contact" class="nav-item">Contact Us</a></li>
+        </ul>
       </nav>
     </div>
     <div class="main-content">
       {{ block "main" . }}{{ end }}
     </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.nav-menu');
+        menu.classList.toggle('active');
+      }
+    </script>
     {{ block "additional_scripts" . }}{{ end }}
   </body>
 </html>
