@@ -1,5 +1,5 @@
 ---
-title: "Contact"
+title: "Contact Us"
 showDate: false
 showWordCount: false
 showReadingTime: false
