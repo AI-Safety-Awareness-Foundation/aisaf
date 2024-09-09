@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://aisafetyawarenessfoundation.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'AI Safety Awareness Foundation'
 disableKinds = ['taxonomy', 'term']
