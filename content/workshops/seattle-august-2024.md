@@ -1,6 +1,6 @@
 ---
 title: AISAF Seattle Meetup
-workshopdate: Saturday Aug 10th, 2024
+workshopdate: 2024-08-10
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: past
 ---

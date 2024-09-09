@@ -2,71 +2,80 @@
 <html lang="en" charset="utf-8">
   <head>
     <meta charset="utf-8"/>
-    <title>AI Safety Awareness Foundation</title>
+    <title>{{ block "title" . }}AI Safety Awareness Foundation{{ end }}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-      h1 {
-        font-size: 44px;
-        font-weight: 400;
+      body {
+        font-family: 'Noto Sans', sans-serif;
+        margin: 0;
+        padding: 0;
       }
-      h2 {
-        font-size: 36px;
-        font-weight: 400;
-      }
-      h3 {
-        font-size: 30px;
-        font-weight: 400;
-      }
-      h4 {
-        font-size: 24px;
-        font-weight: 400;
-      }
-      h5 {
-        font-size: 20px;
-        font-weight: 500;
-      }
-      h6 {
-        font-size: 16px;
-        font-weight: 500;
-      }
-      a.anchor-button {
-        border: 2px solid;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 15px;
-        padding-right: 15px;
-        border-radius: 999999px;
-        text-decoration: inherit;
-        color: inherit;
-      }
-      a.anchor-button:hover {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-      }
+      h1 { font-size: 44px; font-weight: 400; color: #000000; }
+      h2 { font-size: 36px; font-weight: 400; }
+      h3 { font-size: 30px; font-weight: 400; color: #1b5e20; }
+      h4 { font-size: 24px; font-weight: 400; }
+      h5 { font-size: 20px; font-weight: 500; }
+      h6 { font-size: 16px; font-weight: 500; }
       a.nav-item {
         text-decoration: inherit;
         color: inherit;
         padding: 10px;
       }
-      body {
-        font-family:Noto-Sans, sans-serif
+      .top-bar {
+        background-color: #e8f5e9;
+        padding: 10px 0;
+        width: 100%;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header-link {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+      }
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      .highlight-green {
+        background-color: #e8f5e9;
+        padding: 5px 10px;
+        display: inline-block;
+      }
+      .italic-emphasis {
+        font-style: italic;
       }
     </style>
+    {{ block "additional_styles" . }}{{ end }}
   </head>
   <body>
-    <nav style="display: flex; justify-content: space-between; margin-left: auto; margin-right: auto; max-width: 1200px;">
-      <h4 style="margin: 10px;">AI Safety Awareness Foundation</h4>
-      <div>
-        <ul style="display: flex; flex-direction: row; list-style-type: none;">
-          <li><a href="/#our-work" class="nav-item">Our Work</a></li>
-          <li><a href="/about" class="nav-item">About Us</a></li>
-          <li><a href="/contact" class="nav-item">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-	{{ block "main" . }}
-	{{ end }}
+    <div class="top-bar">
+      <nav class="nav-container">
+        <h4 style="margin: 10px;">
+          <a href="{{ .Site.BaseURL }}" class="header-link">AI Safety Awareness Foundation</a>
+        </h4>
+        <div>
+          <ul style="display: flex; flex-direction: row; list-style-type: none;">
+            <li><a href="{{ .Site.BaseURL }}#our-workshops" class="nav-item">Our Workshops</a></li>
+            <li><a href="{{ .Site.BaseURL }}about" class="nav-item">About the Team</a></li>
+            <li><a href="{{ .Site.BaseURL }}contact" class="nav-item">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="main-content">
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ block "additional_scripts" . }}{{ end }}
   </body>
 </html>

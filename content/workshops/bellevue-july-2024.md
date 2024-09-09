@@ -1,6 +1,6 @@
 ---
 title: AISAF Bellevue Meetup
-workshopdate: Saturday Jul 20th, 2024
+workshopdate: 2024-08-30
 workshoplocation: Bellevue Library, Bellevue, WA
 temporalstatus: past
 detailstobedetermined: false

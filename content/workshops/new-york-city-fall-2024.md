@@ -1,6 +1,6 @@
 ---
 title: AISAF NYC Meetup
-workshopdate: Fall 2024
+workshopdate: 2024-Fall
 workshoplocation: New York City, NY
 temporalstatus: future
 detailstobedetermined: true

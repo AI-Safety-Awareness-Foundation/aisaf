@@ -1,209 +1,172 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>AI Safety Awareness Foundation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-      h1 {
-        font-size: 44px;
-        font-weight: 400;
-        color: #000000;
-      }
-      h2 {
-        font-size: 36px;
-        font-weight: 400;
-      }
-      h3 {
-        font-size: 30px;
-        font-weight: 400;
-        color: #1b5e20;
-      }
-      h4 {
-        font-size: 24px;
-        font-weight: 400;
-      }
-      h5 {
-        font-size: 20px;
-        font-weight: 500;
-      }
-      h6 {
-        font-size: 16px;
-        font-weight: 500;
-      }
-      a.nav-item {
-        text-decoration: inherit;
-        color: inherit;
-        padding: 10px;
-      }
-      body {
-        font-family: 'Noto Sans', sans-serif;
-      }
-      .what-we-do-item {
-        padding: 20px;
-        border-radius: 8px;
-        margin: 10px;
-        border: 1px solid #e0e0e0;
-        background-color: #ffffff;
-        color: #000000;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .what-we-do-item:hover {
-        transform: scale(1.02);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .workshops-section {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-      .workshops-header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-      .workshops-tabs {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-      }
-      .tab-button {
-        padding: 10px 20px;
-        font-size: 18px;
-        background-color: #f0f0f0;
-        border: none;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        color: #000000;
-      }
-      .tab-button.active {
-        background-color: #e8f5e9;
-        color: #000000;
-      }
-      .workshops-list {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .workshop-item {
-        background-color: #ffffff;
-        border: 1px solid #e0e0e0;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        color: #000000;
-      }
-      .workshop-date {
-        font-weight: bold;
-        color: #000000;
-        margin-bottom: 10px;
-      }
-      .workshop-location {
-        margin-bottom: 10px;
-      }
-      .workshop-link {
-        display: inline-block;
-        margin-top: 10px;
-        color: #000000;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      .workshop-link:hover {
-        text-decoration: underline;
-      }
-      .highlight-green {
-        background-color: #e8f5e9;
-        padding: 5px 10px;
-        display: inline-block;
-      }
-      .italic-emphasis {
-        font-style: italic;
-      }
-    </style>
-  </head>
-  <body>
-    <nav style="display: flex; justify-content: space-between; margin-left: auto; margin-right: auto; max-width: 1200px;">
-      <h4 style="margin: 10px;">AI Safety Awareness Foundation</h4>
-      <div>
-        <ul style="display: flex; flex-direction: row; list-style-type: none;">
-          <li><a href="/#what-we-do" class="nav-item">What We Do</a></li>
-          <li><a href="/about" class="nav-item">About the Team</a></li>
-          <li><a href="/contact" class="nav-item">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div style="display: flex; justify-content: space-evenly; margin-top: 100px; margin-bottom: 100px;">
-      <div style="display: flex; flex-direction: column; max-width: 1000px;">
-        <div style="margin-left: 50px;">
-          <h1><span class="italic-emphasis">Superhuman AI</span> might be coming soon.<br><span class="highlight-green">And we aren't ready.</span></h1>
-            <p style="font-size:large; margin-top: 50px; margin-bottom: 50px;">The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help make sure it's safe. We run workshops focusing on educating the general public in the following three areas:</p>
-        </div>
-        <div style="display: flex; justify-content: space-evenly;">
-          <div class="what-we-do-item">
-            <h3>Awareness</h3>
-            <p>Bridging the gap in awareness between frontier AI research and the general public and what risks exist with modern AI development</p>
-          </div>
-          <div class="what-we-do-item">
-            <h3>Skills</h3>
-            <p>Equipping people with the tools and skills to participate in modern AI discussion and development</p>
-          </div>
-          <div class="what-we-do-item">
-            <h3>Social/Political Consciousness</h3>
-            <p>Building the social/political consciousness needed to convince policymakers to take AI and AI safety seriously</p>
-          </div>
-        </div>
-      </div>
+{{ define "title" }}AI Safety Awareness Foundation - Home{{ end }}
+
+{{ define "additional_styles" }}
+<style>
+  .what-we-do-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .what-we-do-item {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .what-we-do-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .workshops-section {
+    margin-top: 40px;
+  }
+  .workshops-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .workshops-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .tab-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000000;
+  }
+  .tab-button.active {
+    background-color: #e8f5e9;
+    color: #000000;
+  }
+  .workshops-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .workshop-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000;
+  }
+  .workshop-date {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .workshop-location {
+    margin-bottom: 10px;
+  }
+  .workshop-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .workshop-link:hover {
+    text-decoration: underline;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+  <div class="header-container">
+    <h1>
+      <span class="header-text"><span class="italic-emphasis">Superhuman AI</span> might be coming soon.</span><br>
+      <span class="highlight-green">And we aren't ready.</span>
+    </h1>
+    <p style="font-size:large; margin-top: 50px; margin-bottom: 50px; text-align: center;">The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help make sure it's safe. We run workshops focusing on educating the general public in the following three areas:</p>
+  </div>
+  <div class="what-we-do-container">
+    <div class="what-we-do-item">
+      <h3>Awareness</h3>
+      <p>Bridging the gap in awareness between frontier AI research and the general public and what risks exist with modern AI development</p>
     </div>
-    <section class="workshops-section">
-      <div class="workshops-header">
-        <h2>Our Workshops</h2>
-        <p>Join us in our mission to promote AI safety awareness</p>
-      </div>
-      <div class="workshops-tabs">
-        <button class="tab-button active" onclick="showWorkshops('future')">Future Workshops</button>
-        <button class="tab-button" onclick="showWorkshops('past')">Past Workshops</button>
-      </div>
-      <div id="future-workshops" class="workshops-list">
-        {{ range (where .Site.Pages "Section" "workshops") }}
-          {{ range .Pages }}
-            {{ if eq .Params.temporalstatus "future" }}
-              <div class="workshop-item">
-                <div class="workshop-date">{{ .Params.workshopdate }}</div>
-                <div class="workshop-location">{{ .Params.workshoplocation }}</div>
-                {{ if ne .Params.detailstobedetermined true }}
-                  <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
-                {{ end }}
-              </div>
-            {{ end }}
-          {{ end }}
+    <div class="what-we-do-item">
+      <h3>Skills</h3>
+      <p>Equipping people with the tools and skills to participate in modern AI discussion and development</p>
+    </div>
+    <div class="what-we-do-item">
+      <h3>Social/Political Consciousness</h3>
+      <p>Building the social/political consciousness needed to convince policymakers to take AI and AI safety seriously</p>
+    </div>
+  </div>
+  <section id="our-workshops" class="workshops-section">
+    <div class="workshops-header">
+      <h2>Our Workshops</h2>
+      <p>Join us in our mission to promote AI safety awareness</p>
+    </div>
+    <div class="workshops-tabs">
+      <button class="tab-button active" onclick="showWorkshops('future')">Future Workshops</button>
+      <button class="tab-button" onclick="showWorkshops('past')">Past Workshops</button>
+    </div>
+    <div id="future-workshops" class="workshops-list">
+      {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
+      {{ $sortedFutureWorkshops := sort $futureWorkshops "Params.workshopdate" }}
+      {{ range $sortedFutureWorkshops }}
+        {{ $date := .Params.workshopdate }}
+        {{ if not (findRE "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" $date) }}
+          {{ $date = printf "9999-%s" $date }}
         {{ end }}
-      </div>
-      <div id="past-workshops" class="workshops-list" style="display: none;">
-        {{ range (where .Site.Pages "Section" "workshops") }}
-          {{ range .Pages }}
-            {{ if eq .Params.temporalstatus "past" }}
-              <div class="workshop-item">
-                <div class="workshop-date">{{ .Params.workshopdate }}</div>
-                <div class="workshop-location">{{ .Params.workshoplocation }}</div>
-                {{ if ne .Params.detailstobedetermined true }}
-                  <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
-                {{ end }}
-              </div>
-            {{ end }}
+        <div class="workshop-item" data-sort-date="{{ $date }}">
+          <div class="workshop-date">{{ .Params.workshopdate }}</div>
+          <div class="workshop-location">{{ .Params.workshoplocation }}</div>
+          {{ if ne .Params.detailstobedetermined true }}
+            <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
           {{ end }}
-        {{ end }}
-      </div>
-    </section>
-    <script>
-      function showWorkshops(type) {
-        document.getElementById('future-workshops').style.display = type === 'future' ? 'flex' : 'none';
-        document.getElementById('past-workshops').style.display = type === 'past' ? 'flex' : 'none';
-        document.querySelectorAll('.tab-button').forEach(button => {
-          button.classList.toggle('active', button.textContent.toLowerCase().includes(type));
-        });
-      }
-    </script>
-  </body>
-</html>
+        </div>
+      {{ end }}
+    </div>
+    <div id="past-workshops" class="workshops-list" style="display: none;">
+      {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
+      {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.workshopdate" "desc" }}
+      {{ range $sortedPastWorkshops }}
+        <div class="workshop-item">
+          <div class="workshop-date">{{ .Params.workshopdate }}</div>
+          <div class="workshop-location">{{ .Params.workshoplocation }}</div>
+          {{ if ne .Params.detailstobedetermined true }}
+            <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{ define "additional_scripts" }}
+<script>
+  function showWorkshops(type) {
+    document.getElementById('future-workshops').style.display = type === 'future' ? 'flex' : 'none';
+    document.getElementById('past-workshops').style.display = type === 'past' ? 'flex' : 'none';
+    document.querySelectorAll('.tab-button').forEach(button => {
+      button.classList.toggle('active', button.textContent.toLowerCase().includes(type));
+    });
+
+    if (type === 'future') {
+      const workshopsList = document.getElementById('future-workshops');
+      const workshops = Array.from(workshopsList.children);
+      workshops.sort((a, b) => {
+        const dateA = a.dataset.sortDate;
+        const dateB = b.dataset.sortDate;
+        return dateA.localeCompare(dateB);
+      });
+      workshops.forEach(workshop => workshopsList.appendChild(workshop));
+    }
+  }
+
+  // Initial sort on page load
+  showWorkshops('future');
+</script>
+{{ end }}
