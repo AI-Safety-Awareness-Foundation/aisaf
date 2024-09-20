@@ -1,5 +1,5 @@
 ---
-title: AI and AI Safety Forecasting Seminar
+title: AI and AI Safety Forecasting Seminar + OpenAI o1 Q and A
 workshopdate: September 24th, 2024, 6 p.m. - 9 p.m. PDT
 workshoplocation: Founders Hall (FNDR) Room 370, University of Washington, 4215 East Stevens Way Northeast, Seattle, WA
 temporalstatus: future
