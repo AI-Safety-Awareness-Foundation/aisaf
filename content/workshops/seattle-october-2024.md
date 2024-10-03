@@ -1,12 +1,14 @@
 ---
-title: AI and AI Safety Forecasting Seminar + OpenAI o1 Q and A
-workshopdate: September 24th, 2024, 6 p.m. - 9 p.m. PDT
-workshoplocation: Founders Hall (FNDR) Room 370, University of Washington, 4215 East Stevens Way Northeast, Seattle, WA
-temporalstatus: past
+title: AI and AI Safety Forecasting Seminar
+workshopdate: late Oct (exact date TBD), 2024
+workshoplocation: Seattle, WA
+temporalstatus: future
 detailstobedetermined: false
 listindex: 0
 ---
 
+This is a free AI safety meetup that will be done in collaboration with the
+Seattle Public Library
 This is a free AI safety meetup aimed at teaching the general public what modern AI
 is capable of, both good and bad, and giving people an introduction to the
 skills and knowledge necessary to predict what else might be coming around the
