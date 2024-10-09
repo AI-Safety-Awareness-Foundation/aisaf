@@ -3,6 +3,7 @@ title: UW eScience Institute AI Safety Meetup
 workshopdate: Aug 10th, 2024
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: past
+listindex: 10
 ---
 
 Hi folks! We’re hosting an open to the public, completely free AI safety meetup. In it we'll be building and analyzing an LLM from scratch as well as going over governance and legislation issues for dealing with the dangers of modern AI.

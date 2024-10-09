@@ -4,6 +4,7 @@ workshopdate: July 20th, 2024
 workshoplocation: Bellevue Library, Bellevue, WA
 temporalstatus: past
 detailstobedetermined: false
+listindex: 15
 ---
 
 Hi folks! We’re hosting an open to the public, completely free AI safety meetup. In it we'll be building and analyzing an LLM from scratch as well as going over governance and legislation issues for dealing with the dangers of modern AI.

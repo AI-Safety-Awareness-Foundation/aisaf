@@ -10,4 +10,4 @@ If you’re an individual who is curious about AI and wants to learn more about 
 
 Reach us at [info@aisafetyawarenessfoundation.org](mailto:info@aisafetyawarenessfoundation.org).
 
-You can also subscribe to our [mailing list](https://forms.gle/cbUyG8qzGKnp5bKZ6) where we’ll post updates about the newest AI safety events we’re running. 
+You can also subscribe to our [mailing list](https://forms.gle/cbUyG8qzGKnp5bKZ6) where we’ll post about upcoming events.

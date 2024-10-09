@@ -65,13 +65,16 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #000000;
   }
-  .workshop-date {
+  .workshop-title {
     font-weight: bold;
-    color: #000000;
+    font-size: 1.1em;
     margin-bottom: 10px;
   }
-  .workshop-location {
+  .workshop-info {
     margin-bottom: 10px;
+  }
+  .info-label {
+    font-weight: bold;
   }
   .workshop-link {
     display: inline-block;
@@ -83,6 +86,10 @@
   .workshop-link:hover {
     text-decoration: underline;
   }
+  .details-text {
+    font-weight: bold;
+    margin-top: 10px;
+  }
 </style>
 {{ end }}
 
@@ -92,20 +99,20 @@
       <span class="header-text"><span class="italic-emphasis">Superhuman AI</span> might be coming soon.</span><br>
       <span class="highlight-green">And we aren't ready.</span>
     </h1>
-    <p style="font-size:large; margin-top: 50px; margin-bottom: 50px; text-align: center;">The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help make sure it's safe. We run workshops focusing on educating the general public in the following three areas:</p>
+    <p style="font-size:large; margin-top: 50px; margin-bottom: 50px; text-align: center;">The AI Safety Awareness Foundation is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help.</p>
   </div>
   <div class="what-we-do-container">
     <div class="what-we-do-item">
       <h3>Awareness</h3>
-      <p>Bridging the gap in awareness between frontier AI research and the general public and what risks exist with modern AI development</p>
+      <p>For the general public to understand risks and benefits of frontier AI research</p>
     </div>
     <div class="what-we-do-item">
       <h3>Skills</h3>
-      <p>Equipping people with the tools and skills to participate in modern AI discussion and development</p>
+      <p>To participate in modern AI discussion and development</p>
     </div>
     <div class="what-we-do-item">
       <h3>Social/Political Consciousness</h3>
-      <p>Building the social/political consciousness needed to convince policymakers to take AI and AI safety seriously</p>
+      <p>To convince policymakers to take AI and AI safety seriously</p>
     </div>
   </div>
   <section id="our-workshops" class="workshops-section">
@@ -119,30 +126,36 @@
     </div>
     <div id="future-workshops" class="workshops-list">
       {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
-      {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "desc" }}
+      {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "asc" }}
       {{ range $sortedFutureWorkshops }}
-        {{ $date := .Params.workshopdate }}
-        {{ if not (findRE "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" $date) }}
-          {{ $date = printf "9999-%s" $date }}
-        {{ end }}
-        <div class="workshop-item" data-sort-date="{{ $date }}">
-          <div class="workshop-date">{{ .Params.workshopdate }}</div>
-          <div class="workshop-location">{{ .Params.workshoplocation }}</div>
+        <div class="workshop-item">
+          <div class="workshop-title">{{ .Title }}</div>
+          <div class="workshop-info">
+            <span class="info-label">Date:</span> {{ .Params.workshopdate }}<br>
+            <span class="info-label">Location:</span> {{ .Params.workshoplocation }}
+          </div>
           {{ if ne .Params.detailstobedetermined true }}
-            <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
+            <a href="{{ .RelPermalink }}" class="workshop-link details-text">Click here for details</a>
+          {{ else }}
+            <div class="details-text">Details coming soon</div>
           {{ end }}
         </div>
       {{ end }}
     </div>
     <div id="past-workshops" class="workshops-list" style="display: none;">
       {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
-      {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "desc" }}
+      {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "asc" }}
       {{ range $sortedPastWorkshops }}
         <div class="workshop-item">
-          <div class="workshop-date">{{ .Params.workshopdate }}</div>
-          <div class="workshop-location">{{ .Params.workshoplocation }}</div>
+          <div class="workshop-title">{{ .Title }}</div>
+          <div class="workshop-info">
+            <span class="info-label">Date:</span> {{ .Params.workshopdate }}<br>
+            <span class="info-label">Location:</span> {{ .Params.workshoplocation }}
+          </div>
           {{ if ne .Params.detailstobedetermined true }}
-            <a href="{{ .RelPermalink }}" class="workshop-link">More details</a>
+            <a href="{{ .RelPermalink }}" class="workshop-link details-text">Click here for details</a>
+          {{ else }}
+            <div class="details-text">Details coming soon</div>
           {{ end }}
         </div>
       {{ end }}
@@ -158,20 +171,9 @@
     document.querySelectorAll('.tab-button').forEach(button => {
       button.classList.toggle('active', button.textContent.toLowerCase().includes(type));
     });
-
-    if (type === 'future') {
-      const workshopsList = document.getElementById('future-workshops');
-      const workshops = Array.from(workshopsList.children);
-      workshops.sort((a, b) => {
-        const dateA = a.dataset.sortDate;
-        const dateB = b.dataset.sortDate;
-        return dateA.localeCompare(dateB);
-      });
-      workshops.forEach(workshop => workshopsList.appendChild(workshop));
-    }
   }
 
-  // Initial sort on page load
+  // Initial display on page load
   showWorkshops('future');
 </script>
 {{ end }}
