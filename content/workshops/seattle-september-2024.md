@@ -4,7 +4,7 @@ workshopdate: September 24th, 2024, 6 p.m. - 9 p.m. PDT
 workshoplocation: Founders Hall (FNDR) Room 370, University of Washington, 4215 East Stevens Way Northeast, Seattle, WA
 temporalstatus: past
 detailstobedetermined: false
-listindex: 0
+listindex: 8
 ---
 
 This is a free AI safety meetup aimed at teaching the general public what modern AI
