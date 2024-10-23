@@ -1,6 +1,6 @@
 ---
 title: Analyzing a Malicious AI agent
-workshopdate: Oct 26th, 2024, 1 p.m. - 4 p.m. Pacific
+workshopdate: Oct 26th, 2024, 12:30 p.m. - 3:30 p.m. Pacific Time
 workshoplocation: Remote (meet.google.com/uui-ioub-qwc)
 temporalstatus: future
 detailstobedetermined: false
