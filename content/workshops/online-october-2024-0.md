@@ -1,7 +1,7 @@
 ---
 title: Analyzing a Malicious AI agent
 workshopdate: Oct 26th, 2024, 1 p.m. - 4 p.m. Pacific
-workshoplocation: Remote
+workshoplocation: Remote (meet.google.com/uui-ioub-qwc)
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
@@ -15,3 +15,5 @@ We'll be spending roughly 3 hours on dissecting a model that's been trained to n
 Why might that happen? That's the riddle we'll be exploring!
 
 During the session you'll be doing some hands-on code exploration and spelunking with an AI model trained via reinforcement learning to play this game. While we don't expect to have attendees be writing too much code from scratch (although some exploratory code may be written as you play with the models), we do expect attendees to be able to comfortably read Python code. Along the way we'll be spending a little bit of time introducing people to the basics of reinforcement learning and its role in modern AI.
+
+If you're planning to attend please fill out this quick survey to let us know you're coming: [https://forms.gle/BRFPRtqhjFX6MPgT9](https://forms.gle/BRFPRtqhjFX6MPgT9)
