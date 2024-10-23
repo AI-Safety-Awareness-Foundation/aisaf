@@ -4,7 +4,7 @@ workshopdate: Oct 26th, 2024, 12:30 p.m. - 3:30 p.m. Pacific Time
 workshoplocation: Remote (meet.google.com/uui-ioub-qwc)
 temporalstatus: future
 detailstobedetermined: false
-listindex: -1
+listindex: -2
 ---
 
 Ever wonder how an AI agent could be malicious? Have some Python coding chops but don't know too much about AI? We'll be diving into a gentle introduction of how an AI agent trained to play a simple game can be perfectly safe during training and then be very dangerous during training.
