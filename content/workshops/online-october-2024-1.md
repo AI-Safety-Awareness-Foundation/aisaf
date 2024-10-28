@@ -1,11 +1,13 @@
 ---
 title: AI legislation spotlight - Looking over SB-1047 in detail
-workshopdate: Oct 28th, 2024, 5 p.m. - 7:30 p.m. Pacific
+workshopdate: Oct 29th, 2024, 5 p.m. - 7:30 p.m. Pacific
 workshoplocation: Bellevue Library, 1111 110th Ave NE, Bellevue, WA 98004 (or join remotely at meet.google.com/pri-ntmy-icb)
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
 ---
+
+NOTE THAT THE ORIGINAL TIME ON THIS EVENT WAS INCORRECT: It has been changed to Oct 29th from the original time of Oct 28th.
 
 This is a free hybrid meetup open to the general public about AI safety legislation. Feel free to join us either in person or remotely!
 
