@@ -58,17 +58,24 @@
         .timeline-item {
             margin-bottom: 1rem;
             position: relative;
+            line-height: 1.5;
         }
 
         .timeline-item:before {
             content: "";
             position: absolute;
             left: -1.625rem;
-            top: 0.5rem;
+            top: 0.6em; /* This should better align with text */
             width: 0.75rem;
             height: 0.75rem;
             background: #2563eb;
             border-radius: 50%;
+        }
+
+        /* Remove the flex display and just add some spacing */
+        .timeline-item strong {
+            display: inline-block;
+            margin-right: 0.5rem;
         }
 
         .university-list {
@@ -114,8 +121,7 @@
         <div class="container nav-container">
             <a href="index.html" class="nav-logo">AI Safety Awareness Foundation</a>
             <div class="nav-links">
-                <a href="#">Workshops</a>
-                <a href="#">Resources</a>
+                <a href="workshops.html">Workshops</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -134,9 +140,34 @@
                 </div>
 
                 <div class="info-section">
-                    <h2><i class="fas fa-info-circle"></i> What to expect</h2>
+                    <h2><i class="fas fa-clock"></i> When</h2>
+                    <p>Wednesday, November 20, 2024<br>
+                    Times: 3-5pm, 6-8pm, 9-11pm ET</p>
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-university"></i> Participating Universities and Signup</h2>
+
+                    <p>Sign up to run a local workshop:</p>
+                    <div class="signup-buttons">
+                        <a href="#" class="cta-button">University Group Registration</a>
+                    </div>
+                    <br><br>
+                    <p>Individuals should sign up with their local group! If your group isn't listed yet, register interest here. We'll either match you 
+                        with a local group or you can join our fully virtual session. 
+                    </p>
+                    <div class="signup-buttons">
+                        <a href="#" class="cta-button">Individual Interest Registration</a>   
+                    </div> 
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-info-circle"></i> What to Expect</h2>
                     <p>An interactive 2-hour workshop focused on AI forecasting and safety awareness. Our goal is to help participants understand the urgency of AI safety through interactive demonstrations and group exercises.</p>
                     
+                    <p>Participants meet up with their local university groups -- the first portion will be an all-together virtual intro and demo, and then local groups will break out into their own sessions.</p>
+
+
                     <div class="timeline">
                         <div class="timeline-item">
                             <strong>Intro</strong> - Virtual intro with AISAF
@@ -145,7 +176,7 @@
                             <strong>AI Demos</strong> - Virtual demonstrations of current AI capabilities
                         </div>
                         <div class="timeline-item">
-                            <strong>AI Forecasting</strong> - Interactive session with your local university group
+                            <strong>AI Forecasting</strong> - Interactive session with your local group
                         </div>
                         <div class="timeline-item">
                             <strong>Q&A</strong> - Open discussion with local participants
@@ -156,45 +187,6 @@
                     </div>
                 </div>
 
-                <div class="info-section">
-                    <h2><i class="fas fa-map-marker-alt"></i> Format & Location</h2>
-                    <p>This is a hybrid workshop combining the best of both worlds:</p>
-                    <ul>
-                        <li>First half: Remote session with AISAF featuring intro talk and AI demos</li>
-                        <li>Second half: In-person sessions at participating universities for group exercises</li>
-                    </ul>
-                </div>
-
-                <div class="info-section">
-                    <h2><i class="fas fa-university"></i> Participating Universities</h2>
-                    <table class="university-list">
-                        <thead>
-                            <tr>
-                                <th>University Group</th>
-                                <th>Contact</th>
-                                <th>Event Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Add university rows here -->
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="info-section">
-                    <h2><i class="fas fa-clock"></i> When</h2>
-                    <p>Wednesday, November 20, 2024<br>
-                    Time: [TBD]</p>
-                </div>
-
-                <div class="info-section">
-                    <h2><i class="fas fa-sign-in-alt"></i> How to Sign Up</h2>
-                    <p>Choose the option that best fits your situation:</p>
-                    <div class="signup-buttons">
-                        <a href="#" class="cta-button">University Group Registration</a>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnuXOSyeqicQ1LlLJZeFG-5KP1gQsxwaZ9m3oz2xj0pSItGA/viewform" class="cta-button">Individual Interest Form</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -205,8 +197,7 @@
                 <h3>AI Safety Awareness Foundation</h3>
             </div>
             <nav class="nav">
-                <a href="#">Workshops</a>
-                <a href="#">Resources</a>
+                <a href="workshops.html">Workshops</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>

@@ -139,6 +139,7 @@
             color: #1d4ed8;
         }
 
+        /* Workshop Tags - Reordered to ensure private-tag overrides workshop-tag */
         .workshop-tag {
             display: inline-block;
             padding: 0.25rem 0.75rem;
@@ -148,9 +149,28 @@
             font-size: 0.875rem;
         }
 
+        .private-tag {
+            background: #fee2e2 !important;  /* Added !important to ensure override */
+            color: #991b1b !important;
+        }
+
         .button-group {
             display: flex;
             gap: 0.75rem;
+        }
+
+        /* Added gray button variant */
+        .btn-secondary {
+            background: #dcdfe6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
         }
 
         @media (max-width: 768px) {
@@ -185,8 +205,7 @@
         <div class="container nav-container">
             <a href="index.html" class="nav-logo">AI Safety Awareness Foundation</a>
             <div class="nav-links">
-                <a href="#">Workshops</a>
-                <a href="#">Resources</a>
+                <a href="workshops.html">Workshops</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -258,12 +277,10 @@
                         <p>Thurs Nov 7, 2024</p>
                         <p>1:00-4:00 PM ET | <a href="https://recurse.com">Recurse Center</a>, NYC</p>
                         <span class="workshop-tag">Beginner-Friendly</span>
-                    </div>
-                    <div class="button-group">
-                        <a href="#" class="btn btn-info">More Info</a>
-                        <a href="#" class="btn btn-register">Register</a>
+                        <span class="workshop-tag private-tag">Recurse Center Only</span>
                     </div>
                 </div>
+
                 <div class="workshop-item">
                     <div class="workshop-info">
                         <h4>Malicious RL Agents</h4>
@@ -273,17 +290,17 @@
                         <span class="workshop-tag">Technical</span>
                     </div>
                     <div class="button-group">
-                        <a href="#" class="btn btn-info">More Info</a>
-                        <a href="https://lu.ma/gmck9joa?tk=FtCIB2" class="btn btn-register">Register</a>
+                        <a href="https://lu.ma/gmck9joa?tk=FtCIB2" class="btn btn-register">Register & More Info</a>
                     </div>
                 </div>
+
                 <div class="workshop-item">
                     <div class="workshop-info">
                         <h4>Future Workshops</h4>
-                        <p>Get notified when new workshops are scheduled in your area</p>
+                        <p>Get notified about new workshops and other events: </p>
                     </div>
                     <div class="button-group">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnuXOSyeqicQ1LlLJZeFG-5KP1gQsxwaZ9m3oz2xj0pSItGA/viewform" class="btn btn-register">Express Interest</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnuXOSyeqicQ1LlLJZeFG-5KP1gQsxwaZ9m3oz2xj0pSItGA/viewform" class="btn btn-secondary">Express Interest</a>
                     </div>
                 </div>
                 <div class="workshop-item">
@@ -292,7 +309,7 @@
                         <p>Check out previous workshops</p>
                     </div>
                     <div class="button-group">
-                        <a href="workshops.html" class="btn btn-register">View Past Workshops</a>
+                        <a href="workshops.html" class="btn btn-secondary">View Past Workshops</a>
                     </div>
                 </div>
             </div>
@@ -305,8 +322,7 @@
                 <h3>AI Safety Awareness Foundation</h3>
             </div>
             <nav class="nav">
-                <a href="#">Workshops</a>
-                <a href="#">Resources</a>
+                <a href="workshops.html">Workshops</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
