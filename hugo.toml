@@ -1,4 +1,0 @@
-baseURL = 'https://aisafetyawarenessfoundation.org/'
-languageCode = 'en-us'
-title = 'AI Safety Awareness Foundation'
-disableKinds = ['taxonomy', 'term']
