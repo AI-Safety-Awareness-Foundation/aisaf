@@ -1,0 +1,41 @@
+baseURL = 'https://aisafetyawarenessfoundation.org/'
+languageCode = 'en-us'
+title = 'AI Safety Awareness Foundation'
+
+# Enable all default taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Configure content types
+[contentTypes]
+  workshops = "workshops"
+
+# Configure menu
+[menu]
+  [[menu.main]]
+    identifier = "workshops"
+    name = "Workshops"
+    url = "/workshops/"
+    weight = 20
+
+# Configure permalinks
+[permalinks]
+  workshops = "/workshops/:year/:month/:slug/"
+
+# Configure outputs
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+# Configure date formats
+[params]
+  dateFormat = "2006-01-02"
+  timeFormat = "15:04"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
