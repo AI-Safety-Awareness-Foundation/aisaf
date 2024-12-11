@@ -1,7 +1,7 @@
 ---
 title: Analyzing a Malicious AI agent
 workshopdate: Dec 14th, 2024, 1 p.m. - 6 p.m.
-workshoplocation: Chinatown, Manhattan, NY
+workshoplocation: 47 Monroe St, Unit 3, Manhattan, NY 10002
 temporalstatus: future
 detailstobedetermined: false
 listindex: -5
