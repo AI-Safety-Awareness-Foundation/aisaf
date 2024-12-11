@@ -2,7 +2,7 @@
 title: AI legislation spotlight - Looking over SB-1047 in detail
 workshopdate: Oct 29th, 2024, 5 p.m. - 7:30 p.m. Pacific
 workshoplocation: Bellevue Library, 1111 110th Ave NE, Bellevue, WA 98004 (or join remotely at meet.google.com/pri-ntmy-icb)
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: -1
 ---

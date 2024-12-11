@@ -2,7 +2,7 @@
 title: Analyzing a Malicious AI agent
 workshopdate: Nov 10th, 2024, 12:30 p.m./1:30 p.m. - 4:30 p.m. Eastern Time
 workshoplocation: Fractal Tech, 111 Conselyea St Floor 2, Brooklyn, NY 11211
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: -3
 ---
