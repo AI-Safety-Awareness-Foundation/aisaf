@@ -2,7 +2,7 @@
 title: Full-Day Technical AI Safety Workshop
 workshopdate: Dec 7th, 2024
 workshoplocation: Recurse Center, 397 Bridge St, Brooklyn, NY 11201
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: -4
 ---
