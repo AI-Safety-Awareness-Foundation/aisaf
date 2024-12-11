@@ -1,0 +1,25 @@
+---
+title: Performing Per-Neuron Analysis on an LLM
+workshopdate: Dec 17th, 2024, 6 p.m. - 9:30 p.m.
+workshoplocation: Chinatown, Manhattan, NY
+temporalstatus: future
+detailstobedetermined: false
+listindex: -6
+---
+
+Ever wonder how transformers actually do some of their computation? Wanted to
+know more about what this "mechanistic interpretability" thing is and how it
+relates to AI safety? This is the workshop for you!
+
+We'll be analyzing how transformers perform induction (in particular in the vein
+of mechanistic interpretability as first kicked off by Anthropic's 2021
+transformer circuits paper). This workshop is meant for people who have
+previously built and trained their own transformers previously. We will assume
+that people are already very familiar with a standard decoder-only GPT-2-style
+transformer.
+
+This workshop will consist of an introduction talk into mechanistic
+interpretability of LLMs, some guiding principles, and then a hands-on exercise
+where we actually do some interpretability exercises.
+
+You will need to bring a computer to participate!

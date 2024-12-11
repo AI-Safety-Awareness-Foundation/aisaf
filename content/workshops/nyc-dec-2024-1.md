@@ -7,10 +7,10 @@ detailstobedetermined: false
 listindex: -5
 ---
 
-Ever wonder how an AI agent could be malicious? Have some Python coding chops
-but don't know too much about AI? We'll be diving into a gentle introduction of
-how an AI agent trained to play a simple game can be perfectly safe during
-training and then be very dangerous during production.
+Ever wonder how an AI agent could be malicious? Have trained some basic neural
+nets but don't know anything about reinforcement learning? We'll be diving into
+a gentle introduction of how an AI agent trained to play a simple game can be
+perfectly safe during training and then be very dangerous during production.
 
 This event will be remote and wholly open to the public and free to attend!
 We'll be spending the time dissecting an agent that's been trained to navigate a
@@ -28,12 +28,19 @@ attendees to be able to comfortably read Python code. Along the way we'll be
 spending a little bit of time introducing people to the basics of reinforcement
 learning and its role in modern AI.
 
+*We will assume that participants are comfortable with Python and have
+constructed and trained a basic neural net before with some sort of autograd
+library such as PyTorch.* If you are familiar with Python but have not
+previously trained a basic neural net, please reach out to us at
+info@aisafetyawarenessfoundation.org and we're happy to see if there's
+potentially some sort of introduction materials we could have you review
+beforehand.
+
 NOTE: If you have already attended a previous AISAF workshop, please message us
 at info@aisafetyawarenessfoundation.org. It may make sense for you to skip the
 first section of the workshop.
 
-If you're planning to attend please RSVP through one of the following platforms:
+If you're planning to attend please RSVP through at least one of the following platforms:
 
-+ Lu.ma
-+ Meetup.com
-+ Partiful
++ Lu.ma: [https://lu.ma/y3wack8r](https://lu.ma/y3wack8r)
++ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/][https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/]
