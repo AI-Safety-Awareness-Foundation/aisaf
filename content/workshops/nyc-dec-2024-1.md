@@ -43,4 +43,4 @@ first section of the workshop.
 If you're planning to attend please RSVP through at least one of the following platforms:
 
 + Lu.ma: [https://lu.ma/y3wack8r](https://lu.ma/y3wack8r)
-+ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/][https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/]
++ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/)
