@@ -1,124 +1,228 @@
 <!DOCTYPE html>
-<html lang="en" charset="utf-8">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}AI Safety Awareness Foundation{{ end }}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
     <style>
-      body {
-        font-family: 'Noto Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      h1 { font-size: 44px; font-weight: 400; }
-      h2 { font-size: 36px; font-weight: 400; }
-      h3 { font-size: 30px; font-weight: 400; }
-      h4 { font-size: 24px; font-weight: 400; }
-      h5 { font-size: 20px; font-weight: 500; }
-      h6 { font-size: 16px; font-weight: 500; }
-      .top-bar {
-        padding: 10px 0;
-        width: 100%;
-      }
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-      .nav-menu {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .nav-item {
-        text-decoration: inherit;
-        color: inherit;
-        padding: 10px;
-      }
-      .menu-toggle {
-        display: none;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-      }
-      .header-link {
-        text-decoration: none;
-        color: inherit;
-        font-weight: bold;
-      }
-      .main-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-      .highlight-green {
-        background-color: #e8f5e9;
-        padding: 5px 10px;
-        display: inline-block;
-      }
-      .italic-emphasis {
-        font-style: italic;
-      }
-      @media screen and (max-width: 768px) {
-        h1 { font-size: 32px; }
-        h2 { font-size: 28px; }
-        h3 { font-size: 24px; }
-        h4 { font-size: 20px; }
-        h5 { font-size: 18px; }
-        h6 { font-size: 16px; }
-        .nav-menu {
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          top: 60px;
-          left: 0;
-          width: 100%;
-          background-color: #ffffff;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        /* Page-specific styles */
+        .pillars {
+            padding: 4rem 0;
+            background: #f9fafb;
         }
-        .nav-menu.active {
-          display: flex;
+
+        .pillars-grid {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
-        .menu-toggle {
-          display: block;
+
+        .pillar-card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-      }
+
+        .pillar-card i {
+            color: #2563eb;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .pillar-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .pillar-card p {
+            color: #4b5563;
+        }
+
+        /* Workshop Section */
+        .workshops {
+            padding: 4rem 0;
+            background: #eff6ff;
+        }
+
+        .workshop-types {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .workshop-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .workshop-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .workshop-card i {
+            color: #2563eb;
+        }
+
+        .workshop-card p {
+            color: #4b5563;
+        }
+
+        /* Upcoming Workshops */
+        .upcoming-workshops {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .upcoming-workshops > h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .upcoming-workshops > h3 i {
+            color: #2563eb;
+        }
+
+        .workshop-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-item:hover {
+            background: #f8fafc;
+        }
+
+        .workshop-info h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .workshop-info p {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        .workshop-info a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .workshop-info a:hover {
+            color: #1d4ed8;
+        }
+
+        /* Workshop Tags - Reordered to ensure private-tag overrides workshop-tag */
+        .workshop-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+        }
+
+        .private-tag {
+            background: #fee2e2 !important;  /* Added !important to ensure override */
+            color: #991b1b !important;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        /* Added gray button variant */
+        .btn-secondary {
+            background: #dcdfe6;
+            color: #000000;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+            color: #000000;
+        }
+
+        @media (max-width: 768px) {
+            .pillars-grid {
+                flex-direction: column;
+            }
+
+            .workshop-types {
+                flex-direction: column;
+            }
+
+            .workshop-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .button-group {
+                margin-top: 0.5rem;
+            }
+        }
     </style>
     {{ block "additional_styles" . }}{{ end }}
-  </head>
-  <body>
-    <div class="top-bar">
-      <nav class="nav-container">
-        <h4 style="margin: 10px;">
-          <a href="/" class="header-link">AI Safety Awareness Foundation</a>
-        </h4>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <ul class="nav-menu">
-          <li><a href="/#our-workshops" class="nav-item">Our Workshops</a></li>
-          <li><a href="/about" class="nav-item">About the Team</a></li>
-          <li><a href="/contact" class="nav-item">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="main-content">
-      {{ block "main" . }}{{ end }}
-    </div>
-    <script>
-      function toggleMenu() {
-        const menu = document.querySelector('.nav-menu');
-        menu.classList.toggle('active');
-      }
-    </script>
-    {{ block "additional_scripts" . }}{{ end }}
-  </body>
+</head>
+<body>
+    <nav class="nav-header">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">AI Safety Awareness Foundation</a>
+            <div class="nav-links">
+                <a href="/workshops/">Workshops</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+    {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <h3>AI Safety Awareness Foundation</h3>
+            </div>
+            <nav class="nav">
+                <a href="workshops.html">Workshops</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
 </html>

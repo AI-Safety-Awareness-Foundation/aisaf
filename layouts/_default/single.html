@@ -1,11 +1,14 @@
 {{ define "main" }}
+{{ if eq .Section "workshops" }}
 <div style="max-width: 800px; margin-left: auto; margin-right: auto;">
   <h1>{{ .Params.title }}</h1>
-  {{ if eq .Section "workshops" }}
   <h4>Date: {{ .Params.workshopdate }}</h4>
   <h4>Location: {{ .Params.workshoplocation }}</h4>
-  <h4>Description:</h4>
-  {{ end }}
-	{{ .Content }}
+  <div>
+  {{ .Content }}
+</div>
+{{ else }}
+{{ .Content }}
+{{ end }}
 </div>
 {{ end }}

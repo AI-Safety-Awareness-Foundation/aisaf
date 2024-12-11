@@ -1,0 +1,170 @@
+{{ define "additional_styles" }}
+    <style>
+        .workshops-content h1 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .workshops-subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 3rem;
+        }
+
+        .workshops-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .workshops-section > h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .workshops-section > h2 i {
+            color: #2563eb;
+        }
+
+        .workshop-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-item:hover {
+            background: #f8fafc;
+        }
+
+        .workshop-info h4 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .workshop-info p {
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+
+        .workshop-info a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        .workshop-info a:hover {
+            color: #1d4ed8;
+        }
+
+        .workshop-tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #dbeafe;
+            color: #1e40af;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+        }
+
+        .date-tag {
+            background: #e5e7eb;
+            color: #4b5563;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .private-tag {
+            background: #fee2e2;  /* Light red background */
+            color: #991b1b;       /* Darker red text */
+        }
+
+        @media (max-width: 768px) {
+            .workshop-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .button-group {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+
+{{ end }}
+
+{{ define "main" }}
+    <section class="page-section">
+        <div class="container">
+            <div class="workshops-content">
+                <h1>Our Workshops</h1>
+                <p class="workshops-subtitle">Join us in exploring the future of AI safety through interactive workshops</p>
+
+                <div class="workshops-section">
+                    <h2><i class="fas fa-calendar"></i> Upcoming Workshops</h2>
+                    {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
+                    {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "asc" }}
+                    {{ range $sortedFutureWorkshops }}
+                      <div class="workshop-item">
+                        <div class="workshop-info">
+                          <h4>{{ .Title }}</h4>
+                          <p>{{ .Params.workshopdate }}</p>
+                          <p>{{ .Params.workshoplocation }}</p>
+                        </div>
+                        {{ if ne .Params.detailstobedetermined true }}
+                          <a href="{{ .RelPermalink }}" class="btn btn-register">Click here for details</a>
+                        {{ else }}
+                          <div class="details-text">Details coming soon</div>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+                </div>
+
+                <div class="workshops-section">
+                    <h2><i class="fas fa-history"></i> Past Workshops</h2>
+
+                    {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
+                    {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "asc" }}
+                    {{ range $sortedPastWorkshops }}
+                      <div class="workshop-item">
+                        <div class="workshop-info">
+                          <h4>{{ .Title }}</h4>
+                          <p>{{ .Params.workshopdate }}</p>
+                          <p>{{ .Params.workshoplocation }}</p>
+                        </div>
+                        {{ if ne .Params.detailstobedetermined true }}
+                          <a href="{{ .RelPermalink }}" class="btn btn-register">Click here for details</a>
+                        {{ else }}
+                          <div class="details-text">Details coming soon</div>
+                        {{ end }}
+                      </div>
+                    {{ end }}
+
+                </div>
+
+                <div class="workshops-section">
+                    <h2><i class="fas fa-bell"></i> Stay Updated</h2>
+                    <p>Join our mailing list for updates about new workshops and other events:</p>
+                    <div class="button-group" style="margin-top: 1rem;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdnuXOSyeqicQ1LlLJZeFG-5KP1gQsxwaZ9m3oz2xj0pSItGA/viewform" class="btn btn-register">Join Mailing List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{{ end }}

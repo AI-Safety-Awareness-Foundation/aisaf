@@ -1,0 +1,258 @@
+/* This is all kind of hacky, trying to undo some crazy per page styling BEGIN */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+nav-header {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* END */
+
+a:visited {
+    color: inherit;
+}
+
+.announcement-banner {
+    position: sticky;
+    top: 0;
+    background: #FFD700;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.1rem;
+    z-index: 1000;
+}
+
+.announcement-banner a {
+    color: #1e3a8a;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.announcement-banner a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+    color: white;
+    padding: 4rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 800px;
+}
+
+header .blue-text {
+    color: #93c5fd;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    background: #3b82f6;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background: #2563eb;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-info {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+.btn-info:hover {
+    background: #d1d5db;
+}
+
+.btn-register {
+    background: #2563eb;
+    color: white !important;
+}
+
+.btn-register:hover {
+    background: #1d4ed8;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title .icon-wrapper {
+    display: inline-block;
+    padding: 1rem;
+    background: #dbeafe;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-title i {
+    font-size: 1.5rem;
+    color: #2563eb;
+}
+
+.section-title h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Page Content Styles */
+.page-section {
+    padding: 3rem 0;
+    background: #f9fafb;
+}
+
+.page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+footer a:hover {
+    color: #60a5fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    footer .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    footer a {
+        margin: 0;
+    }
+}
+
+.nav-header {
+    background: #f1f5f9;
+    padding: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
