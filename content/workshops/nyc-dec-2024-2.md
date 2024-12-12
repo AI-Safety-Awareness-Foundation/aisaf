@@ -1,7 +1,7 @@
 ---
 title: Performing Per-Neuron Analysis on an LLM
 workshopdate: Dec 17th, 2024, 6 p.m. - 9:30 p.m.
-workshoplocation: 47 Monroe St, Unit 3, Manhattan, NY 10002
+workshoplocation: Lower Manhattan, NY (Please register to see the address!)
 temporalstatus: future
 detailstobedetermined: false
 listindex: -6
