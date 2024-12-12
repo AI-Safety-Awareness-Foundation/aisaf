@@ -12,7 +12,7 @@ nets but don't know anything about reinforcement learning? We'll be diving into
 a gentle introduction of how an AI agent trained to play a simple game can be
 perfectly safe during training and then be very dangerous during production.
 
-This event will be remote and wholly open to the public and free to attend!
+This event will be wholly open to the public and free to attend!
 We'll be spending the time dissecting an agent that's been trained to navigate a
 maze and optionally harvest crops and/or humans along the way. During training,
 very sensibly the agent harvests crops and avoids humans. But as soon as we
