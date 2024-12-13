@@ -27,5 +27,5 @@ You will need to bring a computer to participate!
 If you're planning to attend please RSVP through at least one of the following platforms:
 
 + Lu.ma: [https://lu.ma/8ibsgv82](https://lu.ma/8ibsgv82)
-+ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038891](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038891:)
++ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038891](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038891)
 + Partiful: [https://partiful.com/e/yL8v4bYSzIOd6GjGRctx](https://partiful.com/e/yL8v4bYSzIOd6GjGRctx)
