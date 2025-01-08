@@ -1,0 +1,197 @@
+{{ define "additional_styles" }}
+    <style>
+        .workshop-day-content h1 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-day-subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 3rem;
+        }
+
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .info-section h2 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-section h2 i {
+            color: #2563eb;
+        }
+
+        .info-section p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            border-left: 2px solid #2563eb;
+            padding-left: 1.2rem;
+            margin: 1.5rem 0;
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 1rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -1.625rem;
+            top: 0.6em; /* This should better align with text */
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Remove the flex display and just add some spacing */
+        .timeline-item strong {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .university-list {
+            border-spacing: 0;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .university-list th,
+        .university-list td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .university-list th {
+            background: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .signup-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .signup-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+{{ end }}
+
+{{ define "main" }}
+    <section class="page-section">
+        <div class="container">
+            <div class="workshop-day-content">
+                <h1>AI Safety Forecasting Workshops Feb 1st, 2025</h1>
+                <p class="workshop-day-subtitle">A day to raise awareness about AI safety through interactive workshops</p>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-info-circle"></i> What to Expect</h2>
+                    <p>An interactive 1.5-hour workshop focused on AI forecasting and safety awareness held in <strong>20+ locations across the U.S. on Feb 1st.</strong> Find your own local location below! If you don't see your location on here and would like to run a workshop, please see the signup form at the bottom of this page.</p>
+
+                    <p>Our goal is to help participants understand the urgency of AI safety through interactive demonstrations and group exercises aimed at helping people forecast what might be coming over the next year or two with AI and AI safety.</p>
+                    
+                    <p>Participants meet up with their local in-person groups -- the first portion will be an all-together virtual intro and demo, and then local groups will break out into their own sessions.</p>
+
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>Intro</strong> - Virtual intro with AISAF
+                        </div>
+                        <div class="timeline-item">
+                            <strong>AI Demos</strong> - Virtual demonstrations of current AI capabilities
+                        </div>
+                        <div class="timeline-item">
+                            <strong>AI Forecasting</strong> - Interactive session with your local group
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Q&A</strong> - Open discussion with local participants
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Closing</strong> - Wrap-up and next steps
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h2><i class="fas fa-users"></i> Who is this for?</h2>
+                    <p>This workshop is designed for a broad audience interested in understanding current and future AI trends at a high level. No technical background required.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-university"></i> Participating Locations and Signup</h2>
+
+                    <div>
+                      <h3>Seattle, WA</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Pacific</h4>
+                      <p>Location TBD</p>
+                      <p><a href="workshopday-seattle.html">More details and signup info</a></p>
+                      <h3>Bellevue, WA</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Pacific</h4>
+                      <p>Location TBD</p>
+                      <p><a href="workshopday-bellevue.html">More details and signup info</a></p>
+                      <h3>Louisville, KY</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Eastern</h4>
+                      <p>Location TBD</p>
+                      <h3>Los Angeles, CA</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Pacific</h4>
+                      <p>Location TBD</p>
+                      <h3>San Francisco, CA</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Pacific</h4>
+                      <p>Location TBD</p>
+                      <h3>Storrs, CT</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Eastern</h4>
+                      <p>Location TBD</p>
+                      <h3>Raleigh, NC</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Eastern</h4>
+                      <p>Location TBD</p>
+                      <h3>Remote (Time Slot 1)</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Eastern</h4>
+                      <p>Link TBD</p>
+                      <h3>Remote (Time Slot 2)</h3>
+                      <h4>Feb 1st, 2025 3 p.m. Pacific</h4>
+		      <p>Link TBD</p>
+                    </div>
+
+                    <p>If you don't see a location here, but would like to run your own, sign up here to run a local workshop:</p>
+                    <div class="signup-buttons">
+                        <a href="https://forms.gle/CWYt3ubzF3yJ1hcL8" class="cta-button">University Group Registration</a>
+                    </div>
+                    <br><br>
+                    <p>If you would prefer to join us online, please sign up here:</p>
+                    <div class="signup-buttons">
+                        <a href="https://forms.gle/x1zm74Kwu5tuvYxv8" class="cta-button">Individual Interest Registration</a>   
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+{{ end }}

@@ -5,7 +5,7 @@ workshoplocation: Various locations around the U.S.
 temporalstatus: past
 detailstobedetermined: false
 listindex: -3
-layout: workshopday
+layout: workshopday-nov-2024
 type: miscellaneous
 ---
 
