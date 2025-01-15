@@ -2,7 +2,7 @@
 title: Analyzing a Malicious AI agent
 workshopdate: Jan 18th, 2024, 2 p.m. - 4 p.m.
 workshoplocation: Chicago Public Library, 5th Floor South study room - Harold Washington Library Center, Chicago, IL 60605
-temporalstatus: past
+temporalstatus: future
 detailstobedetermined: false
 listindex: -7
 ---
