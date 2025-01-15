@@ -4,7 +4,7 @@ workshopdate: Jan 18th, 2024, 2 p.m. - 4 p.m.
 workshoplocation: Chicago Public Library, 5th Floor South study room - Harold Washington Library Center, Chicago, IL 60605
 temporalstatus: future
 detailstobedetermined: false
-listindex: -7
+listindex: -8
 ---
 
 Ever wonder how an AI agent could be malicious? Have trained some basic neural
