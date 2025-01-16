@@ -43,5 +43,6 @@ beforehand.
 
 If you're planning to attend please RSVP through at least one of the following platforms:
 
++ If you are joining remotely (or are uncomfortable using meetup.com or lu.ma) please let us know via: [https://forms.gle/bUHr7CTtNFjbi34L8](https://forms.gle/bUHr7CTtNFjbi34L8)
 + Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-chicago/events/305632229/](https://www.meetup.com/ai-safety-awareness-group-chicago/events/305632229/)
 + Lu.ma: [https://lu.ma/60yexizj](https://lu.ma/60yexizj)
