@@ -10,7 +10,7 @@ listindex: -8
 **Physical Location Info:** We will be on the 5th floor in the south study room.
 If you're having trouble finding us please email info@aisafetyawarenessfoundation.org
 
-**Remote Videoconference Info**: [meet.google.com/pfi-anhy-rvo](meet.google.com/pfi-anhy-rvo)
+**Remote Videoconference Info**: [https://meet.google.com/pfi-anhy-rvo](https://meet.google.com/pfi-anhy-rvo)
 
 Ever wonder how an AI agent could be malicious? Have trained some basic neural
 nets but don't know anything about reinforcement learning? We'll be diving into
