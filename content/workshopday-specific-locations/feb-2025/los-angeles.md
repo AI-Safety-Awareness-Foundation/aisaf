@@ -23,3 +23,8 @@ forecast what kinds of AI developments might come and when.
 
 If you're interested in attending, please fill out this form here:
 [https://docs.google.com/forms/d/e/1FAIpQLSd8c5s8abYphCH5QKbLOWaCwQOYfN3awkjYMikFaSZDw09h6w/viewform?usp=sharing](https://docs.google.com/forms/d/e/1FAIpQLSd8c5s8abYphCH5QKbLOWaCwQOYfN3awkjYMikFaSZDw09h6w/viewform?usp=sharing)
+
+If you'd like, you can also sign up via one of the platforms below:
+
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-los-angeles/events/305853841/](https://www.meetup.com/ai-safety-awareness-group-los-angeles/events/305853841/)
++ lu.ma: [https://lu.ma/zt7gycz0](https://lu.ma/zt7gycz0)
