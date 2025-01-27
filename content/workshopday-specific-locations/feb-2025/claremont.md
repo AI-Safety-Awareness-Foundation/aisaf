@@ -1,6 +1,6 @@
 ---
 title: Feb 1st AI Workshop Day Claremont Location
-workshopdate: Feb 1st, 12 p.m. Pacific
+workshopdate: Feb 1st, 3 p.m. Pacific
 workshoplocation: Claremont Colleges, (room TBD) Claremont, CA 91711
 temporalstatus: future
 detailstobedetermined: false
