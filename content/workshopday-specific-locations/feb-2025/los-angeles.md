@@ -22,4 +22,4 @@ where we'll use prediction markets to calibrate expectations and help
 forecast what kinds of AI developments might come and when.
 
 If you're interested in attending, please fill out this form here:
-[https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
+[https://docs.google.com/forms/d/e/1FAIpQLSd8c5s8abYphCH5QKbLOWaCwQOYfN3awkjYMikFaSZDw09h6w/viewform?usp=sharing](https://docs.google.com/forms/d/e/1FAIpQLSd8c5s8abYphCH5QKbLOWaCwQOYfN3awkjYMikFaSZDw09h6w/viewform?usp=sharing)
