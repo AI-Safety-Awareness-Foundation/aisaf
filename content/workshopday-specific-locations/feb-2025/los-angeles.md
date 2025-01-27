@@ -1,5 +1,5 @@
 ---
-title: Feb 1st AI Workshop Day Portland Location
+title: Feb 1st AI Workshop Day Los Angeles Location
 workshopdate: Feb 1st, 12 p.m. Pacific
 workshoplocation: UCLA, (room TBD) Los Angeles, CA 90095
 temporalstatus: future
