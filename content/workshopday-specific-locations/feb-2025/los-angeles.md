@@ -1,7 +1,7 @@
 ---
 title: Feb 1st AI Workshop Day Los Angeles Location
 workshopdate: Feb 1st, 12 p.m. Pacific
-workshoplocation: UCLA, (room TBD) Los Angeles, CA 90095
+workshoplocation: UCLA, Haines Hall, Room A18, 375 Portola Plaza, Los Angeles, CA 90095 Los Angeles, CA 90095
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
