@@ -24,5 +24,7 @@ forecast what kinds of AI developments might come and when.
 Finally we'll go over DeepSeek's newest r1 model in detail including both
 technical details and wider implications for AI and AI safety.
 
-If you're interested in attending, please fill out this form here:
-[https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
+If you're interested in attending, please RSVP via one of the links below:
+
++ meetup.com: [https://www.meetup.com/ai-and-ai-safety-forecasting-seminar-deepseek-r1-q-and-a/events/305879211/](https://www.meetup.com/ai-and-ai-safety-forecasting-seminar-deepseek-r1-q-and-a/events/305879211/)
++ lu.ma: [https://lu.ma/6i60tsjz](https://lu.ma/6i60tsjz)
