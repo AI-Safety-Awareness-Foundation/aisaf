@@ -1,7 +1,7 @@
 ---
-title: Feb 1st AI Workshop Day Boston Location
-workshopdate: Feb 1st, 3 p.m. Eastern
-workshoplocation: Boston Public Library, Mezzanine Conference Room 2, 700 Boylston St, Boston, MA 02116
+title: Feb 1st AI Workshop Day Chicago Location
+workshopdate: Feb 1st, 2 p.m. Central
+workshoplocation: Chicago Public Library - Harold Washington Library Center, North Study Room, Chicago, IL 60605
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
@@ -23,3 +23,4 @@ If you're interested in attending, please RSVP via one of the following methods:
   [https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
 + meetup.com: [https://www.meetup.com/ai-safety-awareness-group-boston/events/305855850/](https://www.meetup.com/ai-safety-awareness-group-boston/events/305855850/)
 + lu.ma: [https://lu.ma/umduxl72](https://lu.ma/umduxl72)
+
