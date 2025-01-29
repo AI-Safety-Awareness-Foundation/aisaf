@@ -1,7 +1,7 @@
 ---
 title: Feb 1st AI Workshop Day Claremont Location
 workshopdate: Feb 1st, 3 p.m. Pacific
-workshoplocation: Claremont Colleges, (room TBD) Claremont, CA 91711
+workshoplocation: Pickford Auditorium, Bauer Center, Claremont McKenna College, 390 E 9th St, Claremont, CA 91711
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
@@ -23,3 +23,8 @@ forecast what kinds of AI developments might come and when.
 
 If you're interested in attending, please fill out this form here:
 [https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
+
+or RSVP via one of the following:
+
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-claremont/events/305882638/](https://www.meetup.com/ai-safety-awareness-group-claremont/events/305882638/)
++ lu.ma: [https://lu.ma/8mp7wzkw](https://lu.ma/8mp7wzkw)
