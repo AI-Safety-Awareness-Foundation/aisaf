@@ -8,7 +8,9 @@ listindex: -1
 ---
 
 This is an interactive 1.5-hour workshop, free and open to the public, focused
-on AI forecasting and safety awareness.
+on AI forecasting and safety awareness. There is additionally an optional 30
+minute section going over DeepSeek's latest r1 model both at a technical level
+and in terms of overall impact on AI and AI safety.
 
 Our goal is to help participants understand the urgency of AI safety through
 interactive demonstrations and group exercises aimed at helping people forecast
@@ -20,6 +22,9 @@ demonstrations of current AI capabilities.
 The second portion of this workshop will be more detailed forecasting exercises,
 where we'll use prediction markets to calibrate expectations and help
 forecast what kinds of AI developments might come and when.
+
+The third portion will go over DeepSeek's arXiv paper for r1 and will be a Q and
+A.
 
 If you're interested in attending, please fill out this form here:
 [https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
