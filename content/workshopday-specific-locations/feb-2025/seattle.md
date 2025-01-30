@@ -23,4 +23,3 @@ If you're interested in attending, please fill out this form here:
 or RSVP via one of the methods below
 
 + meetup.com: [https://www.meetup.com/ai-safety-awareness-group-seattle/events/305869669/](https://www.meetup.com/ai-safety-awareness-group-seattle/events/305869669/)
-+ lu.ma: 
