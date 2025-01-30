@@ -21,6 +21,6 @@ If you're interested in attending, please RSVP via one of the following methods:
 
 + form submission:
   [https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-boston/events/305855850/](https://www.meetup.com/ai-safety-awareness-group-boston/events/305855850/)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-chicago/events/305855540/](https://www.meetup.com/ai-safety-awareness-group-chicago/events/305855540/)
 + lu.ma: [https://lu.ma/umduxl72](https://lu.ma/umduxl72)
 
