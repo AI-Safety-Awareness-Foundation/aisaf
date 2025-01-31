@@ -2,11 +2,11 @@ Unfortunately one of AISAF's co-founders Max Chiswick, passed away on Jan 7th, 2
 
 I'll first share a couple of tributes and obituaries from his friends before including a message I sent to his friends and family:
 
-https://www.thefp.com/p/my-friend-max-suzy-weiss
+[https://www.thefp.com/p/my-friend-max-suzy-weiss](https://www.thefp.com/p/my-friend-max-suzy-weiss)
 
-https://substack.com/home/post/p-154541432
+[https://substack.com/home/post/p-154541432](https://substack.com/home/post/p-154541432)
 
-https://blog.rossry.net/chisness/
+[https://blog.rossry.net/chisness/](https://blog.rossry.net/chisness/)
 
 One of the great tragedies of human relationships is that even our closest relationships capture only a tiny sliver of who the other person is. The way we try to grapple with that is to tell stories, imperfect, linear shadows that capture only a single path through an impossibly twisting and fractal life.
 
