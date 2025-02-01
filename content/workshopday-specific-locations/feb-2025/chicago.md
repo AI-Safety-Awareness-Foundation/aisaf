@@ -1,11 +1,13 @@
 ---
 title: Feb 1st AI Workshop Day Chicago Location
 workshopdate: Feb 1st, 2 p.m. Central
-workshoplocation: Chicago Public Library - Harold Washington Library Center, North Study Room, Chicago, IL 60605
+workshoplocation: https://meet.google.com/vhu-dvpe-kpc
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
 ---
+
+**IMPORTANT NOTE: Due to unfortunate last minute logistics issues, we have switched this event to an online-only event! Please join us at the link in the event description.**
 
 This is an interactive 2-hour workshop, free and open to the public, focused on AI forecasting and safety awareness along with a look at the technical details and wider implications of DeepSeek's newest r1 model.
 
