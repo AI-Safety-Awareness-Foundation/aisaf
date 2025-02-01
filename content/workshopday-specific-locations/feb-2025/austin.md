@@ -1,11 +1,13 @@
 ---
 title: Feb 1st AI Workshop Day Austin Location
 workshopdate: Feb 1st, 2 p.m. Central
-workshoplocation: Austin Central Public Library, Shared Learning Room 621, 710 W Cesar Chavez St
+workshoplocation: https://meet.google.com/vhu-dvpe-kpc
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
 ---
+
+**IMPORTANT NOTE: Due to unfortunate last minute logistics issues, we have switched this event to an online-only event! Please join us at the link in the event description.**
 
 This is an interactive 1.5-hour workshop (with an additional optional 30 min section going over DeepSeek's newest model), free and open to the public, focused on AI forecasting and safety awareness.
 
