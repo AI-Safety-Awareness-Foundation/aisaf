@@ -7,6 +7,8 @@ detailstobedetermined: false
 listindex: -1
 ---
 
+See [https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2](https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2).
+
 This is an interactive 1.5-hour workshop (with an additional final 30 min section going over DeepSeek's newest model), free and open to the public, focused on AI forecasting and safety awareness.
 
 Our goal is to help participants understand the urgency of AI safety through interactive demonstrations and group exercises aimed at helping people forecast what might be coming over the next year or two with AI and AI safety.
