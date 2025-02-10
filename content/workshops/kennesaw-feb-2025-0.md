@@ -4,7 +4,7 @@ workshopdate: Feb 12th, 2025, 5:30 p.m. - 8:30 p.m. Eastern
 workshoplocation: KSU, Atrium Room J215, 1100 South Marietta Pkwy SE, Marietta, GA
 temporalstatus: future
 detailstobedetermined: false
-listindex: -5
+listindex: 0
 ---
 
 Ever wonder how an AI agent could be malicious? Have trained some basic neural
