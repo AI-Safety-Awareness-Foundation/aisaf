@@ -1,8 +1,8 @@
 ---
 title: Analyzing a Malicious AI agent
-workshopdate: Dec 14th, 2024, 1 p.m. - 6 p.m.
-workshoplocation: Lower Manhattan, NY (Please register to see the address!)
-temporalstatus: past
+workshopdate: Feb 12th, 2025, 5:30 p.m. - 8:30 p.m. Eastern
+workshoplocation: KSU, Atrium Room J215, 1100 South Marietta Pkwy SE, Marietta, GA
+temporalstatus: future
 detailstobedetermined: false
 listindex: -5
 ---
@@ -36,8 +36,10 @@ info@aisafetyawarenessfoundation.org and we're happy to see if there's
 potentially some sort of introduction materials we could have you review
 beforehand.
 
+NOTE: If you have already attended a previous AISAF workshop, please message us
+at info@aisafetyawarenessfoundation.org. It may make sense for you to skip the
+first section of the workshop.
+
 If you're planning to attend please RSVP through at least one of the following platforms:
 
-+ Lu.ma: [https://lu.ma/y3wack8r](https://lu.ma/y3wack8r)
-+ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/305038398/)
-
++ Meetup.com: [https://www.meetup.com/ai-safety-awareness-group-kennesaw/events/306005335/](https://www.meetup.com/ai-safety-awareness-group-kennesaw/events/306005335/)
