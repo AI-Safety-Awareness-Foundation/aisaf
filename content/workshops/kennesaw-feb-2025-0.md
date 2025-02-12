@@ -1,11 +1,13 @@
 ---
 title: Analyzing a Malicious AI agent
 workshopdate: Feb 12th, 2025, 5:30 p.m. - 8:30 p.m. Eastern
-workshoplocation: KSU, Atrium Room J215, 1100 South Marietta Pkwy SE, Marietta, GA
+workshoplocation: (Hybrid) KSU, Atrium Room J215, 1100 South Marietta Pkwy SE, Marietta, GA. For remote see description.
 temporalstatus: future
 detailstobedetermined: false
 listindex: 0
 ---
+
+**Remote Videoconference Info**: [https://meet.google.com/gsd-hvqr-rhq](https://meet.google.com/gsd-hvqr-rhq)
 
 Ever wonder how an AI agent could be malicious? Have trained some basic neural
 nets but don't know anything about reinforcement learning? We'll be diving into
