@@ -1,11 +1,14 @@
 ---
 title: AI and AI Safety Forecasting Seminar
-workshopdate: Feb 15th, 2 p.m. - 4 p.m. Pacific
-workshoplocation: (Hybrid) Brooklyn Public Library (Central Library), 10 Grand Army Plaza, Brooklyn, NY 11238. For remote see description.
+workshopdate: Feb 15th, 1 p.m. - 3 p.m. Pacific
+workshoplocation: (Hybrid) Brooklyn Public Library (Central Library), Info Commons Room 7, 10 Grand Army Plaza, Brooklyn, NY 11238. For remote see description.
 temporalstatus: future
 detailstobedetermined: false
 listindex: 2
 ---
+
+**Remote Videoconference Info**:
+[https://meet.google.com/vqe-togp-moa](https://meet.google.com/vqe-togp-moa)
 
 This is a free AI safety meetup aimed at teaching the general public what modern AI
 is capable of, both good and bad, and giving people an introduction to the
