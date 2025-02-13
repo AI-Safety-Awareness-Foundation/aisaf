@@ -2,7 +2,7 @@
 title: Multi-City AI Safety Workshop Feb 2025
 workshopdate: Feb 1st, 2025
 workshoplocation: Multiple locations around the U.S.
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: -7
 layout: workshopday-feb-2025

@@ -2,7 +2,7 @@
 title: AI and AI Safety Forecasting Seminar + DeepSeek r1 Q and A
 workshopdate: Feb 7th, 5:30 p.m. - 7:30 p.m. Central
 workshoplocation: University of Minnesota Twin Cities, (Room TBD), Minneapolis, MN 55455
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: -1
 ---
