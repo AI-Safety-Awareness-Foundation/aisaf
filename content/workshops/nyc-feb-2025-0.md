@@ -1,6 +1,6 @@
 ---
 title: AI and AI Safety Forecasting Seminar
-workshopdate: Feb 15th, 1 p.m. - 3 p.m. Pacific
+workshopdate: Feb 15th, 1 p.m. - 3 p.m. Eastern
 workshoplocation: (Hybrid) Brooklyn Public Library (Central Library), Info Commons Room 7, 10 Grand Army Plaza, Brooklyn, NY 11238. For remote see description.
 temporalstatus: future
 detailstobedetermined: false
