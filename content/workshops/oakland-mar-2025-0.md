@@ -22,4 +22,4 @@ Finally there is an optional final section where we will have a Q and A session 
 If you're interested in attending, please RSVP via one of the methods below
 
 + meetup.com: [https://www.meetup.com/ai-safety-awareness-group-oakland/events/306091623/](https://www.meetup.com/ai-safety-awareness-group-oakland/events/306091623/)
-
++ Oakland public library website: [https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2](https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2)
