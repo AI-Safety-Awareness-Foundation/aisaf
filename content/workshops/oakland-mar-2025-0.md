@@ -4,7 +4,7 @@ workshopdate: Mar 2nd, 2 p.m. - 4 p.m. Pacific
 workshoplocation: Oakland Public Library, Bradley C. Walters Community Room 125, 14th St, Oakland, CA 94612
 temporalstatus: future
 detailstobedetermined: false
-listindex: 3
+listindex: 2
 ---
 
 See [https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2](https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2).
