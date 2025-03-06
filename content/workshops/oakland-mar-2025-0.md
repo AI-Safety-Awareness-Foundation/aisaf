@@ -2,7 +2,7 @@
 title: AI and AI Safety Forecasting Seminar + DeepSeek r1 Q and A
 workshopdate: Mar 2nd, 2 p.m. - 4 p.m. Pacific
 workshoplocation: Oakland Public Library, Bradley C. Walters Community Room 125, 14th St, Oakland, CA 94612
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: 2
 ---
