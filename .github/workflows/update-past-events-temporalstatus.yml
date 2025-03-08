@@ -46,3 +46,6 @@ jobs:
           git add -A
           git commit -m "Auto update of temporalstatus via GitHub Actions"
           git push
+  deploy-after-update:
+    needs: update-and-commit
+    uses: ./.github/workflows/hugo.yml
