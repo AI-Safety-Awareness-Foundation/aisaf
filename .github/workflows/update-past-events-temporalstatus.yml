@@ -6,6 +6,7 @@ on:
     - cron: '0 0 * * *'
   # Allow manual triggering
   workflow_dispatch:
+  push:
 
 jobs:
   update-and-commit:
