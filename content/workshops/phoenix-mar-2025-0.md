@@ -1,5 +1,5 @@
 ---
-title: AI and AI Safety Forecasting Seminar
+title: AI and AI Safety Forecasting Seminar | Phoenix
 workshopdate: Mar 22nd, 11 a.m. - 1 p.m. Mountain
 workshoplocation: Harmon Libary, 1325 South 5th Avenue Phoenix, AZ 85003
 temporalstatus: future
