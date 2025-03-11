@@ -1,5 +1,5 @@
 ---
-title: AI Safety Meet-Up NYC
+title: AI Safety Meet-Up | NYC
 workshopdate: Mar 13th, 6 p.m. - 8 p.m. Eastern
 workshoplocation: Bibliotheque, 54 Mercer St, New York, NY 10013, USA
 temporalstatus: future
