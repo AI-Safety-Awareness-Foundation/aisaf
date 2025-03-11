@@ -18,4 +18,4 @@ The second portion of this workshop will be more detailed forecasting exercises,
 Please RSVP via one of the following:
 
 + Eventbrite: [https://www.eventbrite.com/e/ai-safety-forecasting-workshop-phoenix-az-tickets-1260103085249](https://www.eventbrite.com/e/ai-safety-forecasting-workshop-phoenix-az-tickets-1260103085249)
-+ Meetup: [https://example.com](https://example.com)
++ Meetup: [https://www.meetup.com/ai-safety-awareness-group-phoenix/events/306657937/?slug=ai-safety-awareness-group-phoenix&isFirstPublish=true](https://www.meetup.com/ai-safety-awareness-group-phoenix/events/306657937/?slug=ai-safety-awareness-group-phoenix&isFirstPublish=true)
