@@ -4,7 +4,7 @@ workshopdate: Mar 22nd, 11 a.m. - 1 p.m. Mountain
 workshoplocation: Harmon Libary, 1325 South 5th Avenue Phoenix, AZ 85003
 temporalstatus: future
 detailstobedetermined: false
-listindex: 8
+listindex: 9
 ---
 
 This is an interactive 2-hour workshop, free and open to the public, focused on AI forecasting and safety awareness.
