@@ -11,7 +11,7 @@ listindex: 5
 either join the livestream to only listen in
 [https://www.firstchurchbrooklyn.org/watch-listen/](https://www.firstchurchbrooklyn.org/watch-listen/) or the Google Meet link if you'd like to participate in the forecasting exercise portion [https://meet.google.com/wfo-xnom-iib](https://meet.google.com/wfo-xnom-iib).**
 
-This is an interactive 2-hour workshop, free and open to the public, focused on AI forecasting and safety awareness.
+This is an interactive 2-hour workshop, free and open to the public, focused on AI forecasting and safety awareness that we are holding in collaboration with the First Presbyterian Brooklyn church.
 
 Our goal is to help participants understand the landscape of AI and AI safety through interactive demonstrations and group exercises aimed at helping people forecast what might be coming over the next year or two with AI and AI safety.
 
