@@ -1,10 +1,10 @@
 ---
-title: AI Safety Meet-Up NYC
+title: AI Safety + Faith at First Presbyterian Brooklyn
 workshopdate: Mar 16th, 12:30 p.m. - 2:30 p.m. Eastern
 workshoplocation: Hybrid (see description for details) 124 Henry Street, Brooklyn, NY 11201
 temporalstatus: future
 detailstobedetermined: false
-listindex: 4
+listindex: 5
 ---
 
 **If you would like to join remotely, you can join via one of two options:
