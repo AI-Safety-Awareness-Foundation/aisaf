@@ -20,3 +20,8 @@ The first portion of this workshop will be a set of virtual talks and demonstrat
 The second portion of this workshop will be more detailed forecasting exercises, where we’ll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
 
 Finally there is a final section where we will go over the intersection of AI and faith, as an open-ended discussion on what AI means for the relationship of the congregation among itself, with the church, and with God.
+
+Please signup via one of the following methods:
+
++ Eventbrite: [https://www.eventbrite.com/e/ai-safety-forecasting-workshop-intersection-of-ai-and-faith-tickets-1276209108799?aff=oddtdtcreator](https://www.eventbrite.com/e/ai-safety-forecasting-workshop-intersection-of-ai-and-faith-tickets-1276209108799?aff=oddtdtcreator)
++ Google Form: [https://docs.google.com/forms/d/e/1FAIpQLSfH-PG2DTPVBLqvyBAJOQaRTlgDi_kp9y-HlOiPJTaZevQEWA/viewform?usp=dialog](https://docs.google.com/forms/d/e/1FAIpQLSfH-PG2DTPVBLqvyBAJOQaRTlgDi_kp9y-HlOiPJTaZevQEWA/viewform?usp=dialog)
