@@ -2,7 +2,7 @@
 title: AI Safety + Faith at First Presbyterian Brooklyn
 workshopdate: Mar 16th, 12:30 p.m. - 2:30 p.m. Eastern
 workshoplocation: Hybrid (see description for details) 124 Henry Street, Brooklyn, NY 11201
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: 5
 ---
