@@ -132,6 +132,12 @@ header p {
     background: #1d4ed8;
 }
 
+/* Email input styling */ 
+
+.sg_email {
+    border-radius: 8px !important; 
+}
+
 /* Section Title */
 .section-title {
     text-align: center;
