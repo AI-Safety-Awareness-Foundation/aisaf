@@ -98,6 +98,13 @@ header p {
     transition: background-color 0.2s;
 }
 
+@media (max-width: 768px) {
+    .cta-button {
+      margin-left: 0 !important;
+      margin-top: 0.5rem;
+    }
+}
+
 .cta-button:hover {
     background: #2563eb;
 }
@@ -132,7 +139,7 @@ header p {
     background: #1d4ed8;
 }
 
-/* Email input styling */ 
+/* Email input box styling */ 
 
 .sg_email {
     border-radius: 8px !important; 
