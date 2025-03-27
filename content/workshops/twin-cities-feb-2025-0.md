@@ -4,7 +4,7 @@ workshopdate: Feb 7th, 5:30 p.m. - 7:30 p.m. Central
 workshoplocation: University of Minnesota Twin Cities, (Room TBD), Minneapolis, MN 55455
 temporalstatus: past
 detailstobedetermined: false
-listindex: -1
+listindex: 13
 ---
 
 This is an interactive 1.5-hour workshop, free and open to the public, focused

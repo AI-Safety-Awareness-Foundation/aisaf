@@ -4,7 +4,7 @@ workshopdate: Oct 29th, 2024, 5 p.m. - 7:30 p.m. Pacific
 workshoplocation: Bellevue Library, 1111 110th Ave NE, Bellevue, WA 98004 (or join remotely at meet.google.com/pri-ntmy-icb)
 temporalstatus: past
 detailstobedetermined: false
-listindex: -1
+listindex: 4
 ---
 
 NOTE THAT THE ORIGINAL TIME ON THIS EVENT WAS INCORRECT: It has been changed to Oct 29th from the original time of Oct 28th.

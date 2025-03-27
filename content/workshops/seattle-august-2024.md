@@ -3,14 +3,14 @@ title: UW eScience Institute AI Safety Meetup
 workshopdate: Aug 10th, 2024
 workshoplocation: University of Washington, Seattle, WA
 temporalstatus: past
-listindex: 10
+listindex: 1
 ---
 
-Hi folks! We’re hosting an open to the public, completely free AI safety meetup. In it we'll be building and analyzing an LLM from scratch as well as going over governance and legislation issues for dealing with the dangers of modern AI.
+Hi folks! We're hosting an open to the public, completely free AI safety meetup. In it we'll be building and analyzing an LLM from scratch as well as going over governance and legislation issues for dealing with the dangers of modern AI.
 
-The session is meant for both coders and people who have no coding background! It will be a session of one or two talks, followed by a lot of small group discussion and hands-on coding, depending on people’s backgrounds.
+The session is meant for both coders and people who have no coding background! It will be a session of one or two talks, followed by a lot of small group discussion and hands-on coding, depending on people's backgrounds.
 
-For everyone we’ll be kicking off with a gentle introduction to both the state of AI today as well as probable new events on the horizon and a lot of safety problems that those can cause.
+For everyone we'll be kicking off with a gentle introduction to both the state of AI today as well as probable new events on the horizon and a lot of safety problems that those can cause.
 
 We will split participants by background and interest into four groups with tracks for people both with a technical background and non-technical background. Not to fear if you don't have a technical background! We have non-technical tracks as well.
 

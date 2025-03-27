@@ -4,7 +4,7 @@ workshopdate: Nov 10th, 2024, 12:30 p.m./1:30 p.m. - 4:30 p.m. Eastern Time
 workshoplocation: Fractal Tech, 111 Conselyea St Floor 2, Brooklyn, NY 11211
 temporalstatus: past
 detailstobedetermined: false
-listindex: -3
+listindex: 5
 ---
 
 NOTE: we will have an extra hour at the beginning of the session for people who have never built a neural net before where we have some introductory materials and a talk for that.

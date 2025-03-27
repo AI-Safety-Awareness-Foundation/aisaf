@@ -4,7 +4,7 @@ workshopdate: Jan 18th, 2025, 2 p.m. - 4 p.m. (U.S. Central Time)
 workshoplocation: (Hybrid) Chicago Public Library - Harold Washington Library Center, 400 S State St, Chicago, IL 60605. For remote see description.
 temporalstatus: past
 detailstobedetermined: false
-listindex: -7
+listindex: 10
 ---
 
 **Physical Location Info:** We will be on the 5th floor in the south study room.

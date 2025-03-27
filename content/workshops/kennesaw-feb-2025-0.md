@@ -4,7 +4,7 @@ workshopdate: Feb 12th, 2025, 5:30 p.m. - 8:30 p.m. Eastern
 workshoplocation: (Hybrid) KSU, Atrium Room J215, 1100 South Marietta Pkwy SE, Marietta, GA. For remote see description.
 temporalstatus: past
 detailstobedetermined: false
-listindex: 0
+listindex: 14
 ---
 
 **Remote Videoconference Info**: [https://meet.google.com/gsd-hvqr-rhq](https://meet.google.com/gsd-hvqr-rhq)

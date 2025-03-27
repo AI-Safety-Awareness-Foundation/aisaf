@@ -4,7 +4,7 @@ workshopdate: Mar 2nd, 2 p.m. - 4 p.m. Pacific
 workshoplocation: Oakland Public Library, Bradley C. Walters Community Room 125, 14th St, Oakland, CA 94612
 temporalstatus: past
 detailstobedetermined: false
-listindex: 2
+listindex: 17
 ---
 
 See [https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2](https://oaklandlibrary.bibliocommons.com/events/67a682e30bf98bfa52af06c2).
@@ -15,7 +15,7 @@ Our goal is to help participants understand the urgency of AI safety through int
 
 The first portion of this workshop will be a set of virtual talks and demonstrations of current AI capabilities.
 
-The second portion of this workshop will be more detailed forecasting exercises, where we’ll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
+The second portion of this workshop will be more detailed forecasting exercises, where we'll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
 
 Finally there is an optional final section where we will have a Q and A session about the DeepSeek r1 paper and salient details about the model for those who are more technically inclined. We will go over the r1 paper on arXiv and explain various bits of its terminology, what makes it different from pre-existing models, and what this reveals about OpenAI's own o-X family of models.
 

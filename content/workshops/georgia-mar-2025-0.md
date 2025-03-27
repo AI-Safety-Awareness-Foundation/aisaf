@@ -4,7 +4,7 @@ workshopdate: Mar 7th, 1 p.m. - 4 p.m. Eastern
 workshoplocation: Georgia Institute of Technology, Scheller School of Business Floor 2
 temporalstatus: past
 detailstobedetermined: false
-listindex: 3
+listindex: 18
 ---
 See [https://www.aisi.dev/spring-ai-safety-forum](https://www.aisi.dev/spring-ai-safety-forum).
 

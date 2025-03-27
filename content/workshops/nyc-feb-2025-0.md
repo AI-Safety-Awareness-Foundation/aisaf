@@ -4,7 +4,7 @@ workshopdate: Feb 15th, 1 p.m. - 3 p.m. Eastern
 workshoplocation: (Hybrid) Brooklyn Public Library (Central Library), Info Commons Room 7, 10 Grand Army Plaza, Brooklyn, NY 11238. For remote see description.
 temporalstatus: past
 detailstobedetermined: false
-listindex: 2
+listindex: 15
 ---
 
 **Remote Videoconference Info**:
@@ -24,7 +24,7 @@ background or strong AI development experience to attend.  Our hosts have
 previously built and trained LLMs and done low-level analysis on them, so we're
 happy to talk shop about more technical details in today's models.
 
-We’ll be kicking off with a gentle introduction to the state of modern AI today 
+We'll be kicking off with a gentle introduction to the state of modern AI today 
 going into more detailed forecasting exercises.
 
 In particular our event will cover:

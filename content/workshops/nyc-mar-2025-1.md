@@ -4,7 +4,7 @@ workshopdate: Mar 16th, 12:30 p.m. - 2:30 p.m. Eastern
 workshoplocation: Hybrid (see description for details) 124 Henry Street, Brooklyn, NY 11201
 temporalstatus: past
 detailstobedetermined: false
-listindex: 5
+listindex: 20
 ---
 
 **If you would like to join remotely, you can join via one of two options:
@@ -17,7 +17,7 @@ Our goal is to help participants understand the landscape of AI and AI safety th
 
 The first portion of this workshop will be a set of virtual talks and demonstrations of current AI capabilities.
 
-The second portion of this workshop will be more detailed forecasting exercises, where we’ll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
+The second portion of this workshop will be more detailed forecasting exercises, where we'll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
 
 Finally there is a final section where we will go over the intersection of AI and faith, as an open-ended discussion on what AI means for the relationship of the congregation among itself, with the church, and with God.
 

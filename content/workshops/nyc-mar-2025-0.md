@@ -4,7 +4,7 @@ workshopdate: Mar 13th, 6 p.m. - 8 p.m. Eastern
 workshoplocation: Bibliotheque, 54 Mercer St, New York, NY 10013, USA
 temporalstatus: past
 detailstobedetermined: false
-listindex: 3
+listindex: 19
 ---
 
 **Note this is an event that is held in conjunction with BlueDot Impact.**

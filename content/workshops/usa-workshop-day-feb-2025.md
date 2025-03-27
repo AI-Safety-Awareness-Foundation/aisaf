@@ -4,7 +4,7 @@ workshopdate: Feb 1st, 2025
 workshoplocation: Multiple locations around the U.S.
 temporalstatus: past
 detailstobedetermined: false
-listindex: -7
+listindex: 12
 layout: workshopday-feb-2025
 type: miscellaneous
 ---

@@ -4,7 +4,7 @@ workshopdate: Dec 14th, 2024, 1 p.m. - 6 p.m.
 workshoplocation: Lower Manhattan, NY (Please register to see the address!)
 temporalstatus: past
 detailstobedetermined: false
-listindex: -5
+listindex: 8
 ---
 
 Ever wonder how an AI agent could be malicious? Have trained some basic neural

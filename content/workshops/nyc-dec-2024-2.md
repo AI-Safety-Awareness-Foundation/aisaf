@@ -4,7 +4,7 @@ workshopdate: Dec 17th, 2024, 6 p.m. - 9:30 p.m.
 workshoplocation: Lower Manhattan, NY (Please register to see the address!)
 temporalstatus: past
 detailstobedetermined: false
-listindex: -6
+listindex: 9
 ---
 
 Ever wonder how transformers actually do some of their computation? Wanted to
