@@ -117,7 +117,7 @@
                 <div class="workshops-section">
                     <h2><i class="fas fa-calendar"></i> Upcoming Workshops</h2>
                     {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
-                    {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "asc" }}
+                    {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "desc" }}
                     {{ range $sortedFutureWorkshops }}
                       <div class="workshop-item">
                         <div class="workshop-info">
@@ -138,7 +138,7 @@
                     <h2><i class="fas fa-history"></i> Past Workshops</h2>
 
                     {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
-                    {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "asc" }}
+                    {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "desc" }}
                     {{ range $sortedPastWorkshops }}
                       <div class="workshop-item">
                         <div class="workshop-info">
