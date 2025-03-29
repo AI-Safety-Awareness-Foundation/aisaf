@@ -1,0 +1,826 @@
+{{ define "additional_styles" }}
+    <style>
+        .workshop-day-content h1 {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .workshop-day-subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 3rem;
+        }
+
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .info-section h2 {
+            color: #1f2937;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .info-section h2 i {
+            color: #2563eb;
+        }
+
+        .info-section p {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            border-left: 2px solid #2563eb;
+            padding-left: 1.2rem;
+            margin: 1.5rem 0;
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            margin-bottom: 1rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -1.625rem;
+            top: 0.6em; /* This should better align with text */
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #2563eb;
+            border-radius: 50%;
+        }
+
+        /* Remove the flex display and just add some spacing */
+        .timeline-item strong {
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .university-list {
+            border-spacing: 0;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .university-list th,
+        .university-list td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .university-list th {
+            background: #f3f4f6;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .signup-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .signup-buttons {
+                flex-direction: column;
+            }
+        }
+
+    #map {
+      height: 600px;
+      width: 100%;
+    }
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .controls {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .filter-btn {
+      background-color: #ecf0f1;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover {
+      background-color: #d5dbdb;
+    }
+    .filter-btn.active {
+      background-color: #3498db;
+      color: white;
+    }
+    .info-window {
+      min-width: 200px;
+    }
+    .info-window h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      color: #2c3e50;
+    }
+    .info-window p {
+      margin: 5px 0;
+    }
+
+    </style>
+
+{{ end }}
+
+{{ define "main" }}
+    <section class="page-section">
+        <div class="container">
+            <div class="workshop-day-content">
+                <h1>AI Safety Workshops Apr 27th, 2025</h1>
+                <p class="workshop-day-subtitle">A day to raise awareness about AI safety through interactive workshops</p>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-info-circle"></i> What to Expect</h2>
+                    <p>An interactive 1.5-hour workshop focused on AI forecasting and safety awareness held in <strong>multiple locations across the U.S. on Apr 27th.</strong> Find your own local location below! If you don't see your location on here and would like to run a workshop, please see the signup form at the bottom of this page.</p>
+
+                    <p>Our goal is to help participants understand the urgency of AI safety through interactive demonstrations and group exercises aimed at helping people forecast what might be coming over the next year or two with AI and AI safety.</p>
+                    
+                    <p>Participants meet up with their local in-person groups -- the first portion will be a nation-wide virtual intro and demo, and then local groups will break out into their own sessions.</p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <strong>Intro</strong> - Virtual intro with AISAF
+                        </div>
+                        <div class="timeline-item">
+                            <strong>AI Demos</strong> - Virtual demonstrations of current AI capabilities
+                        </div>
+                        <div class="timeline-item">
+                            <strong>AI Forecasting</strong> - Interactive session with your local group
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Q&A</strong> - Open discussion with local participants
+                        </div>
+                        <div class="timeline-item">
+                            <strong>Closing</strong> - Wrap-up and next steps
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-section">
+                    <h2><i class="fas fa-users"></i> Who is this for?</h2>
+                    <p>This workshop is designed for a broad audience interested in understanding current and future AI trends at a high level. No technical background required.</p>
+                    <p>If you are interested in attending, please indicate so below and we'll update you as soon as locations finalize.</p>
+                    <div class="signup-buttons">
+                        <a href="https://forms.gle/XD11ZGApYYnXjkpe9" class="cta-button">Individual Interest Registration</a>   
+                    </div> 
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-university"></i> Participating Locations and Signup</h2>
+
+  <div class="map-container">
+    <h1>Workshop Locations</h1>
+    <h2>April 27th, 2025</h2>
+    
+    <div class="controls">
+      <div class="filters">
+        <button class="filter-btn active" data-timezone="all">All Timezones</button>
+        <button class="filter-btn" data-timezone="Eastern">Eastern</button>
+        <button class="filter-btn" data-timezone="Central">Central</button>
+        <button class="filter-btn" data-timezone="Mountain">Mountain</button>
+        <button class="filter-btn" data-timezone="Pacific">Pacific</button>
+        <button class="filter-btn" data-timezone="Other">Alaska/Hawaii</button>
+      </div>
+    </div>
+    
+    <div id="map"></div>
+  </div>
+
+  <script>
+    // City data with coordinates and timezone information
+    const cities = [
+      // Eastern Time Zone
+      {name: "New York, NY", slug: "new-york", coordinates: {lat: 40.7128, lng: -74.0060}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Washington D.C.", slug: "washington-dc", coordinates: {lat: 38.9072, lng: -77.0369}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Boston, MA", slug: "boston", coordinates: {lat: 42.3601, lng: -71.0589}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Philadelphia, PA", slug: "philadelphia", coordinates: {lat: 39.9526, lng: -75.1652}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Jacksonville, FL", slug: "jacksonville", coordinates: {lat: 30.3322, lng: -81.6557}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Charlotte, NC", slug: "charlotte", coordinates: {lat: 35.2271, lng: -80.8431}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Indianapolis, IN", slug: "indianapolis", coordinates: {lat: 39.7684, lng: -86.1581}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Columbus, OH", slug: "columbus", coordinates: {lat: 39.9612, lng: -82.9988}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Detroit, MI", slug: "detroit", coordinates: {lat: 42.3314, lng: -83.0458}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Baltimore, MD", slug: "baltimore", coordinates: {lat: 39.2904, lng: -76.6122}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Miami, FL", slug: "miami", coordinates: {lat: 25.7617, lng: -80.1918}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Virginia Beach, VA", slug: "virginia-beach", coordinates: {lat: 36.8529, lng: -75.9780}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Cleveland, OH", slug: "cleveland", coordinates: {lat: 41.4993, lng: -81.6944}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Tampa, FL", slug: "tampa", coordinates: {lat: 27.9506, lng: -82.4572}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Pittsburgh, PA", slug: "pittsburgh", coordinates: {lat: 40.4406, lng: -79.9959}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Cincinnati, OH", slug: "cincinnati", coordinates: {lat: 39.1031, lng: -84.5120}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Orlando, FL", slug: "orlando", coordinates: {lat: 28.5383, lng: -81.3792}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Lexington, KY", slug: "lexington", coordinates: {lat: 38.0406, lng: -84.5037}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Newark, NJ", slug: "newark", coordinates: {lat: 40.7357, lng: -74.1724}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Greensboro, NC", slug: "greensboro", coordinates: {lat: 36.0726, lng: -79.7920}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Durham, NC", slug: "durham", coordinates: {lat: 35.9940, lng: -78.8986}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Raleigh, NC", slug: "raleigh", coordinates: {lat: 35.7796, lng: -78.6382}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      {name: "Atlanta, GA", slug: "atlanta", coordinates: {lat: 33.7490, lng: -84.3880}, timezone: "Eastern", time: "12 p.m. Eastern"},
+      
+      // Central Time Zone
+      {name: "Chicago, IL", slug: "chicago", coordinates: {lat: 41.8781, lng: -87.6298}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Houston, TX", slug: "houston", coordinates: {lat: 29.7604, lng: -95.3698}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "San Antonio, TX", slug: "san-antonio", coordinates: {lat: 29.4241, lng: -98.4936}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Dallas/Fort Worth, TX", slug: "dallas-fort-worth", coordinates: {lat: 32.7767, lng: -96.7970}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Austin, TX", slug: "austin", coordinates: {lat: 30.2672, lng: -97.7431}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Oklahoma City, OK", slug: "oklahoma-city", coordinates: {lat: 35.4676, lng: -97.5164}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Nashville, TN", slug: "nashville", coordinates: {lat: 36.1627, lng: -86.7816}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "El Paso, TX", slug: "el-paso", coordinates: {lat: 31.7619, lng: -106.4850}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Memphis, TN", slug: "memphis", coordinates: {lat: 35.1495, lng: -90.0490}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Milwaukee, WI", slug: "milwaukee", coordinates: {lat: 43.0389, lng: -87.9065}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Kansas City, MO", slug: "kansas-city", coordinates: {lat: 39.0997, lng: -94.5786}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Omaha, NE", slug: "omaha", coordinates: {lat: 41.2565, lng: -95.9345}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Minneapolis, MN", slug: "minneapolis", coordinates: {lat: 44.9778, lng: -93.2650}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Tulsa, OK", slug: "tulsa", coordinates: {lat: 36.1540, lng: -95.9928}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Arlington, TX", slug: "arlington", coordinates: {lat: 32.7357, lng: -97.1081}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Wichita, KS", slug: "wichita", coordinates: {lat: 37.6872, lng: -97.3301}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "New Orleans, LA", slug: "new-orleans", coordinates: {lat: 29.9511, lng: -90.0715}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Louisville, KY", slug: "louisville", coordinates: {lat: 38.2527, lng: -85.7585}, timezone: "Central", time: "1 p.m. Central"},
+      {name: "Corpus Christi, TX", slug: "corpus-christi", coordinates: {lat: 27.8006, lng: -97.3964}, timezone: "Central", time: "1 p.m. Central"},
+      
+      // Mountain Time Zone
+      {name: "Phoenix, AZ", slug: "phoenix", coordinates: {lat: 33.4484, lng: -112.0740}, timezone: "Mountain", time: "11 a.m. Mountain (Standard)"},
+      {name: "Denver, CO", slug: "denver", coordinates: {lat: 39.7392, lng: -104.9903}, timezone: "Mountain", time: "12 p.m. Mountain"},
+      {name: "Las Vegas, NV", slug: "las-vegas", coordinates: {lat: 36.1699, lng: -115.1398}, timezone: "Mountain", time: "12 p.m. Mountain"},
+      {name: "Albuquerque, NM", slug: "albuquerque", coordinates: {lat: 35.0844, lng: -106.6504}, timezone: "Mountain", time: "12 p.m. Mountain"},
+      {name: "Tucson, AZ", slug: "tucson", coordinates: {lat: 32.2226, lng: -110.9747}, timezone: "Mountain", time: "11 a.m. Mountain (Standard)"},
+      {name: "Colorado Springs, CO", slug: "colorado-springs", coordinates: {lat: 38.8339, lng: -104.8214}, timezone: "Mountain", time: "12 p.m. Mountain"},
+      {name: "Mesa, AZ", slug: "mesa", coordinates: {lat: 33.4152, lng: -111.8315}, timezone: "Mountain", time: "11 a.m. Mountain (Standard)"},
+      {name: "Henderson, NV", slug: "henderson", coordinates: {lat: 36.0395, lng: -114.9817}, timezone: "Mountain", time: "12 p.m. Mountain"},
+      
+      // Pacific Time Zone
+      {name: "Los Angeles, CA", slug: "los-angeles", coordinates: {lat: 34.0522, lng: -118.2437}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "San Diego, CA", slug: "san-diego", coordinates: {lat: 32.7157, lng: -117.1611}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "San Jose, CA", slug: "san-jose", coordinates: {lat: 37.3382, lng: -121.8863}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "San Francisco, CA", slug: "san-francisco", coordinates: {lat: 37.7749, lng: -122.4194}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Seattle, WA", slug: "seattle", coordinates: {lat: 47.6062, lng: -122.3321}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Portland, OR", slug: "portland", coordinates: {lat: 45.5051, lng: -122.6750}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Long Beach, CA", slug: "long-beach", coordinates: {lat: 33.7701, lng: -118.1937}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Oakland, CA", slug: "oakland", coordinates: {lat: 37.8044, lng: -122.2711}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Bakersfield, CA", slug: "bakersfield", coordinates: {lat: 35.3733, lng: -119.0187}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Fresno, CA", slug: "fresno", coordinates: {lat: 36.7378, lng: -119.7871}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Sacramento, CA", slug: "sacramento", coordinates: {lat: 38.5816, lng: -121.4944}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Anaheim, CA", slug: "anaheim", coordinates: {lat: 33.8366, lng: -117.9143}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Stockton, CA", slug: "stockton", coordinates: {lat: 37.9577, lng: -121.2908}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Irvine, CA", slug: "irvine", coordinates: {lat: 33.6846, lng: -117.8265}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      {name: "Santa Ana, CA", slug: "santa-ana", coordinates: {lat: 33.7455, lng: -117.8677}, timezone: "Pacific", time: "11 a.m. Pacific"},
+      
+      // Alaska Time Zone
+      {name: "Anchorage, AK", slug: "anchorage", coordinates: {lat: 61.2181, lng: -149.9003}, timezone: "Other", time: "10 a.m. Alaska"},
+      
+      // Hawaii Time Zone
+      {name: "Honolulu, HI", slug: "honolulu", coordinates: {lat: 21.3069, lng: -157.8583}, timezone: "Other", time: "8 a.m. Hawaii"}
+    ];
+
+    // Initialize the map and markers
+    let map;
+    let markers = [];
+    let activeInfoWindow = null;
+
+    // Colors for different timezones
+    const timezoneColors = {
+      Eastern: '#3498db',   // blue
+      Central: '#2ecc71',   // green
+      Mountain: '#e74c3c',  // red
+      Pacific: '#9b59b6',   // purple
+      Other: '#f39c12'      // orange
+    };
+
+    // Initialize the map
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: 39.8283, lng: -98.5795 },  // Center of US
+        zoom: 4,
+        mapTypeControl: true,
+        streetViewControl: false,
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+        }
+      });
+
+      // Create markers for each city
+      createMarkers();
+
+      // Add event listeners to filter buttons
+      document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          const timezone = this.getAttribute('data-timezone');
+          filterMarkers(timezone);
+          
+          // Update active button
+          document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+          });
+          this.classList.add('active');
+        });
+      });
+    }
+
+    // Create markers for all cities
+    function createMarkers() {
+      cities.forEach((city, index) => {
+        const icon = {
+          path: google.maps.SymbolPath.CIRCLE,
+          fillColor: timezoneColors[city.timezone],
+          fillOpacity: 0.9,
+          strokeWeight: 1,
+          strokeColor: '#ffffff',
+          scale: 8
+        };
+
+        const marker = new google.maps.Marker({
+          position: city.coordinates,
+          map: map,
+          title: city.name,
+          icon: icon,
+          optimized: true,
+          timezone: city.timezone
+        });
+
+        // Create info window content
+        const infoWindowContent = `
+          <div class="info-window">
+            <h3>${city.name}</h3>
+            <p><strong>Date:</strong> April 27th, 2025</p>
+            <p><strong>Time:</strong> ${city.time}</p>
+            <p><strong>Location:</strong> TBD</p>
+            <p><a href="/workshopday-specific-locations/april-2025/${city.slug}/" target="_blank">More details and signup info</a></p>
+          </div>
+        `;
+
+        // Create info window
+        const infoWindow = new google.maps.InfoWindow({
+          content: infoWindowContent,
+          maxWidth: 300
+        });
+
+        // Add click event to marker
+        marker.addListener('click', () => {
+          // Close any open info window
+          if (activeInfoWindow) {
+            activeInfoWindow.close();
+          }
+          
+          // Open this info window
+          infoWindow.open(map, marker);
+          activeInfoWindow = infoWindow;
+        });
+
+        markers.push(marker);
+      });
+    }
+
+    // Filter markers by timezone
+    function filterMarkers(timezone) {
+      if (activeInfoWindow) {
+        activeInfoWindow.close();
+        activeInfoWindow = null;
+      }
+      
+      for (let i = 0; i < markers.length; i++) {
+        const marker = markers[i];
+        
+        if (timezone === 'all') {
+          marker.setMap(map);
+        } else {
+          marker.setMap(marker.timezone === timezone ? map : null);
+        }
+      }
+
+      // Adjust map bounds to fit visible markers
+      if (timezone !== 'all') {
+        const bounds = new google.maps.LatLngBounds();
+        let hasVisibleMarkers = false;
+        
+        for (let i = 0; i < markers.length; i++) {
+          if (markers[i].getMap() !== null) {
+            bounds.extend(markers[i].getPosition());
+            hasVisibleMarkers = true;
+          }
+        }
+        
+        if (hasVisibleMarkers) {
+          map.fitBounds(bounds);
+          
+          // Limit the zoom level
+          google.maps.event.addListenerOnce(map, 'bounds_changed', function() {
+            if (map.getZoom() > 6) {
+              map.setZoom(6);
+            }
+          });
+        }
+      } else {
+        // For "All" view, show the entire US
+        map.setCenter({ lat: 39.8283, lng: -98.5795 });
+        map.setZoom(4);
+      }
+    }
+
+    // Load the Google Maps API
+    function loadGoogleMapsAPI() {
+      const script = document.createElement('script');
+      script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDIdEdrLX0SMPRUKHF4Fbttwd-hsWUQ2lA&callback=initMap'; // Replace YOUR_API_KEY with your actual Google Maps API key
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
+    // Load the API when page is loaded
+    window.onload = loadGoogleMapsAPI;
+  </script>
+
+    <h3>Full list of all cities below:</h3>
+  <details>
+    <summary>Click to expand</summary>
+                    <div>
+<!-- Eastern Time Zone Cities -->
+<h3>New York, NY</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/new-york/">More details and signup info</a></p>
+
+<h3>Washington D.C.</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/washington-dc/">More details and signup info</a></p>
+
+<h3>Boston, MA</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/boston/">More details and signup info</a></p>
+
+<h3>Philadelphia, PA</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/philadelphia/">More details and signup info</a></p>
+
+<h3>Jacksonville, FL</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/jacksonville/">More details and signup info</a></p>
+
+<h3>Charlotte, NC</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/charlotte/">More details and signup info</a></p>
+
+<h3>Indianapolis, IN</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/indianapolis/">More details and signup info</a></p>
+
+<h3>Columbus, OH</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/columbus/">More details and signup info</a></p>
+
+<h3>Detroit, MI</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/detroit/">More details and signup info</a></p>
+
+<h3>Baltimore, MD</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/baltimore/">More details and signup info</a></p>
+
+<h3>Miami, FL</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/miami/">More details and signup info</a></p>
+
+<h3>Virginia Beach, VA</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/virginia-beach/">More details and signup info</a></p>
+
+<h3>Cleveland, OH</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/cleveland/">More details and signup info</a></p>
+
+<h3>Tampa, FL</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/tampa/">More details and signup info</a></p>
+
+<h3>Pittsburgh, PA</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/pittsburgh/">More details and signup info</a></p>
+
+<h3>Cincinnati, OH</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/cincinnati/">More details and signup info</a></p>
+
+<h3>Orlando, FL</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/orlando/">More details and signup info</a></p>
+
+<h3>Lexington, KY</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/lexington/">More details and signup info</a></p>
+
+<h3>Newark, NJ</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/newark/">More details and signup info</a></p>
+
+<h3>Greensboro, NC</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/greensboro/">More details and signup info</a></p>
+
+<h3>Durham, NC</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/durham/">More details and signup info</a></p>
+
+<h3>Raleigh, NC</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/raleigh/">More details and signup info</a></p>
+
+<h3>Atlanta, GA</h3>
+<h4>Apr 27th, 2025 12 p.m. Eastern</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/atlanta/">More details and signup info</a></p>
+
+<!-- Central Time Zone Cities -->
+<h3>Chicago, IL</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/chicago/">More details and signup info</a></p>
+
+<h3>Houston, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/houston/">More details and signup info</a></p>
+
+<h3>San Antonio, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/san-antonio/">More details and signup info</a></p>
+
+<h3>Dallas/Fort Worth, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/dallas-fort-worth/">More details and signup info</a></p>
+
+<h3>Austin, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/austin/">More details and signup info</a></p>
+
+<h3>Oklahoma City, OK</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/oklahoma-city/">More details and signup info</a></p>
+
+<h3>Nashville, TN</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/nashville/">More details and signup info</a></p>
+
+<h3>El Paso, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/el-paso/">More details and signup info</a></p>
+
+<h3>Memphis, TN</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/memphis/">More details and signup info</a></p>
+
+<h3>Milwaukee, WI</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/milwaukee/">More details and signup info</a></p>
+
+<h3>Kansas City, MO</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/kansas-city/">More details and signup info</a></p>
+
+<h3>Omaha, NE</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/omaha/">More details and signup info</a></p>
+
+<h3>Minneapolis, MN</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/minneapolis/">More details and signup info</a></p>
+
+<h3>Tulsa, OK</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/tulsa/">More details and signup info</a></p>
+
+<h3>Arlington, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/arlington/">More details and signup info</a></p>
+
+<h3>Wichita, KS</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/wichita/">More details and signup info</a></p>
+
+<h3>New Orleans, LA</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/new-orleans/">More details and signup info</a></p>
+
+<h3>Louisville, KY</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/louisville/">More details and signup info</a></p>
+
+<h3>Corpus Christi, TX</h3>
+<h4>Apr 27th, 2025 1 p.m. Central</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/corpus-christi/">More details and signup info</a></p>
+
+<!-- Mountain Time Zone Cities -->
+<h3>Phoenix, AZ</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/phoenix/">More details and signup info</a></p>
+
+<h3>Denver, CO</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/denver/">More details and signup info</a></p>
+
+<h3>Las Vegas, NV</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/las-vegas/">More details and signup info</a></p>
+
+<h3>Albuquerque, NM</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/albuquerque/">More details and signup info</a></p>
+
+<h3>Tucson, AZ</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/tucson/">More details and signup info</a></p>
+
+<h3>Colorado Springs, CO</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/colorado-springs/">More details and signup info</a></p>
+
+<h3>Mesa, AZ</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/mesa/">More details and signup info</a></p>
+
+<h3>Henderson, NV</h3>
+<h4>Apr 27th, 2025 12 p.m. Mountain</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/henderson/">More details and signup info</a></p>
+
+<!-- Pacific Time Zone Cities -->
+<h3>Los Angeles, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/los-angeles/">More details and signup info</a></p>
+
+<h3>San Diego, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/san-diego/">More details and signup info</a></p>
+
+<h3>San Jose, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/san-jose/">More details and signup info</a></p>
+
+<h3>San Francisco, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/san-francisco/">More details and signup info</a></p>
+
+<h3>Seattle, WA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/seattle/">More details and signup info</a></p>
+
+<h3>Portland, OR</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/portland/">More details and signup info</a></p>
+
+<h3>Long Beach, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/long-beach/">More details and signup info</a></p>
+
+<h3>Oakland, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/oakland/">More details and signup info</a></p>
+
+<h3>Bakersfield, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/bakersfield/">More details and signup info</a></p>
+
+<h3>Fresno, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/fresno/">More details and signup info</a></p>
+
+<h3>Sacramento, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/sacramento/">More details and signup info</a></p>
+
+<h3>Anaheim, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/anaheim/">More details and signup info</a></p>
+
+<h3>Stockton, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/stockton/">More details and signup info</a></p>
+
+<h3>Irvine, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/irvine/">More details and signup info</a></p>
+
+<h3>Santa Ana, CA</h3>
+<h4>Apr 27th, 2025 11 a.m. Pacific</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/santa-ana/">More details and signup info</a></p>
+
+<!-- Alaska Time Zone City -->
+<h3>Anchorage, AK</h3>
+<h4>Apr 27th, 2025 10 a.m. Alaska</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/anchorage/">More details and signup info</a></p>
+
+<!-- Hawaii Time Zone City -->
+<h3>Honolulu, HI</h3>
+<h4>Apr 27th, 2025 11 a.m. Hawaii</h4>
+<p>Location TBD</p>
+<p><a href="/workshopday-specific-locations/apr-2025/honolulu/">More details and signup info</a></p>
+                    </div>
+                </details>
+
+                    <p>If you don't see a location here, but would like to run your own, sign up here to run a local workshop:</p>
+                    <div class="signup-buttons">
+                        <a href="https://forms.gle/RrogwveBDFj3VLrT8" class="cta-button">New Location Registration</a>
+                    </div>
+                    <br><br>
+                    <p>If you would prefer to join us online, please sign up here:</p>
+                    <div class="signup-buttons">
+                        <a href="https://forms.gle/db9f6Kgm6ygfmfbA7" class="cta-button">Individual Interest Registration</a>   
+                    </div> 
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+{{ end }}

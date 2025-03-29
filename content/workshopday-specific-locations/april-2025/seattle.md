@@ -1,25 +1,20 @@
 ---
-title: Feb 1st AI Workshop Day Seattle Location
-workshopdate: Feb 1st, 3 p.m. Pacific
-workshoplocation: University of Washington, Paccar Hall Room 294, 4277 NE Stevens Way, Seattle, WA 98195
+title: Apr 27th AI Workshop Day Seattle Location
+workshopdate: Apr 27th, 11 a.m. Pacific
+workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
 ---
 
-This is an interactive 1.5-hour workshop (with an additional final 30 min section going over DeepSeek's newest model), free and open to the public, focused on AI forecasting and safety awareness.
+This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, with a focus on how much has changed in the last 5 months, as well as where AI is going over the next 1-5 years.
 
-Our goal is to help participants understand the urgency of AI safety through interactive demonstrations and group exercises aimed at helping people forecast what might be coming over the next year or two with AI and AI safety.
+The purpose of this workshop is to give a broad introduction to risks and benefits of current and near-future AI systems as well as how AI researchers at top AI companies view the future of AI development.
 
-The first portion of this workshop will be a set of virtual talks and demonstrations of current AI capabilities.
+We’ll have a quick introductory talk, some demonstrations of current AI capabilities and risks, and then close with some forecasting/prediction exercises about where AI might be going in the future.
 
-The second portion of this workshop will be more detailed forecasting exercises, where we’ll use prediction markets to calibrate expectations and help forecast what kinds of AI developments might come and when.
+If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-Finally there is an optional final section where we will have a Q and A session about the DeepSeek r1 paper and salient details about the model for those who are more technically inclined. We will go over the r1 paper on arXiv and explain various bits of its terminology, what makes it different from pre-existing models, and what this reveals about OpenAI's own o-X family of models.
-
-If you're interested in attending, please fill out this form here:
-[https://forms.gle/YWAqCXqZwv2hXscY7](https://forms.gle/YWAqCXqZwv2hXscY7)
-
-or RSVP via one of the methods below
-
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-seattle/events/305869669/](https://www.meetup.com/ai-safety-awareness-group-seattle/events/305869669/)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-seattle/events/306979685/](https://www.meetup.com/ai-safety-awareness-group-seattle/events/306979685/)
++ lu.ma: [https://lu.ma/tc1ri31v](https://lu.ma/tc1ri31v)
++ Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
