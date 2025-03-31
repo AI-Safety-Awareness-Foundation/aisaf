@@ -117,64 +117,122 @@ def get_access_token(client_id, client_secret):
         return None
 
 
-def get_user_groups(token):
-    """Get a list of groups the user organizes or co-organizes"""
+def get_user_groups(token, pro_network_urlname=None):
+    """
+    Get a list of groups the user organizes or co-organizes.
+    If pro_network_urlname is provided, gets groups from that Pro Network instead.
+    """
     headers = {
         "Authorization": f"Bearer {token}",
         "Content-Type": "application/json"
     }
     
-    query = """
-    query {
-        self {
-            groups {
-                edges {
-                    node {
-                        id
-                        urlname
-                        name
-                        memberships {
-                            role
+    if pro_network_urlname:
+        # Pro Network Groups Query
+        query = """
+        query($urlname: String!) {
+          proNetworkByUrlname(urlname: $urlname) {
+            groupsSearch(filter: {}, input: { first: 50 }) {
+              count
+              edges {
+                node {
+                  id
+                  urlname
+                  name
+                  memberships {
+                    count
+                  }
+                }
+              }
+            }
+          }
+        }
+        """
+        variables = {"urlname": pro_network_urlname}
+        
+        try:
+            response = requests.post(
+                "https://api.meetup.com/gql",
+                headers=headers,
+                json={"query": query, "variables": variables}
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                edges = data.get("data", {}).get("proNetworkByUrlname", {}).get("groupsSearch", {}).get("edges", [])
+                
+                network_groups = []
+                for edge in edges:
+                    node = edge.get("node", {})
+                    network_groups.append({
+                        "id": node.get("id"),
+                        "urlname": node.get("urlname"),
+                        "name": node.get("name"),
+                        "members": node.get("memberships", {}).get("count", 0),
+                        "type": "network_group"
+                    })
+                
+                return network_groups
+            else:
+                print(f"Error getting Pro Network groups: {response.text}")
+                return []
+        except Exception as e:
+            print(f"Exception getting Pro Network groups: {str(e)}")
+            return []
+    else:
+        # Original User's Groups Query
+        query = """
+        query {
+            self {
+                groups {
+                    edges {
+                        node {
+                            id
+                            urlname
+                            name
+                            memberships {
+                                role
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    """
-    
-    try:
-        response = requests.post(
-            "https://api.meetup.com/gql",
-            headers=headers,
-            json={"query": query}
-        )
+        """
         
-        if response.status_code == 200:
-            data = response.json()
-            edges = data.get("data", {}).get("self", {}).get("groups", {}).get("edges", [])
+        try:
+            response = requests.post(
+                "https://api.meetup.com/gql",
+                headers=headers,
+                json={"query": query}
+            )
             
-            organizer_groups = []
-            for edge in edges:
-                node = edge.get("node", {})
-                memberships = node.get("memberships", {})
-                role = memberships.get("role", "")
+            if response.status_code == 200:
+                data = response.json()
+                edges = data.get("data", {}).get("self", {}).get("groups", {}).get("edges", [])
                 
-                if role in ["ORGANIZER", "CO_ORGANIZER", "ASSISTANT_ORGANIZER"]:
-                    organizer_groups.append({
-                        "id": node.get("id"),
-                        "urlname": node.get("urlname"),
-                        "name": node.get("name"),
-                        "role": role
-                    })
-            
-            return organizer_groups
-        else:
-            print(f"Error getting groups: {response.text}")
+                organizer_groups = []
+                for edge in edges:
+                    node = edge.get("node", {})
+                    memberships = node.get("memberships", {})
+                    role = memberships.get("role", "")
+                    
+                    if role in ["ORGANIZER", "CO_ORGANIZER", "ASSISTANT_ORGANIZER"]:
+                        organizer_groups.append({
+                            "id": node.get("id"),
+                            "urlname": node.get("urlname"),
+                            "name": node.get("name"),
+                            "role": role,
+                            "type": "user_group"
+                        })
+                
+                return organizer_groups
+            else:
+                print(f"Error getting groups: {response.text}")
+                return []
+        except Exception as e:
+            print(f"Exception getting groups: {str(e)}")
             return []
-    except Exception as e:
-        print(f"Exception getting groups: {str(e)}")
-        return []
 
 def create_meetup_event(token, group_urlname, event_data):
     """Create a new event on Meetup.com using the GraphQL API"""
@@ -269,17 +327,31 @@ def main():
         print("\nError: You must provide either an access token or client ID and secret.")
         return
     
-    # Get groups the user can create events for
-    print("\nFetching your Meetup groups...")
-    groups = get_user_groups(access_token)
+    # Ask if user wants to use a Pro Network
+    use_pro_network = input("\nDo you want to create an event for a Pro Network group? (y/n): ").lower() == 'y'
+    
+    if use_pro_network:
+        pro_network_urlname = input("Enter the Pro Network urlname: ")
+        print("\nFetching Pro Network groups...")
+        groups = get_user_groups(access_token, pro_network_urlname)
+    else:
+        # Get groups the user can create events for
+        print("\nFetching your Meetup groups...")
+        groups = get_user_groups(access_token)
     
     if not groups:
-        print("No groups found where you have organizer privileges.")
+        if use_pro_network:
+            print("No groups found in the Pro Network or you don't have access.")
+        else:
+            print("No groups found where you have organizer privileges.")
         return
     
-    print("\n=== Your Meetup Groups ===")
+    print("\n=== Available Meetup Groups ===")
     for i, group in enumerate(groups, 1):
-        print(f"{i}. {group['name']} ({group['urlname']}) - {group['role']}")
+        if group.get("type") == "user_group":
+            print(f"{i}. {group['name']} ({group['urlname']}) - {group['role']}")
+        else:
+            print(f"{i}. {group['name']} ({group['urlname']}) - {group['members']} members")
     
     # Let the user select a group
     while True:
