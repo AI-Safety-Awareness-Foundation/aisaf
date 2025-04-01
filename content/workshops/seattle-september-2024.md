@@ -7,6 +7,8 @@ detailstobedetermined: false
 listindex: 2
 ---
 
+**The video recording associated with this event is available at: [https://vimeo.com/1012841880/151f08512c?ts=0&share=copy](https://vimeo.com/1012841880/151f08512c?ts=0&share=copy)**
+
 This is a free AI safety meetup aimed at teaching the general public what modern AI
 is capable of, both good and bad, and giving people an introduction to the
 skills and knowledge necessary to predict what else might be coming around the
