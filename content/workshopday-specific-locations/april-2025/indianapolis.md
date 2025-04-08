@@ -1,6 +1,6 @@
 ---
 title: Apr 27th AI Workshop Day Indianapolis Location
-workshopdate: Apr 27th, 1 p.m. Eastern
+workshopdate: Apr 27th, 2 p.m. Eastern
 workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
@@ -15,7 +15,7 @@ We’ll begin with an introductory talk, showcase demonstrations of current AI c
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-indianapolis/events/306979688/](https://www.meetup.com/ai-safety-awareness-group-indianapolis/events/306979688/)
-+ lu.ma: [https://lu.ma/indianapolis-ai-workshop](https://lu.ma/indianapolis-ai-workshop)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-indianapolis/events/307027902/](https://www.meetup.com/ai-safety-awareness-group-indianapolis/events/307027902/)
++ lu.ma: [https://lu.ma/klxw9d0m](https://lu.ma/klxw9d0m)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 
