@@ -2,7 +2,7 @@
 title: AI and AI Safety Forecasting Seminar
 workshopdate: Apr 12th, 3:30 - 5 p.m. Eastern
 workshoplocation: "Columbus Metropolitan Library: Northside Branch, Room 2 + 3, 1423 N High St, Columbus, OH 43201"
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: 25
 ---
