@@ -1,6 +1,6 @@
 ---
 title: Apr 27th AI Workshop Day Honolulu Location
-workshopdate: Apr 27th, 8 a.m. Hawaii
+workshopdate: Apr 27th, 12 p.m. Hawaii
 workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
