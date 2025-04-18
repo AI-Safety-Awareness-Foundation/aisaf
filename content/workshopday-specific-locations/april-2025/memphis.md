@@ -1,6 +1,6 @@
 ---
-title: Apr 27th AI Workshop Day Milwaukee Location
-workshopdate: Apr 27th, 1 p.m. Central
+title: Apr 27th AI Workshop Day Memphis Location
+workshopdate: Apr 27th, 2 p.m. Central
 workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
@@ -15,7 +15,7 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/](https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/)
-+ lu.ma: [https://lu.ma/nilhwi03](https://lu.ma/nilhwi03)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-memphis/events/306982715/](https://www.meetup.com/ai-safety-awareness-group-memphis/events/306982715/)
++ lu.ma: [https://lu.ma/wphvi3gz](https://lu.ma/wphvi3gz)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 

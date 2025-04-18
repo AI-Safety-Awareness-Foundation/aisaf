@@ -1,6 +1,6 @@
 ---
-title: Apr 27th AI Workshop Day Louisville Location
-workshopdate: Apr 27th, 2 p.m. Eastern
+title: Apr 27th AI Workshop Day Corpus Christi Location
+workshopdate: Apr 27th, 1 p.m. Central
 workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
@@ -15,7 +15,7 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-louisville/events/306981183/](https://www.meetup.com/ai-safety-awareness-group-louisville/events/306981183/)
-+ lu.ma: [https://lu.ma/8bchd7th](https://lu.ma/8bchd7th)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-corpus-christi/events/306982348/](https://www.meetup.com/ai-safety-awareness-group-corpus-christi/events/306982348/)
++ lu.ma: [https://lu.ma/wvu0v2il](https://lu.ma/wvu0v2il)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 

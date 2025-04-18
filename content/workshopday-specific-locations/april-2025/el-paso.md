@@ -1,6 +1,6 @@
 ---
-title: Apr 27th AI Workshop Day Milwaukee Location
-workshopdate: Apr 27th, 1 p.m. Central
+title: Apr 27th AI Workshop Day El Paso Location
+workshopdate: Apr 27th, 12 p.m. Mountain
 workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
@@ -15,7 +15,7 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/](https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/)
-+ lu.ma: [https://lu.ma/nilhwi03](https://lu.ma/nilhwi03)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-el-paso/events/306982484/](https://www.meetup.com/ai-safety-awareness-group-el-paso/events/306982484/)
++ lu.ma: [https://lu.ma/18s80t04](https://lu.ma/18s80t04)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 

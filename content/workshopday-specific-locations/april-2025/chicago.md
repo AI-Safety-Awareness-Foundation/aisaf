@@ -7,15 +7,15 @@ detailstobedetermined: false
 listindex: -1
 ---
 
-This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, focusing on the significant changes over the past 5 months, as well as projections for the next 1-5 years.
+This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, with a focus on how much has changed in the last 5 months, as well as where AI is going over the next 1‑5 years.
 
-The purpose of this workshop is to provide a broad introduction to the risks and benefits of current and near-future AI systems, as well as insights into how AI researchers at top companies view the future of AI development.
+The purpose of this workshop is to give a broad introduction to risks and benefits of current and near‑future AI systems as well as how AI researchers at top AI companies view the future of AI development.
 
-We’ll begin with an introductory talk, showcase demonstrations of current AI capabilities and associated risks, and conclude with forecasting and prediction exercises about the future trajectory of AI.
+We’ll have a quick introductory talk, some demonstrations of current AI capabilities and risks, and then close with some forecasting/prediction exercises about where AI might be going in the future.
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-chicago/events/306979686/](https://www.meetup.com/ai-safety-awareness-group-chicago/events/306979686/)
-+ lu.ma: [https://lu.ma/chicago-ai-workshop](https://lu.ma/chicago-ai-workshop)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-chicago/events/306795434/](https://www.meetup.com/ai-safety-awareness-group-chicago/events/306795434/)
++ lu.ma: [https://lu.ma/6w59wsvj](https://lu.ma/6w59wsvj)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 

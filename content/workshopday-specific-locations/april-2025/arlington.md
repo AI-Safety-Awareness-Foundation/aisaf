@@ -1,5 +1,5 @@
 ---
-title: Apr 27th AI Workshop Day Louisville Location
+title: Apr 27th AI Workshop Day Arlington Location
 workshopdate: Apr 27th, 2 p.m. Eastern
 workshoplocation: TBD
 temporalstatus: future
@@ -15,7 +15,7 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-louisville/events/306981183/](https://www.meetup.com/ai-safety-awareness-group-louisville/events/306981183/)
-+ lu.ma: [https://lu.ma/8bchd7th](https://lu.ma/8bchd7th)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-arlington/events/306981597/](https://www.meetup.com/ai-safety-awareness-group-arlington/events/306981597/)
++ lu.ma: [https://lu.ma/3zglbwdg](https://lu.ma/3zglbwdg)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 

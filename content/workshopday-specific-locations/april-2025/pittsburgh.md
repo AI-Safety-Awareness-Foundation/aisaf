@@ -1,5 +1,5 @@
 ---
-title: Apr 27th AI Workshop Day Cleveland Location
+title: Apr 27th AI Workshop Day Pittsburgh Location
 workshopdate: Apr 27th, 2 p.m. Eastern
 workshoplocation: TBD
 temporalstatus: future
@@ -15,6 +15,6 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-cleveland/events/307027909/](https://www.meetup.com/ai-safety-awareness-group-cleveland/events/307027909/)
-+ lu.ma: [https://lu.ma/05wwmsy0](https://lu.ma/05wwmsy0)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-pittsburgh-1/events/306989487/](https://www.meetup.com/ai-safety-awareness-group-pittsburgh-1/events/306989487/)
++ lu.ma: [https://lu.ma/5ph52dy6](https://lu.ma/5ph52dy6)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)

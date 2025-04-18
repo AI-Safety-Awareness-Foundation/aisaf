@@ -1,5 +1,5 @@
 ---
-title: Apr 27th AI Workshop Day Milwaukee Location
+title: Apr 27th AI Workshop Day Omaha Location
 workshopdate: Apr 27th, 1 p.m. Central
 workshoplocation: TBD
 temporalstatus: future
@@ -15,7 +15,7 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/](https://www.meetup.com/ai-safety-awareness-group-milwaukee/events/307027870/)
-+ lu.ma: [https://lu.ma/nilhwi03](https://lu.ma/nilhwi03)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-omaha/events/306989386/](https://www.meetup.com/ai-safety-awareness-group-omaha/events/306989386/)
++ lu.ma: [https://lu.ma/nwxz4db8](https://lu.ma/nwxz4db8)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)
 
