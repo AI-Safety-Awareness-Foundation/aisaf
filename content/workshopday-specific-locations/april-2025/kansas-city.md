@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Kansas City Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: "Kansas Library (Central Branch), Meeting Room 310, 14 W 10th St, Kansas City, MO 64105"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

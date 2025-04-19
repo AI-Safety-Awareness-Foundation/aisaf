@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Louisville Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Louisville Library (Main Branch), Room 202, Main Library 301 York St, Louisville, KY 40203"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Milwaukee Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: "Milwaukee Library (Good Hope Branch), Community Room, 7715 Good Hope Rd, Milwaukee, WI 53223"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

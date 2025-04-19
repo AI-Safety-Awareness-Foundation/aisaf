@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Baltimore Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: Baltimore Library (North Point Branch), North Point Room, 1716 Merritt Blvd, Dundalk, MD 21222
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

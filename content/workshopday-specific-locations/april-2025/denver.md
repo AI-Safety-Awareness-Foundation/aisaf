@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Denver Location
 workshopdate: Apr 27th, 12 p.m. Mountain
-workshoplocation: Location TBD
+workshoplocation: Prodigy Coffee House, 3801 E 40th Ave, Denver, CO 80205 
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

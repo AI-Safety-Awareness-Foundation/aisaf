@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Pittsburgh Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Carnegie Library of Pittsburgh, Large Meeting Room, 612 Smithfield St. Pittsburgh, PA 15222"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

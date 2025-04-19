@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Nashville Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: "Nashville Public Library (Bordeaux Branch), Flex Room, 4000 Clarksville Pike, Nashville, TN 37218"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

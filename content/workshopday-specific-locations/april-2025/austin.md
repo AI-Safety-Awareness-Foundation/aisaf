@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Austin Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: "Austin Public Library (Ruiz Branch), Room #2, 1600 Grove Blvd, Austin, TX 78741"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

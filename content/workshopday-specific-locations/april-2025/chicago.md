@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Chicago Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: High Jump Office, 820 W Jackson Blvd, Chicago, IL 60607
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

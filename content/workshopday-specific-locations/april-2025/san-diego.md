@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day San Diego Location
 workshopdate: Apr 27th, 11 a.m. Pacific
-workshoplocation: Location TBD
+workshoplocation: "La Jolla Riford Library, Seminar Room, 7555 Draper Ave, San Diego CA, 92037"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

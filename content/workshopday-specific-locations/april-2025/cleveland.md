@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Cleveland Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Cleveland Library (Bay Village Branch), Meeting Room A-116, 27400 Wolf Rd, Bay Village, OH 44140 "
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day New York City Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Brooklyn Public Library (Central Branch), Info Commons Room 2, 10 Grand Army Plz, Brooklyn, NY 11238"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

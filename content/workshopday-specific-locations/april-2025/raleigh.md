@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Raleigh Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Southeast Regional Library, Adult Program Room, 908 7th Ave, Garner, NC 27529"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

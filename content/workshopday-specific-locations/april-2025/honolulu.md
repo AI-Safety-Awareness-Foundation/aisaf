@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Honolulu Location
 workshopdate: Apr 27th, 12 p.m. Hawaii
-workshoplocation: TBD
+workshoplocation: "HCAI, 643 Ilalo St, Honolulu, HI 96813"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

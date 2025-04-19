@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Boston
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: Room TBD
+workshoplocation: "Boston Public Library (Central Branch), Mezzanine Conference Room, 3700 Boylston Street, Boston MA, 02116"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

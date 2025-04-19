@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Cincinnati Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Downtown Main Library, 3 South Room D, 800 Vine St, Cincinnati, OH 45202"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

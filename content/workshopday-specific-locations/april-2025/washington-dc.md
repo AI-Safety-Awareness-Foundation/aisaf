@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Washington D.C. Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: George Washington University, Room TBD
+workshoplocation: "George Washington University, Mt. Vernon Campus, Room B111, 2100 Foxhall Rd NW, Washington, DC, 20007"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

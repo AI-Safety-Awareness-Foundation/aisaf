@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Indianapolis Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Indianapolis Library (Eagle Branch), Room 2, 3905 Moller Rd, Indianapolis, IN 46254"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

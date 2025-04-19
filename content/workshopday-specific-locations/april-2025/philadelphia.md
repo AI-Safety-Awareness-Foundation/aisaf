@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Philadelphia Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: Room TBD
+workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

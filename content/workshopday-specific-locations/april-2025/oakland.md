@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Oakland Location
 workshopdate: Apr 27th, 11 a.m. Pacific
-workshoplocation: Location TBD
+workshoplocation: "Oakland Library (Cesar E Chavez Branch), Cesar E Chavez Meeting Room, 3301 E 12th St #271, Oakland, CA 94601"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Virginia Beach Location
 workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: TBD
+workshoplocation: "Meyera E. Oberndorf Central Library, Central Folio Meeting Room, 4100 Virginia Beach Blvd, Virginia Beach, VA 23452"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
