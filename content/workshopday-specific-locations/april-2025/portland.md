@@ -1,7 +1,7 @@
 ---
-title: Apr 27th AI Workshop Day Cleveland Location
-workshopdate: Apr 27th, 2 p.m. Eastern
-workshoplocation: "Cleveland Library (Bay Village Branch), Meeting Room A-116, 27400 Wolf Rd, Bay Village, OH 44140"
+title: Apr 27th AI Workshop Day Portland Location
+workshopdate: Apr 27th, 11 a.m. Pacific
+workshoplocation: TBD
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
@@ -15,6 +15,6 @@ We’ll have a quick introductory talk, some demonstrations of current AI capabi
 
 If you're interested in attending, please RSVP via one of the following methods (only one is needed):
 
-+ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-cleveland/events/307027909/](https://www.meetup.com/ai-safety-awareness-group-cleveland/events/307027909/)
-+ lu.ma: [https://lu.ma/05wwmsy0](https://lu.ma/05wwmsy0)
++ meetup.com: [https://www.meetup.com/ai-safety-awareness-group-portland/events/307357792/](https://www.meetup.com/ai-safety-awareness-group-portland/events/307357792/)
++ lu.ma: [https://lu.ma/dv0d2cnj](https://lu.ma/dv0d2cnj)
 + Filling out this Google form: [https://forms.gle/db9f6Kgm6ygfmfbA7](https://forms.gle/db9f6Kgm6ygfmfbA7)

@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Dallas/Forth Worth Location
 workshopdate: Apr 27th, 1 p.m. Central
-workshoplocation: TBD
+workshoplocation: "Frisco Public Library, Conference Room 2, 8000 Dallas Pkwy, Frisco, TX 75034"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
