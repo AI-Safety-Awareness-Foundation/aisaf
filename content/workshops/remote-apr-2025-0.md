@@ -8,7 +8,10 @@ listindex: 41
 ---
 
 This is a remote workshop where we'll be introducing people to the basics of LLM
-evaluations! Come to learn:
+evaluations! Join us at
+[https://meet.google.com/xhv-ufah-tfi](https://meet.google.com/xhv-ufah-tfi).
+
+Come to learn:
 
 1. A deeper dive into LLM prompt engineering
 2. How to interact directly with LLM providers' APIs
