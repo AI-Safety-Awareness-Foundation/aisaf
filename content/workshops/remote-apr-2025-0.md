@@ -1,6 +1,6 @@
 ---
 title: LLM Evaluations Workshop - Replicating an Anthropic Paper
-workshopdate: Apr 27th, 2025, 2 p.m. to 5 p.m. Pacific/5 p.m. - 8 p.m. Eastern
+workshopdate: Apr 27th, 2025, 1 p.m. to 4 p.m. Pacific/4 p.m. - 7 p.m. Eastern
 workshoplocation: "Remote (join at https://meet.google.com/xhv-ufah-tfi)"
 temporalstatus: future
 detailstobedetermined: false
