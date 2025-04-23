@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Irvine Location
 workshopdate: Apr 27th, 11 a.m. Pacific
-workshoplocation: Location TBD
+workshoplocation: "17592 E. 17th Street, 225 Tustin, CA, 92780"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
