@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day San Jose Location
 workshopdate: Apr 27th, 11 a.m. Pacific
-workshoplocation: 1631 North First Street, San Jose, CA, 95112
+workshoplocation: 1631 North First Street, First Floor Room, San Jose, CA, 95112
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

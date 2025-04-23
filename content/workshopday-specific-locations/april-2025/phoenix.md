@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Phoenix Location
 workshopdate: Apr 27th, 11 a.m. Mountain (Standard)
-workshoplocation: Location TBD
+workshoplocation: 801 E. Washington St., Phoenix, AZ 85034
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1

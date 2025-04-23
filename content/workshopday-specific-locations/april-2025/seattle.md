@@ -1,7 +1,7 @@
 ---
 title: Apr 27th AI Workshop Day Seattle Location
 workshopdate: Apr 27th, 11 a.m. Pacific
-workshoplocation: TBD
+workshoplocation: "Capitol Hill Branch, Capitol Hill Room, 425 Harvard Ave E, Seattle, WA 98102"
 temporalstatus: future
 detailstobedetermined: false
 listindex: -1
