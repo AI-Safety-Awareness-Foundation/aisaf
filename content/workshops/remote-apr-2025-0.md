@@ -24,5 +24,7 @@ APIs, but we do recommend having some experience as an end user with ChatGPT.
 
 The workshop will culminate in replicating Anthropic's ["Alignment Faking in LLMs"](https://www.anthropic.com/research/alignment-faking) paper, where we'll go over to what extent modern AI systems can figure out that they are in a training environment and actively modify their behavior to manipulate the training process against the wishes of human trainers.
 
-If you're planning to attend, please fill out this quick survey to let us know
-you're coming: [https://forms.gle/1qut4KVhMXHFT8Uc6](https://forms.gle/1qut4KVhMXHFT8Uc6).
+If you're planning to attend, please RSVP through one of these two methods:
+
+1. Luma: [https://lu.ma/wn7ul2qb](https://lu.ma/wn7ul2qb)
+2. Google Forms: [https://forms.gle/1qut4KVhMXHFT8Uc6](https://forms.gle/1qut4KVhMXHFT8Uc6).
