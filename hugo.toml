@@ -1,4 +1,4 @@
-baseURL = 'https://aisafetyawarenessfoundation.org/'
+baseURL = 'https://aisafetyawarenessproject.org/'
 languageCode = 'en-us'
 title = 'AI Safety Awareness Project'
 disableKinds = ['taxonomy', 'term']
