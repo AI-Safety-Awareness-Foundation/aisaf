@@ -1,11 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" fill="#1e3a8a"/>
-  <text x="50" y="65" 
-        font-family="Arial, sans-serif" 
-        font-size="30" 
-        fill="white" 
-        text-anchor="middle" 
-        font-weight="bold">
-    AISAF
-  </text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.68"
+     inkscape:cx="51.347305"
+     inkscape:cy="50"
+     inkscape:window-width="1440"
+     inkscape:window-height="896"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     width="100"
+     height="100"
+     fill="#1e3a8a"
+     id="rect1" />
+  <text
+     x="50"
+     y="65"
+     font-family="Arial, sans-serif"
+     font-size="30px"
+     fill="#ffffff"
+     text-anchor="middle"
+     font-weight="bold"
+     id="text1">AISAP</text>
 </svg>
