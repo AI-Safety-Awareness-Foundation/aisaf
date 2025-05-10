@@ -13,7 +13,7 @@ The purpose of this workshop is to give a broad introduction to risks and benefi
 We’ll have a quick introductory talk, some demonstrations of current AI capabilities and risks, and then close with some forecasting/prediction exercises about where AI might be going in the future.
 
 RSVP:
-[+Eventbrite](https://www.eventbrite.com/e/1361303578649?aff=oddtdtcreator)
-[+Meetup](https://www.meetup.com/ai-safety-awareness-group-san-diego/events/307747903/?slug=ai-safety-awareness-group-san-diego&eventId=306982626&isFirstPublish=true)
-[+Luma](https://lu.ma/tjfkxonv)
-[+Facebook](https://www.facebook.com/share/16JQEjxxjP/)
++[Eventbrite](https://www.eventbrite.com/e/1361303578649?aff=oddtdtcreator)
++[Meetup](https://www.meetup.com/ai-safety-awareness-group-san-diego/events/307747903/?slug=ai-safety-awareness-group-san-diego&eventId=306982626&isFirstPublish=true)
++[Luma](https://lu.ma/tjfkxonv)
++[Facebook](https://www.facebook.com/share/16JQEjxxjP/)
