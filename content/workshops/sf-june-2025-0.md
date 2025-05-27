@@ -1,5 +1,5 @@
 ---
-title: Where is AI in 2025 and Where is it Going | San Francisco 
+title: Introduction to AI Evals | San Francisco 
 workshopdate: June 11rd, 2025 4:00 p.m. - 6:00 p.m. PT
 workshoplocation: SFU Campus, 130 Fulton Street, McLaren 200, San Francisco CA 94117 Room MC 251
 temporalstatus: future
