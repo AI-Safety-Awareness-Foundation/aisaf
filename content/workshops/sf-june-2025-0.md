@@ -1,6 +1,6 @@
 ---
 title: Introduction to AI Evals | San Francisco 
-workshopdate: June 11rd, 2025 4:00 p.m. - 6:00 p.m. PT
+workshopdate: June 11th, 2025 4:00 p.m. - 6:00 p.m. PT
 workshoplocation: USF Campus, 2130 Fulton Street, McLaren 200, San Francisco CA 94117 Room MC 251
 temporalstatus: future
 detailstobedetermined: false
