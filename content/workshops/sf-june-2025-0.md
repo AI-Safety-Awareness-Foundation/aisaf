@@ -15,6 +15,6 @@ Prior Python experience is required. Ideal for AI practitioners, researchers, or
 
 RSVP:
 +[Eventbrite](https://www.eventbrite.com/e/1383192488969?aff=oddtdtcreator)
-+[Meetup]([https://www.meetup.com/ai-safety-awareness-group-san-diego/events/307747903/?slug=ai-safety-awareness-group-san-diego&eventId=306982626&isFirstPublish=true](https://www.meetup.com/ai-safety-awareness-group-san-francisco/events/308093454/?slug=ai-safety-awareness-group-san-francisco&eventId=308093454))
++[Meetup](https://www.meetup.com/ai-safety-awareness-group-san-francisco/events/308093454/?eventOrigin=group_upcoming_events)
 +[Luma](https://lu.ma/4443e4ff)
 +[Facebook](https://www.facebook.com/share/18hGH1YiMC/)
