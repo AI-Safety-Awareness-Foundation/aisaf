@@ -21,7 +21,7 @@ with a clearer picture of where AI could be heading and how we might navigate th
 
 
 RSVP:
-+[Meetup](https://www.meetup.com/ai-safety-awareness-group-los-angeles/events/308115287/?slug=ai-safety-awareness-group-los-angeles&isFirstPublish=true)
-+[Eventbrite](https://www.eventbrite.com/e/ai-and-the-intelligence-explosion-tickets-1384479879589?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl)
-+[Luma](https://lu.ma/hu3zfcl5)
-+[Facebook](https://www.facebook.com/share/19ogfU3u8R/)
++ [Meetup](https://www.meetup.com/ai-safety-awareness-group-los-angeles/events/308115287/?slug=ai-safety-awareness-group-los-angeles&isFirstPublish=true)
++ [Eventbrite](https://www.eventbrite.com/e/ai-and-the-intelligence-explosion-tickets-1384479879589?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl)
++ [Luma](https://lu.ma/hu3zfcl5)
++ [Facebook](https://www.facebook.com/share/19ogfU3u8R/)
