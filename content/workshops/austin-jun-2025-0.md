@@ -4,7 +4,7 @@ workshopdate: June 21st, 2025 1:00 p.m. - 2:30 p.m. CT
 workshoplocation: Ruiz Branch Library, 1600 Grove Blvd, Austin, TX 78741
 temporalstatus: future
 detailstobedetermined: false
-listindex: 4
+listindex: 5
 ---
 This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, with a focus on how much has changed in the last 5 months, as well as where AI is going over the next 1-5 years.
 
