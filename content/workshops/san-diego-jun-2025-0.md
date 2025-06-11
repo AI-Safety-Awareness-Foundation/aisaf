@@ -2,7 +2,7 @@
 title: Where is AI in 2025 and Where is it Going | San Diego
 workshopdate: June 3rd, 2025 5:30 p.m. - 7:00 p.m. PT
 workshoplocation: La Jolla/Riford Library Seminar Room, 7555 Draper Ave, La Jolla CA 92037
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: 1
 ---
