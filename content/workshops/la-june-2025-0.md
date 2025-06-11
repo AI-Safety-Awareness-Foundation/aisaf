@@ -2,7 +2,7 @@
 title: AI and the Intellegence Explosion | Pasadena  
 workshopdate: June 7th, 2025 12:00 p.m. - 2:00 p.m. PT
 workshoplocation: San Rafael Branch Library, 1240 Nithsdale Rd Pasadena, CA 91105
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 listindex: 2
 ---
