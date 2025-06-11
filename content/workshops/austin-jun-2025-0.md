@@ -12,6 +12,10 @@ The purpose of this workshop is to give a broad introduction to risks and benefi
 
 We’ll have a quick introductory talk, some demonstrations of current AI capabilities and risks, and then close with some forecasting/prediction exercises about where AI might be going in the future.
 
+Speaker Bio:
+
+Chris is an artist, entrepreneur, and engineer. He has built systems and cultures that have stood the test of time at Heroku, Coinbase, and Stripe. After a career break in the Brooklyn underground music scene led him to the Recurse Center, he met Changlin and rediscovered his love of code through llms. Today he works as an AI product engineer at GRAX - a Salesforce data replication company.
+
 RSVP:
 
 + [Eventbrite](https://www.eventbrite.com/e/where-is-ai-in-2025-and-where-is-it-going-tickets-1388454116639?aff=oddtdtcreator)
