@@ -6,7 +6,9 @@ that needs to be addressed in this codebase. Issues that we've finished go into
 
 ## Unfinished Issues
 
-## Getting the Python update script to reorder posts after they go from future to past
+## Finished Issues
+
+### Getting the Python update script to reorder posts after they go from future to past
 
 For our workshop posts (under `content/workshops`), there are two pieces of frontmatter that matter for this issue:
 
@@ -62,4 +64,14 @@ that e.g. if `A` and `B` were both changed from `temporalstatus: future` to
 than `B`, `A` should get a `listindex` of `11` and `B` should get a `listindex`
 of `12`.
 
-## Finished Issues
+---
+
+**COMPLETED**
+
+- Enhanced the `scripts/updater.py` script to implement the requested functionality. The script now:
+- Parses all workshop markdown files to extract frontmatter data
+- Identifies workshops that need status updates (future workshops with past dates)  
+- Finds the current maximum listindex among past workshops
+- Updates workshops in chronological order, assigning sequential listindex values starting from max+1
+- Includes comprehensive logging for debugging and monitoring
+- Handles complex date formats with times and timezones
