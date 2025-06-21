@@ -647,8 +647,6 @@
         function createTileElement(data) {
             const tile = document.createElement('div');
             tile.className = 'tile';
-            tile.setAttribute('data-difficulty', data.difficulty);
-            tile.setAttribute('data-background', data.backgrounds.join(','));
 
             const tagsHtml = data.backgrounds.map(bg => 
                 `<span class="tag ${bg}">${bg}</span>`
