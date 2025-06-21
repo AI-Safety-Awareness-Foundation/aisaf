@@ -228,7 +228,7 @@
         .difficulty-display {
             font-weight: 600;
             color: #667eea;
-            min-width: 120px;
+            width: 220px;
             text-align: right;
         }
 
@@ -473,22 +473,12 @@
                     </p>
                 </div>
 
-                <div class="quick-follow-ups">
-                    <h2>Quick Follow-ups</h2>
-                    <ul>
-                        </li>
-                        <li>
-                            <strong>Workshop Slides:</strong> Want to see the slides we used for the intro talk? Those are <a href="https://github.com/changlinli/intro-to-technical-ai-safety-slides/blob/master/general-intro-slides/slides.md" class="resource-link">available here</a>.
-                        </li>
-                    </ul>
-                </div>
-
           <div class="controls">
               <div class="control-group">
-                  <label class="control-label">Difficulty Level:</label>
+                  <label class="control-label">Max Effort Level:</label>
                   <div class="difficulty-slider-container">
                       <input type="range" min="1" max="5" value="5" class="difficulty-slider" id="difficultySlider">
-                      <span class="difficulty-display" id="difficultyDisplay">●●●●● (All levels)</span>
+                      <span class="difficulty-display" id="difficultyDisplay">●●●●● (All effort levels)</span>
                   </div>
               </div>
               <div class="control-group">
@@ -510,26 +500,26 @@
           </div>
 
           <div class="legend">
-              <h3>Difficulty Rating Guide</h3>
+              <h3>Effort Rating Guide</h3>
               <div class="legend-item">
                   <span class="legend-stars">●○○○○</span>
-                  <span>Very Easy - Anyone can start immediately</span>
+                  <span>Less than 1 hour</span>
               </div>
               <div class="legend-item">
                   <span class="legend-stars">●●○○○</span>
-                  <span>Easy - Minimal preparation required</span>
+                  <span>1 - 3 hours</span>
               </div>
               <div class="legend-item">
                   <span class="legend-stars">●●●○○</span>
-                  <span>Moderate - Some learning or experience needed</span>
+                  <span>3 - 10 hours</span>
               </div>
               <div class="legend-item">
                   <span class="legend-stars">●●●●○</span>
-                  <span>Hard - Significant expertise or commitment required</span>
+                  <span>10 - 30 hours</span>
               </div>
               <div class="legend-item">
                   <span class="legend-stars">●●●●●</span>
-                  <span>Very Hard - Professional-level dedication needed</span>
+                  <span>Over 30 hours</span>
               </div>
           </div>
 
@@ -622,11 +612,11 @@
         let originalTiles = [];
 
         const difficultyTexts = {
-            1: '●○○○○ (Very Easy)',
-            2: '●●○○○ (Easy)',
-            3: '●●●○○ (Moderate)',
-            4: '●●●●○ (Hard)',
-            5: '●●●●● (All levels)'
+            1: '●○○○○ (Less than 1 hour)',
+            2: '●●○○○ (1 - 3 hours)',
+            3: '●●●○○ (3 - 10 hours)',
+            4: '●●●●○ (10 - 30 hours)',
+            5: '●●●●● (Over 30 hours)'
         };
 
         const difficultyStars = {
@@ -650,7 +640,7 @@
             tile.innerHTML = `
                 <div class="tile-title">${data.title}</div>
                 <div class="difficulty">
-                    <span class="difficulty-label">Difficulty:</span>
+                    <span class="difficulty-label">Effort:</span>
                     <span class="stars">${difficultyStars[data.difficulty]}</span>
                 </div>
                 <div class="background">
@@ -687,13 +677,17 @@
 
             const selectedTiles = [];
             const filteredTiles = [];
+            // Delete all tiles
+            tilesGrid.innerHTML = '';
 
             // Process tiles in original order
-            originalTiles.forEach(tile => {
-                const difficulty = parseInt(tile.dataset.difficulty);
-                const backgrounds = tile.dataset.background.split(',').filter(bg => bg.length > 0);
+            tileData.forEach(tile => {
+                const difficulty = tile.difficulty;
+                const backgrounds = tile.backgrounds;
                 
                 const meetsDifficulty = difficulty <= maxDifficulty;
+                console.log({difficulty});
+                console.log({maxDifficulty});
                 
                 let meetsBackground = false;
                 if (backgrounds.length === 0) {
@@ -711,13 +705,15 @@
                 if (!technicalChecked && !policyChecked) {
                     meetsBackground = true;
                 }
+
+                const tileElement = createTileElement(tile);
                 
                 if (meetsDifficulty && meetsBackground) {
-                    tile.classList.remove('filtered');
-                    selectedTiles.push(tile);
+                    tileElement.classList.remove('filtered');
+                    selectedTiles.push(tileElement);
                 } else {
-                    tile.classList.add('filtered');
-                    filteredTiles.push(tile);
+                    tileElement.classList.add('filtered');
+                    filteredTiles.push(tileElement);
                 }
             });
 
