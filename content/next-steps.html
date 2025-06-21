@@ -496,10 +496,6 @@
               <div class="control-group">
                   <label class="control-label">Background Requirements:</label>
                   <div class="background-filters">
-                      <label class="filter-checkbox active" id="filterNone">
-                          <input type="checkbox" checked>
-                          <span>No Background</span>
-                      </label>
                       <label class="filter-checkbox active" id="filterTechnical">
                           <input type="checkbox" checked>
                           <span>Technical</span>
@@ -545,7 +541,6 @@
     <script>
         const difficultySlider = document.getElementById('difficultySlider');
         const difficultyDisplay = document.getElementById('difficultyDisplay');
-        const filterNone = document.getElementById('filterNone');
         const filterTechnical = document.getElementById('filterTechnical');
         const filterPolicy = document.getElementById('filterPolicy');
         const tilesGrid = document.getElementById('tilesGrid');
@@ -555,7 +550,7 @@
             {
                 title: "Contact Your Local Legislator",
                 difficulty: 2,
-                backgrounds: ["none"],
+                backgrounds: [],
                 icon: "🏛️"
             },
             {
@@ -567,13 +562,13 @@
             {
                 title: "Donate to AI Safety Organizations",
                 difficulty: 1,
-                backgrounds: ["none"],
+                backgrounds: [],
                 icon: "💰"
             },
             {
                 title: "Join AI Safety Community Forums",
                 difficulty: 1,
-                backgrounds: ["none"],
+                backgrounds: [],
                 icon: "💬"
             },
             {
@@ -603,7 +598,7 @@
             {
                 title: "Volunteer for AI Safety Organizations",
                 difficulty: 2,
-                backgrounds: ["none"],
+                backgrounds: [],
                 icon: "🤝"
             },
             {
@@ -647,10 +642,12 @@
         function createTileElement(data) {
             const tile = document.createElement('div');
             tile.className = 'tile';
+            tile.setAttribute('data-difficulty', data.difficulty);
+            tile.setAttribute('data-background', data.backgrounds.join(','));
 
-            const tagsHtml = data.backgrounds.map(bg => 
-                `<span class="tag ${bg}">${bg}</span>`
-            ).join('');
+            const tagsHtml = data.backgrounds.length > 0 
+                ? data.backgrounds.map(bg => `<span class="tag ${bg}">${bg}</span>`).join('')
+                : '<span class="tag none">none</span>';
 
             tile.innerHTML = `
                 <div class="tile-title">${data.title}</div>
@@ -687,11 +684,8 @@
 
         function filterTiles() {
             const maxDifficulty = parseInt(difficultySlider.value);
-            const allowedBackgrounds = [];
-            
-            if (filterNone.querySelector('input').checked) allowedBackgrounds.push('none');
-            if (filterTechnical.querySelector('input').checked) allowedBackgrounds.push('technical');
-            if (filterPolicy.querySelector('input').checked) allowedBackgrounds.push('policy');
+            const technicalChecked = filterTechnical.querySelector('input').checked;
+            const policyChecked = filterPolicy.querySelector('input').checked;
 
             const selectedTiles = [];
             const filteredTiles = [];
@@ -699,10 +693,26 @@
             // Process tiles in original order
             originalTiles.forEach(tile => {
                 const difficulty = parseInt(tile.dataset.difficulty);
-                const backgrounds = tile.dataset.background.split(',');
+                const backgrounds = tile.dataset.background.split(',').filter(bg => bg.length > 0);
                 
                 const meetsDifficulty = difficulty <= maxDifficulty;
-                const meetsBackground = backgrounds.some(bg => allowedBackgrounds.includes(bg));
+                
+                let meetsBackground = false;
+                if (backgrounds.length === 0) {
+                    // Tile has no background requirements - show if neither technical nor policy is checked, or if both are unchecked
+                    meetsBackground = !technicalChecked && !policyChecked;
+                } else {
+                    // Tile has background requirements - show if any of its backgrounds are checked
+                    meetsBackground = backgrounds.some(bg => 
+                        (bg === 'technical' && technicalChecked) || 
+                        (bg === 'policy' && policyChecked)
+                    );
+                }
+                
+                // If both filters are unchecked, show all tiles (including those with backgrounds)
+                if (!technicalChecked && !policyChecked) {
+                    meetsBackground = true;
+                }
                 
                 if (meetsDifficulty && meetsBackground) {
                     tile.classList.remove('filtered');
@@ -728,13 +738,6 @@
         difficultySlider.addEventListener('input', () => {
             updateDifficultyDisplay();
             filterTiles();
-        });
-
-        filterNone.addEventListener('click', (e) => {
-            e.preventDefault();
-            const checkbox = filterNone.querySelector('input');
-            checkbox.checked = !checkbox.checked;
-            toggleFilter(filterNone);
         });
 
         filterTechnical.addEventListener('click', (e) => {
