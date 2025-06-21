@@ -630,8 +630,6 @@
         function createTileElement(data) {
             const tile = document.createElement('div');
             tile.className = 'tile';
-            tile.setAttribute('data-difficulty', data.difficulty);
-            tile.setAttribute('data-interest', data.interests.join(','));
 
             const tagsHtml = data.interests.length > 0 
                 ? data.interests.map(bg => `<span class="tag ${bg}">${bg}</span>`).join('')
