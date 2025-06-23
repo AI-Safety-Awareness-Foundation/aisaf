@@ -502,7 +502,7 @@
                 
                 <div class="intro-section">
                     <p>
-                        If you've just attended a workshop, enjoyed the experience, and you're wondering what your next steps should be, this is the page for you! We have several different follow-up strategies for people who have attended our technical workshops, which differ based on individuals' own interests.
+                      If you've just attended a workshop, enjoyed the experience, and you're wondering what your next steps should be, or are just wondering <strong>"What can I do?"</strong> this is the page for you! We have many different suggestions based on what you're interested in and how much time you want to spend.
                     </p>
                 </div>
 
@@ -556,7 +556,7 @@
 
     <script>
         // Available interest tags
-        const availableTags = ['technical', 'policy'];
+        const availableTags = ['technical', 'policy', 'community', 'self-education'];
         
         const effortSlider = document.getElementById('effortSlider');
         const effortDisplay = document.getElementById('effortDisplay');
@@ -569,40 +569,52 @@
         // Grid tile data
         const tileData = [
             {
-                title: "Contact Your Local Legislator",
-                effort: 2,
-                interests: [],
-                icon: "🏛️"
-            },
-            {
-                title: "Read AI Safety Research Papers",
-                effort: 3,
-                interests: ["technical"],
-                icon: "📚"
-            },
-            {
-                title: "Donate to AI Safety Organizations",
+                title: "Think About What AI Future You Want",
                 effort: 1,
-                interests: [],
+                interests: ["self-education"],
                 icon: "💰"
             },
             {
-                title: "Join AI Safety Community Forums",
+                title: "Discuss AI with Your Community Groups",
                 effort: 1,
-                interests: [],
+                interests: ["community"],
+                icon: "👥"
+            },
+            {
+                title: "Contact Your Local Legislator",
+                effort: 2,
+                interests: ["community"],
+                icon: "🏛️"
+            },
+            {
+                title: "Read More About AI and AI Safety",
+                effort: 3,
+                interests: ["technical", "policy", "self-education"],
+                icon: "📚"
+            },
+            {
+                title: "Upskill Your Technical AI Safety Skills",
+                effort: 4,
+                interests: ["technical", "self-education"],
                 icon: "💬"
             },
             {
-                title: "Attend AI Safety Conferences",
-                effort: 2,
-                interests: ["technical", "policy"],
+                title: "Evaluate AI Safety Policy Proposals",
+                effort: 4,
+                interests: ["policy", "self-education"],
+                icon: "📝"
+            },
+            {
+                title: "Help Your Community Draft a Statement",
+                effort: 3,
+                interests: ["technical", "policy", "community"],
                 icon: "🎯"
             },
             {
-                title: "Write AI Safety Policy Proposals",
-                effort: 4,
-                interests: ["policy"],
-                icon: "📝"
+                title: "Write an AI Safety Companion Piece for Your Community",
+                effort: 3,
+                interests: ["community"],
+                icon: "🎥"
             },
             {
                 title: "Contribute to Open Source AI Safety Tools",
@@ -611,33 +623,21 @@
                 icon: "⚙️"
             },
             {
-                title: "Start an AI Safety Reading Group",
-                effort: 3,
-                interests: ["technical"],
-                icon: "👥"
-            },
-            {
-                title: "Volunteer for AI Safety Organizations",
+                title: "Volunteer for AI Safety Organizations (e.g. AISAP!)",
                 effort: 2,
-                interests: [],
+                interests: ["technical", "policy", "community"],
                 icon: "🤝"
             },
             {
-                title: "Pursue AI Safety Research Career",
+                title: "Pursue a Full-Time AI Safety Career",
                 effort: 5,
-                interests: ["technical"],
+                interests: ["technical", "policy", "community"],
                 icon: "🔬"
             },
             {
-                title: "Create AI Safety Educational Content",
-                effort: 3,
-                interests: ["technical"],
-                icon: "🎥"
-            },
-            {
                 title: "Organize AI Safety Workshops",
-                effort: 4,
-                interests: ["technical", "policy"],
+                effort: 3,
+                interests: ["community", "technical", "policy"],
                 icon: "🏫"
             }
         ];
