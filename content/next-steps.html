@@ -162,14 +162,24 @@
             }
         }
 
+        .instructions {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+            align-items: stretch;
+        }
+
         .controls {
+            flex: 1;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             padding: 20px;
-            margin: 0 auto 30px auto;
-            max-width: 800px;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .control-group {
@@ -188,13 +198,13 @@
             font-size: 0.95rem;
         }
 
-        .difficulty-slider-container {
+        .effort-slider-container {
             display: flex;
             align-items: center;
             gap: 15px;
         }
 
-        .difficulty-slider {
+        .effort-slider {
             flex: 1;
             -webkit-appearance: none;
             appearance: none;
@@ -204,7 +214,7 @@
             outline: none;
         }
 
-        .difficulty-slider::-webkit-slider-thumb {
+        .effort-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
             width: 20px;
@@ -215,7 +225,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
-        .difficulty-slider::-moz-range-thumb {
+        .effort-slider::-moz-range-thumb {
             width: 20px;
             height: 20px;
             border-radius: 50%;
@@ -225,7 +235,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
 
-        .difficulty-display {
+        .effort-display {
             font-weight: 600;
             color: #667eea;
             width: 220px;
@@ -348,7 +358,7 @@
             line-height: 1.3;
         }
 
-        .difficulty {
+        .effort {
             display: flex;
             align-items: center;
             margin-bottom: 8px;
@@ -356,12 +366,12 @@
             color: #555;
         }
 
-        .difficulty-label {
+        .effort-label {
             margin-right: 8px;
             font-weight: 500;
         }
 
-        .stars {
+        .effort-rating {
             color: #ffd700;
             font-size: 1.1rem;
         }
@@ -419,8 +429,13 @@
             background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             padding: 20px;
-            margin-top: 20px;
             backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .legend h3 {
@@ -437,7 +452,7 @@
             color: #555;
         }
 
-        .legend-stars {
+        .legend-effort-rating {
             color: #ffd700;
             margin-right: 10px;
             font-size: 1rem;
@@ -460,6 +475,24 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        @media (max-width: 800px) {
+            .instructions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .legend {
+                width: 100%;
+                max-width: 400px;
+                order: -1;
+                margin-bottom: 20px;
+            }
+            
+            .controls {
+                width: 100%;
+            }
+        }
     </style>
 
     <section class="page-section">
@@ -473,62 +506,64 @@
                     </p>
                 </div>
 
-          <div class="controls">
-              <div class="control-group">
-                  <label class="control-label">Max Effort Level:</label>
-                  <div class="difficulty-slider-container">
-                      <input type="range" min="1" max="5" value="5" class="difficulty-slider" id="difficultySlider">
-                      <span class="difficulty-display" id="difficultyDisplay">●●●●● (All effort levels)</span>
+                <div class="instructions">
+
+                  <div class="controls">
+                      <div class="control-group">
+                          <label class="control-label">Max Effort Level:</label>
+                          <div class="effort-slider-container">
+                              <input type="range" min="1" max="5" value="5" class="effort-slider" id="effortSlider">
+                              <span class="effort-display" id="effortDisplay">●●●●● (All effort levels)</span>
+                          </div>
+                      </div>
+                      <div class="control-group">
+                          <label class="control-label">Area of Interest:</label>
+                          <div class="interest-filters">
+                              <label class="filter-checkbox active" id="filterTechnical">
+                                  <input type="checkbox" checked>
+                                  <span>Technical</span>
+                              </label>
+                              <label class="filter-checkbox active" id="filterPolicy">
+                                  <input type="checkbox" checked>
+                                  <span>Policy</span>
+                              </label>
+                          </div>
+                      </div>
                   </div>
-              </div>
-              <div class="control-group">
-                  <label class="control-label">Area of Interest:</label>
-                  <div class="interest-filters">
-                      <label class="filter-checkbox active" id="filterTechnical">
-                          <input type="checkbox" checked>
-                          <span>Technical</span>
-                      </label>
-                      <label class="filter-checkbox active" id="filterPolicy">
-                          <input type="checkbox" checked>
-                          <span>Policy</span>
-                      </label>
+                  <div class="legend">
+                      <h3>Effort Rating Guide</h3>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●○○○○</span>
+                          <span>Less than 1 hour</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●○○○</span>
+                          <span>1 - 3 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●○○</span>
+                          <span>3 - 10 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●●○</span>
+                          <span>10 - 30 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●●●</span>
+                          <span>Over 30 hours</span>
+                      </div>
                   </div>
-              </div>
-          </div>
+                </div>
 
           <div class="grid" id="tilesGrid">
-          </div>
-
-          <div class="legend">
-              <h3>Effort Rating Guide</h3>
-              <div class="legend-item">
-                  <span class="legend-stars">●○○○○</span>
-                  <span>Less than 1 hour</span>
-              </div>
-              <div class="legend-item">
-                  <span class="legend-stars">●●○○○</span>
-                  <span>1 - 3 hours</span>
-              </div>
-              <div class="legend-item">
-                  <span class="legend-stars">●●●○○</span>
-                  <span>3 - 10 hours</span>
-              </div>
-              <div class="legend-item">
-                  <span class="legend-stars">●●●●○</span>
-                  <span>10 - 30 hours</span>
-              </div>
-              <div class="legend-item">
-                  <span class="legend-stars">●●●●●</span>
-                  <span>Over 30 hours</span>
-              </div>
           </div>
 
             </div>
         </div>
 
     <script>
-        const difficultySlider = document.getElementById('difficultySlider');
-        const difficultyDisplay = document.getElementById('difficultyDisplay');
+        const effortSlider = document.getElementById('effortSlider');
+        const effortDisplay = document.getElementById('effortDisplay');
         const filterTechnical = document.getElementById('filterTechnical');
         const filterPolicy = document.getElementById('filterPolicy');
         const tilesGrid = document.getElementById('tilesGrid');
@@ -537,73 +572,73 @@
         const tileData = [
             {
                 title: "Contact Your Local Legislator",
-                difficulty: 2,
+                effort: 2,
                 interests: [],
                 icon: "🏛️"
             },
             {
                 title: "Read AI Safety Research Papers",
-                difficulty: 3,
+                effort: 3,
                 interests: ["technical"],
                 icon: "📚"
             },
             {
                 title: "Donate to AI Safety Organizations",
-                difficulty: 1,
+                effort: 1,
                 interests: [],
                 icon: "💰"
             },
             {
                 title: "Join AI Safety Community Forums",
-                difficulty: 1,
+                effort: 1,
                 interests: [],
                 icon: "💬"
             },
             {
                 title: "Attend AI Safety Conferences",
-                difficulty: 2,
+                effort: 2,
                 interests: ["technical", "policy"],
                 icon: "🎯"
             },
             {
                 title: "Write AI Safety Policy Proposals",
-                difficulty: 4,
+                effort: 4,
                 interests: ["policy"],
                 icon: "📝"
             },
             {
                 title: "Contribute to Open Source AI Safety Tools",
-                difficulty: 4,
+                effort: 4,
                 interests: ["technical"],
                 icon: "⚙️"
             },
             {
                 title: "Start an AI Safety Reading Group",
-                difficulty: 3,
+                effort: 3,
                 interests: ["technical"],
                 icon: "👥"
             },
             {
                 title: "Volunteer for AI Safety Organizations",
-                difficulty: 2,
+                effort: 2,
                 interests: [],
                 icon: "🤝"
             },
             {
                 title: "Pursue AI Safety Research Career",
-                difficulty: 5,
+                effort: 5,
                 interests: ["technical"],
                 icon: "🔬"
             },
             {
                 title: "Create AI Safety Educational Content",
-                difficulty: 3,
+                effort: 3,
                 interests: ["technical"],
                 icon: "🎥"
             },
             {
                 title: "Organize AI Safety Workshops",
-                difficulty: 4,
+                effort: 4,
                 interests: ["technical", "policy"],
                 icon: "🏫"
             }
@@ -611,7 +646,7 @@
 
         let originalTiles = [];
 
-        const difficultyTexts = {
+        const effortTexts = {
             1: '●○○○○ (Less than 1 hour)',
             2: '●●○○○ (1 - 3 hours)',
             3: '●●●○○ (3 - 10 hours)',
@@ -619,7 +654,7 @@
             5: '●●●●● (Over 30 hours)'
         };
 
-        const difficultyStars = {
+        const effortRatings = {
             1: '●○○○○',
             2: '●●○○○',
             3: '●●●○○',
@@ -637,9 +672,9 @@
 
             tile.innerHTML = `
                 <div class="tile-title">${data.title}</div>
-                <div class="difficulty">
-                    <span class="difficulty-label">Effort:</span>
-                    <span class="stars">${difficultyStars[data.difficulty]}</span>
+                <div class="effort">
+                    <span class="effort-label">Effort:</span>
+                    <span class="effort-rating">${effortRatings[data.effort]}</span>
                 </div>
                 <div class="interest">
                     <span class="interest-label">Interest:</span>
@@ -664,12 +699,12 @@
             });
         }
 
-        function updateDifficultyDisplay() {
-            difficultyDisplay.textContent = difficultyTexts[difficultySlider.value];
+        function updateEffortDisplay() {
+            effortDisplay.textContent = effortTexts[effortSlider.value];
         }
 
         function filterTiles() {
-            const maxDifficulty = parseInt(difficultySlider.value);
+            const maxEffort = parseInt(effortSlider.value);
             const technicalChecked = filterTechnical.querySelector('input').checked;
             const policyChecked = filterPolicy.querySelector('input').checked;
 
@@ -680,12 +715,12 @@
 
             // Process tiles in original order
             tileData.forEach(tile => {
-                const difficulty = tile.difficulty;
+                const effort = tile.effort;
                 const interests = tile.interests;
                 
-                const meetsDifficulty = difficulty <= maxDifficulty;
-                console.log({difficulty});
-                console.log({maxDifficulty});
+                const meetsEffort = effort <= maxEffort;
+                console.log({effort});
+                console.log({maxEffort});
                 
                 let meetsInterest = false;
                 if (interests.length === 0) {
@@ -706,7 +741,7 @@
 
                 const tileElement = createTileElement(tile);
                 
-                if (meetsDifficulty && meetsInterest) {
+                if (meetsEffort && meetsInterest) {
                     tileElement.classList.remove('filtered');
                     selectedTiles.push(tileElement);
                 } else {
@@ -727,8 +762,8 @@
         }
 
         // Event listeners
-        difficultySlider.addEventListener('input', () => {
-            updateDifficultyDisplay();
+        effortSlider.addEventListener('input', () => {
+            updateEffortDisplay();
             filterTiles();
         });
 
@@ -748,6 +783,6 @@
 
         // Initialize
         generateTiles();
-        updateDifficultyDisplay();
+        updateEffortDisplay();
     </script>
     </section>
