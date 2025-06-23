@@ -518,15 +518,8 @@
                       </div>
                       <div class="control-group">
                           <label class="control-label">Area of Interest:</label>
-                          <div class="interest-filters">
-                              <label class="filter-checkbox active" id="filterTechnical">
-                                  <input type="checkbox" checked>
-                                  <span>Technical</span>
-                              </label>
-                              <label class="filter-checkbox active" id="filterPolicy">
-                                  <input type="checkbox" checked>
-                                  <span>Policy</span>
-                              </label>
+                          <div class="interest-filters" id="interestFilters">
+                              <!-- Dynamically populated by JavaScript -->
                           </div>
                       </div>
                   </div>
@@ -562,11 +555,16 @@
         </div>
 
     <script>
+        // Available interest tags
+        const availableTags = ['technical', 'policy'];
+        
         const effortSlider = document.getElementById('effortSlider');
         const effortDisplay = document.getElementById('effortDisplay');
-        const filterTechnical = document.getElementById('filterTechnical');
-        const filterPolicy = document.getElementById('filterPolicy');
+        const interestFilters = document.getElementById('interestFilters');
         const tilesGrid = document.getElementById('tilesGrid');
+        
+        // Store filter elements dynamically
+        const filterElements = {};
 
         // Grid tile data
         const tileData = [
@@ -699,14 +697,47 @@
             });
         }
 
+        function createFilterCheckboxes() {
+            availableTags.forEach(tag => {
+                const label = document.createElement('label');
+                label.className = 'filter-checkbox active';
+                label.id = `filter${tag.charAt(0).toUpperCase() + tag.slice(1)}`;
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = true;
+                
+                const span = document.createElement('span');
+                span.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+                
+                label.appendChild(checkbox);
+                label.appendChild(span);
+                interestFilters.appendChild(label);
+                
+                // Store reference for easy access
+                filterElements[tag] = label;
+                
+                // Add event listener
+                label.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    checkbox.checked = !checkbox.checked;
+                    toggleFilter(label);
+                });
+            });
+        }
+        
         function updateEffortDisplay() {
             effortDisplay.textContent = effortTexts[effortSlider.value];
         }
 
         function filterTiles() {
             const maxEffort = parseInt(effortSlider.value);
-            const technicalChecked = filterTechnical.querySelector('input').checked;
-            const policyChecked = filterPolicy.querySelector('input').checked;
+            
+            // Get checked state for all tags
+            const checkedTags = availableTags.filter(tag => 
+                filterElements[tag].querySelector('input').checked
+            );
+            const anyTagChecked = checkedTags.length > 0;
 
             const selectedTiles = [];
             const filteredTiles = [];
@@ -719,23 +750,18 @@
                 const interests = tile.interests;
                 
                 const meetsEffort = effort <= maxEffort;
-                console.log({effort});
-                console.log({maxEffort});
                 
                 let meetsInterest = false;
                 if (interests.length === 0) {
-                    // Tile has no interest requirements - show if neither technical nor policy is checked, or if both are unchecked
-                    meetsInterest = !technicalChecked && !policyChecked;
+                    // Tile has no interest requirements - show if no tags are checked
+                    meetsInterest = !anyTagChecked;
                 } else {
                     // Tile has interest requirements - show if any of its interests are checked
-                    meetsInterest = interests.some(bg => 
-                        (bg === 'technical' && technicalChecked) || 
-                        (bg === 'policy' && policyChecked)
-                    );
+                    meetsInterest = interests.some(interest => checkedTags.includes(interest));
                 }
                 
-                // If both filters are unchecked, show all tiles (including those with interests)
-                if (!technicalChecked && !policyChecked) {
+                // If no filters are checked, show all tiles
+                if (!anyTagChecked) {
                     meetsInterest = true;
                 }
 
@@ -767,21 +793,8 @@
             filterTiles();
         });
 
-        filterTechnical.addEventListener('click', (e) => {
-            e.preventDefault();
-            const checkbox = filterTechnical.querySelector('input');
-            checkbox.checked = !checkbox.checked;
-            toggleFilter(filterTechnical);
-        });
-
-        filterPolicy.addEventListener('click', (e) => {
-            e.preventDefault();
-            const checkbox = filterPolicy.querySelector('input');
-            checkbox.checked = !checkbox.checked;
-            toggleFilter(filterPolicy);
-        });
-
         // Initialize
+        createFilterCheckboxes();
         generateTiles();
         updateEffortDisplay();
     </script>
