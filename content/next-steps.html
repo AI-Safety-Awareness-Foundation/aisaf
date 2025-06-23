@@ -161,6 +161,347 @@
                 font-size: 2rem;
             }
         }
+
+        .instructions {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+            align-items: stretch;
+        }
+
+        .controls {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .control-label {
+            display: block;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .effort-slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .effort-slider {
+            flex: 1;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+        }
+
+        .effort-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .effort-slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .effort-display {
+            font-weight: 600;
+            color: #667eea;
+            width: 220px;
+            text-align: right;
+        }
+
+        .interest-filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-checkbox:hover {
+            background: #e9ecef;
+        }
+
+        .filter-checkbox.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .filter-checkbox input[type="checkbox"] {
+            margin: 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+        }
+
+        .tile {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Remove default anchor styling for tile links */
+        a.tile {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        a.tile:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a.tile:visited {
+            color: inherit;
+        }
+
+        a.tile:focus {
+            color: inherit;
+            outline: 2px solid #667eea;
+            outline-offset: 2px;
+        }
+
+        .tile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .tile.filtered {
+            opacity: 0.3;
+            transform: scale(0.95);
+        }
+
+        .tile.filtered:hover {
+            transform: scale(0.95);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .tile:hover::before {
+            transform: scaleX(1);
+        }
+
+        .tile:not(.filtered):hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+
+        .tile-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .effort {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .effort-label {
+            margin-right: 8px;
+            font-weight: 500;
+        }
+
+        .effort-rating {
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .interest {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .interest-label {
+            font-weight: 500;
+            color: #555;
+            margin-right: 8px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background: #e8f2ff;
+            color: #2563eb;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .tag.technical {
+            background: #fef3c7;
+            color: #d97706;
+        }
+
+        .tag.policy {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+
+        .tag.none {
+            background: #f3f4f6;
+            color: #6b7280;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
+        .legend {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .legend h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .legend-effort-rating {
+            color: #ffd700;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 900px) and (min-width: 601px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .instructions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .legend {
+                width: 100%;
+                max-width: 400px;
+                order: -1;
+                margin-bottom: 20px;
+            }
+            
+            .controls {
+                width: 100%;
+            }
+        }
     </style>
 
     <section class="page-section">
@@ -170,134 +511,312 @@
                 
                 <div class="intro-section">
                     <p>
-                        If you've just attended a workshop, enjoyed the experience, and you're wondering what your next steps should be, this is the page for you! We have several different follow-up strategies for people who have attended our technical workshops, which differ based on individuals' own interests.
+                      If you've just attended a workshop, enjoyed the experience, and you're wondering what your next steps should be, or are just wondering <strong>"What can I do?"</strong> this is the page for you! We have many different suggestions based on what you're interested in and how much time you want to spend.
                     </p>
                 </div>
 
-                <div class="quick-follow-ups">
-                    <h2>Quick Follow-ups</h2>
-                    <ul>
-                        <li>
-                            <strong>CivAI Demo Access:</strong> Want access to the CivAI demo (the LinkedIn phishing and voice cloning demo) to show to others? Go to <a href="https://civai.org/cyber-demos" class="resource-link">CivAI's site</a> and ask to get access! Feel free to mention that you were at an AI Safety Awareness Foundation workshop and saw it.
-                        </li>
-                        <li>
-                            <strong>Workshop Slides:</strong> Want to see the slides we used for the intro talk? Those are <a href="https://github.com/changlinli/intro-to-technical-ai-safety-slides/blob/master/general-intro-slides/slides.md" class="resource-link">available here</a>.
-                        </li>
-                    </ul>
+                <div class="instructions">
+
+                  <div class="controls">
+                      <div class="control-group">
+                          <label class="control-label">Max Effort Level:</label>
+                          <div class="effort-slider-container">
+                              <input type="range" min="1" max="5" value="5" class="effort-slider" id="effortSlider">
+                              <span class="effort-display" id="effortDisplay">●●●●● (All effort levels)</span>
+                          </div>
+                      </div>
+                      <div class="control-group">
+                          <label class="control-label">Area of Interest:</label>
+                          <div class="interest-filters" id="interestFilters">
+                              <!-- Dynamically populated by JavaScript -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="legend">
+                      <h3>Effort Rating Guide</h3>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●○○○○</span>
+                          <span>Less than 1 hour</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●○○○</span>
+                          <span>1 - 3 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●○○</span>
+                          <span>3 - 10 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●●○</span>
+                          <span>10 - 30 hours</span>
+                      </div>
+                      <div class="legend-item">
+                          <span class="legend-effort-rating">●●●●●</span>
+                          <span>Over 30 hours</span>
+                      </div>
+                  </div>
                 </div>
 
-                <div class="pathway-grid">
-                    <div class="future-block">
-                        <h2>Understand What AI Future You Want</h2>
-                        <p>
-                            More than anything, the point of these workshops is to give participants a chance to think deeply about what is going on with AI and what is around the corner so that they can form an opinion about what kind of future they want.
-                        </p>
-                        <p>
-                            After all, if AI is going to affect everyone, then everyone should have a voice, and the prerequisite to having a voice is having an opinion, and the prerequisite to having an opinion is knowing what's going on.
-                        </p>
-                        <p>
-                            <strong>Action:</strong> Think for an hour or so at home about what kind of AI future you want. Consider both the things that excite you as well as the things that concern you. We highly recommend writing this down—even if your opinions change over time, this exercise can be highly useful as a starting point.
-                        </p>
-                    </div>
+          <div class="grid" id="tilesGrid">
+          </div>
 
-                    <div class="future-block">
-                        <h2>Contact Your Local Legislator</h2>
-                        <p>
-                            Contacting your local legislator can sound scary, but it's actually not difficult at all! Whether it's your state legislators or your federal legislators, giving them a quick call and asking to speak with either their staff or the legislators themselves is quite easy to do.
-                        </p>
-                        <p>
-                            You don't have to come with any sort of pre-planned policy agenda. Just letting them know that AI governance and AI safety is important to you is a fantastic first step. Legislative offices keep tallies of how many constituents are calling in about particular issues, so just expressing interest in the field itself is already very useful.
-                        </p>
-                    </div>
-
-                    <div class="future-block">
-                        <h2>Join Your Local AI Safety Club</h2>
-                        <p>
-                            Connect with like-minded individuals in your area who are also interested in AI safety and governance. Local clubs provide ongoing discussion, learning opportunities, and community support for staying engaged with these important topics.
-                        </p>
-                    </div>
-
-                    <div class="future-block">
-                        <h2>On-ramping to a Career in Technical AI Safety</h2>
-                        <p>
-                            This section is for those contemplating a career shift into more technical AI safety work. If you didn't get a chance to cover all the topics you wanted to at our technical workshop, please come to another AISAF workshop! We have our workshop schedule on our website <a href="https://aisafetyawarenessfoundation.org/" class="resource-link">here</a>.
-                        </p>
-                        
-                        <div class="resource-list">
-                            <h3>Career Advice Organizations</h3>
-                            <ul>
-                                <li><a href="https://arkose.org/" class="resource-link">Arkose</a></li>
-                                <li><a href="https://80000hours.org/" class="resource-link">80,000 Hours</a></li>
-                            </ul>
-
-                            <h3>Upskilling Programs</h3>
-                            <ul>
-                                <li>
-                                    <strong><a href="https://aisafetyfundamentals.com/alignment/" class="resource-link">BlueDot Impact Alignment Course</a></strong>
-                                    <div class="program-details">12 week online course, part-time, breadth over depth</div>
-                                </li>
-                                <li>
-                                    <strong><a href="https://www.arena.education/" class="resource-link">ARENA</a></strong>
-                                    <div class="program-details">5 week program, full-time, focused on mechanistic interpretability and LLM evaluations. Quite selective and intense.</div>
-                                </li>
-                                <li>
-                                    <strong><a href="https://www.matsprogram.org/" class="resource-link">MATS</strong>
-                                    <div class="program-details">10 week program, full-time, pairing people with senior AI safety researchers. Very prestigious with high bar for entry.</div>
-                                </li>
-                                <li>
-                                    <strong><a href="https://sparai.org/" class="resource-link">SPAR</a></strong>
-                                    <div class="program-details">3 month program, usually part-time, pairing people with mentors. Often viewed as "MATS-lite".</div>
-                                </li>
-                                <li>
-                                    <strong><a href="https://www.aisafety.camp/" class="resource-link">AI Safety Camp</a></strong>
-                                    <div class="program-details">Umbrella for many individual projects, usually part-time commitment.</div>
-                                </li>
-                            </ul>
-
-                            <h3>AI Safety Organizations</h3>
-                            <ul>
-                                <li><strong><a href="https://metr.org/" class="resource-link">METR</a>:</strong> Model Evaluation and Threat Research</li>
-                                <li><strong><a href="https://www.apolloresearch.ai/" class="resource-link">Apollo Research</a>:</strong> Mechanistic interpretability and evaluations</li>
-                                <li><strong><a href="https://transformer-circuits.pub/" class="resource-link">Anthropic's AI Safety Team</a>:</strong> Technical and policy research</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="future-block">
-                        <h2>AI Policy and Governance</h2>
-                        <p>
-                            To understand more about AI policy and governance, first off we have a legislation-focused workshop that we'd be happy to see you at! For more details please see our website <a href="https://aisafetyawarenessfoundation.org" class="resource-link">here</a>.
-                        </p>
-                        
-                        <div class="resource-list">
-                            <h3>Policy Resources</h3>
-                            <ul>
-                                <li>
-                                    <strong><a href="https://aisafetyfundamentals.com/governance/" class="resource-link">Blue Dot Impact Governance Course</a></strong>
-                                    <div class="program-details">12 week online course, part-time, breadth over depth</div>
-                                </li>
-                                <li><strong><a href="https://www.centeraipolicy.org" class="resource-link">Center for AI Policy (CAIP)</a>:</strong> Non-partisan organization working directly with legislators in D.C.</li>
-                                <li><strong><a href="https://civai.org/" class="resource-link">CivAI</a>:</strong> Outreach to civic organizations (we used their demo!)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="future-block">
-                        <h2>Help Run a Workshop</h2>
-                        <p>
-                            As we continue to run more workshops in more places and for more audiences, we are always looking for volunteers to help teach materials and potentially even run workshops on their own!
-                        </p>
-                        <p>
-                            We appreciate the help, but we also have found that often teaching others is a great way to learn for oneself. This also lets you be a part of the process in deciding what materials we'll use in our workshops.
-                        </p>
-                        <p>
-                            For more information, please reach out to us directly at: <a href="mailto:info@aisafetyawarenessfoundation.org" class="contact-email">info@aisafetyawarenessfoundation.org</a>
-                        </p>
-                        <p>
-                            We can give you a rundown of what workshops we're planning over the coming weeks and months. We move quickly so new workshops are often getting scheduled weekly.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
+
+    <script>
+        // Available interest tags
+        const availableTags = ['technical', 'policy', 'community', 'self-education'];
+        
+        const effortSlider = document.getElementById('effortSlider');
+        const effortDisplay = document.getElementById('effortDisplay');
+        const interestFilters = document.getElementById('interestFilters');
+        const tilesGrid = document.getElementById('tilesGrid');
+        
+        // Store filter elements dynamically
+        const filterElements = {};
+
+        // Grid tile data
+        const tileData = [
+            {
+                title: "Think About What AI Future You Want",
+                effort: 1,
+                interests: ["self-education"],
+                icon: "🤔",
+                url: "/next-steps/think-about-ai-future"
+            },
+            {
+                title: "Discuss AI with Your Community Groups",
+                effort: 1,
+                interests: ["community"],
+                icon: "💬",
+                url: "/next-steps/discuss-with-community"
+            },
+            {
+                title: "Contact Your Local Legislator",
+                effort: 2,
+                interests: ["community"],
+                icon: "🏛️",
+                url: "/next-steps/contact-legislator"
+            },
+            {
+                title: "Read More About AI and AI Safety",
+                effort: 3,
+                interests: ["technical", "policy", "self-education"],
+                icon: "📚",
+                url: "/next-steps/read-more-ai-safety"
+            },
+            {
+                title: "Upskill Your Technical AI Safety Skills",
+                effort: 4,
+                interests: ["technical", "self-education"],
+                icon: "⚡",
+                url: "/next-steps/upskill-technical"
+            },
+            {
+                title: "Evaluate AI Safety Policy Proposals",
+                effort: 4,
+                interests: ["policy", "self-education"],
+                icon: "⚖️",
+                url: "/next-steps/evaluate-policy"
+            },
+            {
+                title: "Help Your Community Draft a Statement",
+                effort: 3,
+                interests: ["technical", "policy", "community"],
+                icon: "📝",
+                url: "/next-steps/community-statement"
+            },
+            {
+                title: "Write an AI Safety Companion Piece for Your Community",
+                effort: 3,
+                interests: ["community"],
+                icon: "✍️",
+                url: "/next-steps/write-companion-piece"
+            },
+            {
+                title: "Contribute to Open Source AI Safety Tools",
+                effort: 4,
+                interests: ["technical"],
+                icon: "⚙️",
+                url: "/next-steps/contribute-open-source"
+            },
+            {
+                title: "Volunteer for AI Safety Organizations (e.g. AISAP!)",
+                effort: 2,
+                interests: ["technical", "policy", "community"],
+                icon: "🤝",
+                url: "/next-steps/volunteer-organizations"
+            },
+            {
+                title: "Pursue a Full-Time AI Safety Career",
+                effort: 5,
+                interests: ["technical", "policy", "community"],
+                icon: "🚀",
+                url: "/next-steps/ai-safety-career"
+            },
+            {
+                title: "Organize AI Safety Workshops",
+                effort: 3,
+                interests: ["community", "technical", "policy"],
+                icon: "🎓",
+                url: "/next-steps/organize-workshops"
+            }
+        ];
+
+        let originalTiles = [];
+
+        const effortTexts = {
+            1: '●○○○○ (Less than 1 hour)',
+            2: '●●○○○ (1 - 3 hours)',
+            3: '●●●○○ (3 - 10 hours)',
+            4: '●●●●○ (10 - 30 hours)',
+            5: '●●●●● (Over 30 hours)'
+        };
+
+        const effortRatings = {
+            1: '●○○○○',
+            2: '●●○○○',
+            3: '●●●○○',
+            4: '●●●●○',
+            5: '●●●●●'
+        };
+
+        function createTileElement(data) {
+            const tagsHtml = data.interests.length > 0 
+                ? data.interests.map(bg => `<span class="tag ${bg}">${bg}</span>`).join('')
+                : '<span class="tag none">none</span>';
+
+            // Create tile as anchor tag if URL is provided, otherwise as div
+            const tile = document.createElement(data.url ? 'a' : 'div');
+            tile.className = 'tile';
+            
+            if (data.url) {
+                tile.href = data.url;
+            }
+
+            tile.innerHTML = `
+                <div class="tile-title">${data.title}</div>
+                <div class="effort">
+                    <span class="effort-label">Effort:</span>
+                    <span class="effort-rating">${effortRatings[data.effort]}</span>
+                </div>
+                <div class="interest">
+                    <span class="interest-label">Interest:</span>
+                    <div class="tags">
+                        ${tagsHtml}
+                    </div>
+                </div>
+                <div class="icon">${data.icon}</div>
+            `;
+
+            return tile;
+        }
+
+        function generateTiles() {
+            tilesGrid.innerHTML = '';
+            originalTiles = [];
+            
+            tileData.forEach(data => {
+                const tile = createTileElement(data);
+                tilesGrid.appendChild(tile);
+                originalTiles.push(tile);
+            });
+        }
+
+        function createFilterCheckboxes() {
+            availableTags.forEach(tag => {
+                const label = document.createElement('label');
+                label.className = 'filter-checkbox active';
+                label.id = `filter${tag.charAt(0).toUpperCase() + tag.slice(1)}`;
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = true;
+                
+                const span = document.createElement('span');
+                span.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+                
+                label.appendChild(checkbox);
+                label.appendChild(span);
+                interestFilters.appendChild(label);
+                
+                // Store reference for easy access
+                filterElements[tag] = label;
+                
+                // Add event listener
+                label.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    checkbox.checked = !checkbox.checked;
+                    toggleFilter(label);
+                });
+            });
+        }
+        
+        function updateEffortDisplay() {
+            effortDisplay.textContent = effortTexts[effortSlider.value];
+        }
+
+        function filterTiles() {
+            const maxEffort = parseInt(effortSlider.value);
+            
+            // Get checked state for all tags
+            const checkedTags = availableTags.filter(tag => 
+                filterElements[tag].querySelector('input').checked
+            );
+            const anyTagChecked = checkedTags.length > 0;
+
+            const selectedTiles = [];
+            const filteredTiles = [];
+            // Delete all tiles
+            tilesGrid.innerHTML = '';
+
+            // Process tiles in original order
+            tileData.forEach(tile => {
+                const effort = tile.effort;
+                const interests = tile.interests;
+                
+                const meetsEffort = effort <= maxEffort;
+                
+                let meetsInterest = false;
+                if (interests.length === 0) {
+                    // Tile has no interest requirements - show if any tags are checked
+                    meetsInterest = anyTagChecked;
+                } else {
+                    // Tile has interest requirements - show if any of its interests are checked
+                    meetsInterest = interests.some(interest => checkedTags.includes(interest));
+                }
+
+                const tileElement = createTileElement(tile);
+                
+                if (meetsEffort && meetsInterest) {
+                    tileElement.classList.remove('filtered');
+                    selectedTiles.push(tileElement);
+                } else {
+                    tileElement.classList.add('filtered');
+                    filteredTiles.push(tileElement);
+                }
+            });
+
+            // Reorder tiles: selected first (in original order), then filtered (in original order)
+            selectedTiles.forEach(tile => tilesGrid.appendChild(tile));
+            filteredTiles.forEach(tile => tilesGrid.appendChild(tile));
+        }
+
+        function toggleFilter(filterElement) {
+            const checkbox = filterElement.querySelector('input');
+            filterElement.classList.toggle('active', checkbox.checked);
+            filterTiles();
+        }
+
+        // Event listeners
+        effortSlider.addEventListener('input', () => {
+            updateEffortDisplay();
+            filterTiles();
+        });
+
+        // Initialize
+        createFilterCheckboxes();
+        generateTiles();
+        updateEffortDisplay();
+    </script>
     </section>
