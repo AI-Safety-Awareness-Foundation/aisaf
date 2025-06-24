@@ -17,6 +17,7 @@ We'll cover the details of what the RAISE Act aims to do, and read some of the a
 
 RSVP:
 
++ [Eventbrite](https://www.eventbrite.com/e/understanding-ai-regulation-new-yorks-raise-act-tickets-1431753676789?aff=oddtdtcreator)
 + [Meetup](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/308620420/)
 + [Luma](https://lu.ma/9tk9qiw4)
 + [Facebook](https://www.facebook.com/share/1H8HvRZywy/)
