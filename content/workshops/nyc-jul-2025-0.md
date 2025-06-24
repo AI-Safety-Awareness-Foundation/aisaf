@@ -1,9 +1,9 @@
 ---
-title: AI Legislation Spotlight - Looking over the RAISE Act in detail
-workshopdate: July 2nd, 2025, 6 p.m. - 8 p.m. EST (subject to change)
-workshoplocation: TBD
+title: Understanding AI Regulation: New York's RAISE Act
+workshopdate: July 9th, 2025, 6 p.m. - 8 p.m. EST
+workshoplocation: Fabrik NYC (12-16 Vestry St 4th Floor, New York, NY 10013)
 temporalstatus: future
-detailstobedetermined: true
+detailstobedetermined: false
 listindex: 7
 ---
 
@@ -11,8 +11,12 @@ Heard about AI and curious about what AI regulation and governance might look li
 
 We'll be talking about AI safety legislation and specifically focusing on the RAISE Act, which just passed the New York State Legislature and is now awaiting signature by Governor Hochul.
 
-This workshop is meant for people of all backgrounds and levels of familiarity both with AI and the legislative process. Please come join us even if you know little about AI or the legislative process! The point of this workshop is to familiarize attendees with what kinds of AI regulation is currently being discussed and why it's important.
+This workshop is meant for people of all backgrounds and levels of familiarity both with AI and the legislative process. Please come join us even if you know little about AI or the legislative process!
 
 We'll cover the details of what the RAISE Act aims to do, and read some of the arguments marshalled by both those for and against the bill. We'll also split into breakup groups to give you an opportunity to share your opinions about the bill.
 
-(Venue and signup information will be announced shortly.)
+RSVP:
+
++ [Meetup](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/308620420/)
++ [Luma](https://lu.ma/9tk9qiw4)
++ [Facebook](https://www.facebook.com/share/1H8HvRZywy/)
