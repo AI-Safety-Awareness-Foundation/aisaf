@@ -1,5 +1,5 @@
 ---
-title: Understanding AI Regulation: New York's RAISE Act
+title: Understanding AI Regulation -- New York's RAISE Act
 workshopdate: July 9th, 2025, 6 p.m. - 8 p.m. EST
 workshoplocation: Fabrik NYC (12-16 Vestry St 4th Floor, New York, NY 10013)
 temporalstatus: future
