@@ -2,9 +2,9 @@
 title: Introduction to AI Evals | San Francisco 
 workshopdate: June 11th, 2025 4:00 p.m. - 6:00 p.m. PT
 workshoplocation: USF Campus, 2130 Fulton Street, McLaren 200, San Francisco CA 94117 Room MC 251
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 3
+listindex: 44
 ---
 Join our interactive AI Evaluations Workshop to learn practical skills in evaluating large language models (LLMs) and AI agents! 
 
