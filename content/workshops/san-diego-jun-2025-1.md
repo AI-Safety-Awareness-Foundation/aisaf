@@ -2,9 +2,9 @@
 title: AI and the Intelligence Explosion | San Diego
 workshopdate: June 24th, 2025 5:30 p.m. - 7:30 p.m. PST
 workshoplocation: La Jolla/Riford Library 7555 Draper Ave. La Jolla, CA 92037
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 7
+listindex: 45
 ---
 This free, non-technical workshop is open to anyone who’s ever wondered where artificial intelligence might ultimately lead and wants to explore the topic in a relaxed, fun, and interactive setting.
 
