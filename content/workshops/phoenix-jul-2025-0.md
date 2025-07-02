@@ -2,9 +2,9 @@
 title: AI and the Intelligence Explosion | Phoenix
 workshopdate: July 1st, 2025, 4:00pm - 6:00pm MST
 workshoplocation: Meeting Room A, Burton Barr Central Library
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 6
+listindex: 46
 ---
 This free, non-technical workshop is open to anyone who’s ever wondered where artificial intelligence might ultimately lead and wants to explore the topic in a relaxed, fun, and interactive setting.
 
