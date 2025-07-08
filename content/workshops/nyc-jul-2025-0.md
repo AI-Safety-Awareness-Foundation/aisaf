@@ -15,7 +15,7 @@ This workshop is meant for people of all backgrounds and levels of familiarity b
 
 We'll cover the details of what the RAISE Act aims to do, and read some of the arguments marshalled by both those for and against the bill. We'll also split into breakup groups to give you an opportunity to share your opinions about the bill.
 
-NOTE: Because we received so many RSVPs, our venue has reached capacity. We are now waitlisting all additional registrants. If you initially RSVP'ed but now are not planning on coming, then please update your RSVP so that others can come off the waitlist.
+NOTE: Because we received so many RSVPs for this event, our venue has reached capacity. We are now waitlisting all additional registrants. If you initially RSVP'ed but now are not planning on coming, then please update your RSVP so that others can come off the waitlist.
 
 + [Eventbrite](https://www.eventbrite.com/e/understanding-ai-regulation-new-yorks-raise-act-tickets-1431753676789?aff=oddtdtcreator)
 + [Meetup](https://www.meetup.com/ai-safety-awareness-group-new-york-city/events/308620420/)
