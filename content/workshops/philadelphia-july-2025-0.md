@@ -3,7 +3,7 @@ title: Understanding Agentic AI
 workshopdate: July 19th, 2025, 6 p.m. - 8:30 p.m. EST
 workshoplocation: TBD Philadelphia Area
 temporalstatus: future
-detailstobedetermined: true
+detailstobedetermined: false
 listindex: 4
 ---
 
