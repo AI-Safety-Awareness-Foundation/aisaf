@@ -11,6 +11,4 @@ Join our "Latest News in AI Safety" discussion group to catch up on recent resea
 
 Everyone's welcome, whether you follow these topics closely or are just curious—bring your questions and thoughts!
 
-**Facilitator:** Noah Wilson (open to others joining)
-
-**Duration:** 1.5 hours
+**Registration:** [Sign up on Luma](https://lu.ma/9qaxhk5i)
