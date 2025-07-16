@@ -1,7 +1,7 @@
 ---
 title: Understanding Agentic AI
-workshopdate: July 19th, 2025, 6 p.m. - 8:30 p.m. EST
-workshoplocation: TBD Philadelphia Area
+workshopdate: July 26th, 2025, 2:30 p.m. - 4:30 p.m. EST
+workshoplocation: South Philadelphia Library (1700 S Broad St, Philadelphia, PA 19145)
 temporalstatus: future
 detailstobedetermined: false
 listindex: 4
@@ -13,4 +13,4 @@ We’ll start with a plain-language primer on what Generative AI and Agentic AI 
 
 Expect live demos of agents booking travel, writing code, and coordinating multi-step tasks, followed by guided coding labs where you’ll customize and launch your own mini-agent. Python fluency helps, but enthusiasm and a laptop are the real prerequisites. Bring question and curiosity; leave with new skills and a clearer sense of where AI is heading. Everyone’s welcome, and—as always—there’s no cost to attend.
 
-[​Please RSVP on Luma to help us estimate attendance](https://lu.ma/xng4xtu6)
+[​Please RSVP on Luma if you're planning to attend!](https://lu.ma/xng4xtu6)
