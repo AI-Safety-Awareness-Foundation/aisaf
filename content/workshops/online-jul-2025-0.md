@@ -2,7 +2,7 @@
 title: Vanilla Mechanistic Interpretability
 workshopdate: July 19th, 2025, 1 p.m. - 4 p.m. Pacific Time
 workshoplocation: Remote (meet.google.com/hgm-iqfm-uik)
-temporalstatus: past
+temporalstatus: future
 detailstobedetermined: false
 listindex: 3
 ---
