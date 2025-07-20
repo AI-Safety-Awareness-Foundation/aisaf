@@ -2,9 +2,9 @@
 title: Vanilla Mechanistic Interpretability
 workshopdate: July 19th, 2025, 1 p.m. - 4 p.m. Pacific Time
 workshoplocation: Remote (meet.google.com/hgm-iqfm-uik)
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 3
+listindex: 49
 ---
 
 Ever wonder how neural nets actually do some of their computation? Wanted to
