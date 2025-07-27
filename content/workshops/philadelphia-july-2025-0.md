@@ -2,9 +2,9 @@
 title: Understanding Agentic AI
 workshopdate: July 26th, 2025, 2:30 p.m. - 4:30 p.m. EST
 workshoplocation: South Philadelphia Library (1700 S Broad St, Philadelphia, PA 19145)
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 4
+listindex: 51
 ---
 
 In this free, hands-on workshop we’ll trace the fast-moving arc from classic machine-learning models to today’s autonomous “agents” that plan, reason, and act on our behalf.
