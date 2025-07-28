@@ -2,9 +2,9 @@
 title: AI Safety Virtual Book Club - The Alignment Problem - Pt. 3
 workshopdate: July 27th, 2025, 10:30 a.m. - 11:30 a.m. PT
 workshoplocation: Virtual
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 1
+listindex: 52
 ---
 
 This event is for people who: a) would like to get into AI Safety and b) like reading :)
