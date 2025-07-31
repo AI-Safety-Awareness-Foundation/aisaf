@@ -2,9 +2,9 @@
 title: AI and the Intelligence Explosion
 workshopdate: July 30th, 6:00 p.m. - 7:30 p.m. Pacific
 workshoplocation: Oakland Public Library, Rockridge Branch
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 50
+listindex: 54
 ---
 
 This is a free workshop open to all! Registration with Oakland Library is REQUIRED for this event: [https://oaklandlibrary.bibliocommons.com/events/6850700f6d83b22800d35cd3](https://oaklandlibrary.bibliocommons.com/events/6850700f6d83b22800d35cd3)

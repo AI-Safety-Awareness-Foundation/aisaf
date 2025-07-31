@@ -2,9 +2,9 @@
 title: AI Safety Meet-Up NYC
 workshopdate: July 30th, 2025, 6 p.m. - 9 p.m. EST
 workshoplocation: Fabrik DUMBO (20 Jay St Suite 218, Brooklyn, NY 11201)
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 4
+listindex: 53
 ---
 
 ​Join us for a community event in New York City!
