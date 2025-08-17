@@ -2,7 +2,7 @@
 title: "Intro to Mechanistic Interpretability: Understanding how a neural net analyzes images on a per-neuron basis"
 workshopdate: Aug 16th, 2025, 1:30 p.m. - 3:30 p.m. Pacific Time
 workshoplocation: Remote (https://meet.google.com/jdh-kvsq-juo)
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 ---
 
