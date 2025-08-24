@@ -2,9 +2,9 @@
 title: AI Policy Review of NYs RAISE Act | Honolulu
 workshopdate: August 23rd, 12 p.m. - 2 p.m. Hawaii
 workshoplocation: Entrepreneurs Sandbox, 643 Ilalo St, Honolulu, HI 96813
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 61
+listindex: 56
 ---
 
 Join us for an in-depth discussion on New York's RAISE AI Act, a groundbreaking legislative effort aimed at regulating the use of artificial intelligence.
