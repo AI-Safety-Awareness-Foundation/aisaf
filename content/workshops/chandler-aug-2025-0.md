@@ -2,9 +2,9 @@
 title: Where is AI in 2025 and Where is it Going? | Chandler AZ
 workshopdate: August 25th, 5:30 p.m. - 7 p.m. Mountain
 workshoplocation: Chandler Public Library - Downtown, 22 S Delaware St, Chandler, AZ 85225
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 60
+listindex: 58
 ---
 
 This is a free workshop open to the public for all levels of experience with AI.
