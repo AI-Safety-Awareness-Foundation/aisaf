@@ -2,9 +2,9 @@
 title: Where is AI in 2025 and Where is it Going | Burlington
 workshopdate: August 26th, 2025 5:00 p.m. - 7:30 p.m. EST
 workshoplocation: Fletcher Free Library (Pickering Room), 235 College St, Burlington, VT 05401
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 2
+listindex: 59
 ---
 This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, with a focus on how much has changed in the last 8 months, as well as where AI is going over the next 1-5 years.
 
