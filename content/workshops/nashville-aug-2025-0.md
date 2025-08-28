@@ -2,9 +2,9 @@
 title: Where is AI in 2025 and Where is it Going | Nashville
 workshopdate: August 27th, 2025 3:00 p.m. - 5:00 p.m. CST
 workshoplocation: Nashville Public Library North Branch, 1001 Monroe St, Nashville, TN 37208
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
-listindex: 3
+listindex: 60
 ---
 This is a free workshop open to the public for all levels of experience with AI. We’ll give a quick overview of the current state of AI capabilities, with a focus on how much has changed in the last 8 months, as well as where AI is going over the next 1-5 years.
 
