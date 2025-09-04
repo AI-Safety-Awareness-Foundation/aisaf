@@ -14,7 +14,7 @@
     <header>
         <div class="container">
             <h1><span class="blue-text">Superhuman AI</span> might be coming soon.<br>And we aren't ready.</h1>
-            <p>The AI Safety Awareness Project is a volunteer organization dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help.</p>
+              <p>The AI Safety Awareness Project is a 501(c)(3) nonprofit dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help.</p>
 	    <script type="text/javascript" defer src="//app.sgwidget.com/js/sg-widget-v2.js"></script>
             <style>.sendgrid-subscription-widget input { padding: .5em .5em .55em; font-size: .8em; font-family: sans-serif } .sendgrid-subscription-widget .sg_signup_first_name, .sendgrid-subscription-widget .sg_signup_last_name { margin-right: .5em } .sendgrid-subscription-widget .sendgrid-subscription-widget .sendgrid-subscription-widget .response { display: none; font-family: sans-serif; font-size: .8em } .sendgrid-subscription-widget .success { color: #99FF99; margin: 10px; } .sendgrid-subscription-widget .error, .sendgrid-subscription-widget .sg-consent-text a { color: #FF9999; margin: 10px; } .sendgrid-subscription-widget .sg-consent-text { font-size: .9em } .sendgrid-subscription-widget .sg-consent-text label { font-weight: 400 } .sendgrid-subscription-widget .required { outline: 1px solid #f00; } .sendgrid-subscription-widget .sg_custom { margin-left: 5px; } .sendgrid-subscription-widget .checkbox_label { padding-left: 3px; } </style>
              <div class="sendgrid-subscription-widget widget-3007" data-emailerror="Please enter a valid email address" data-nameerror="Please enter your name" data-checkboxerror="Please tick the box to accept our conditions">
@@ -76,28 +76,19 @@
 
             <div class="upcoming-workshops">
                 <h3><i class="fas fa-calendar"></i>Upcoming Workshops</h3>
-
-                {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
-                {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "asc" }}
-                {{ range $sortedFutureWorkshops }}
-                  <div class="workshop-item">
-                    <div class="workshop-info">
-                      <h4>{{ .Title }}</h4>
-                      <p>{{ .Params.workshopdate }}</p>
-                      <p>{{ .Params.workshoplocation }}</p>
-                    </div>
-                    {{ if ne .Params.detailstobedetermined true }}
-                      <a href="{{ .RelPermalink }}" class="btn btn-register">Click here for details</a>
-                    {{ else }}
-                      <div class="details-text">Details coming soon</div>
-                    {{ end }}
-                  </div>
-                {{ end }}
-
-                <h3><i class="fas fa-bell"></i>Future Workshops</h3>
                 <div class="workshop-item">
                     <div class="workshop-info">
-                        <p>Get notified about new workshops and other events: </p>
+                        <p>Look at our calendar of future workshops and other events: </p>
+                    </div>
+                    <div class="button-group">
+                        <a href="https://luma.com/calendar/manage/cal-wh9UuDcw3cszNr8" class="btn btn-secondary">Go to Our Luma.com Calendar</a>
+                    </div>
+                </div>
+
+                <h3><i class="fas fa-bell"></i>Sign Up for Our Mailing List</h3>
+                <div class="workshop-item">
+                    <div class="workshop-info">
+                        <p>Get notified about new developments: </p>
                     </div>
                     <div class="button-group">
                         <a href="/signup-for-mailing-list/" class="btn btn-secondary">Express Interest</a>
