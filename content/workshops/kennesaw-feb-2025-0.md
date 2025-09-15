@@ -34,12 +34,12 @@ learning and its role in modern AI.
 constructed and trained a basic neural net before with some sort of autograd
 library such as PyTorch.* If you are familiar with Python but have not
 previously trained a basic neural net, please reach out to us at
-info@aisafetyawarenessfoundation.org and we're happy to see if there's
+info@aisafetyawarenessproject.org and we're happy to see if there's
 potentially some sort of introduction materials we could have you review
 beforehand.
 
 NOTE: If you have already attended a previous AISAF workshop, please message us
-at info@aisafetyawarenessfoundation.org. It may make sense for you to skip the
+at info@aisafetyawarenessproject.org. It may make sense for you to skip the
 first section of the workshop.
 
 If you're planning to attend please RSVP through at least one of the following platforms:

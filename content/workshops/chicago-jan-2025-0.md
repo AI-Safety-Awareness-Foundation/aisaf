@@ -8,7 +8,7 @@ listindex: 10
 ---
 
 **Physical Location Info:** We will be on the 5th floor in the south study room.
-If you're having trouble finding us please email info@aisafetyawarenessfoundation.org
+If you're having trouble finding us please email info@aisafetyawarenessproject.org
 
 **Remote Videoconference Info**: [https://meet.google.com/pfi-anhy-rvo](https://meet.google.com/pfi-anhy-rvo)
 
@@ -37,7 +37,7 @@ learning and its role in modern AI.
 constructed and trained a basic neural net before with some sort of autograd
 library such as PyTorch.* If you are familiar with Python but have not
 previously trained a basic neural net, please reach out to us at
-info@aisafetyawarenessfoundation.org and we're happy to see if there's
+info@aisafetyawarenessproject.org and we're happy to see if there's
 potentially some sort of introduction materials we could have you review
 beforehand.
 

@@ -80,7 +80,7 @@ def get_access_token(client_id, client_secret):
         f"https://secure.meetup.com/oauth2/authorize"
         f"?client_id={client_id}"
         f"&response_type=code"
-        f"&redirect_uri=https://aisafetyawarenessfoundation.org"
+        f"&redirect_uri=https://aisafetyawarenessproject.org"
     )
     
     webbrowser.open(auth_url)
@@ -100,7 +100,7 @@ def get_access_token(client_id, client_secret):
         "client_id": client_id,
         "client_secret": client_secret,
         "grant_type": "authorization_code",
-        "redirect_uri": "https://aisafetyawarenessfoundation.org",
+        "redirect_uri": "https://aisafetyawarenessproject.org",
         "code": code
     }
     

@@ -78,7 +78,7 @@ class OAuthCallbackHandler(BaseHTTPRequestHandler):
         self.wfile.write(response.encode())
 
 
-def get_meetup_oauth_token(client_id, client_secret, redirect_uri="https://aisafetyawarenessfoundation.org"):
+def get_meetup_oauth_token(client_id, client_secret, redirect_uri="https://aisafetyawarenessproject.org"):
     """
     Get an OAuth2 token from Meetup.com using the authorization code flow.
     
