@@ -2,7 +2,7 @@
 title: "AI Safety Workshop - UW Dawg Daze"
 workshopdate: September 24th, 2025, 4:00 p.m. - 5:45 p.m. Pacific Time
 workshoplocation: UW Campus, Paccar Hall room 393
-temporalstatus: future
+temporalstatus: past
 detailstobedetermined: false
 ---
 
