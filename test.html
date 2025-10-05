@@ -17,9 +17,10 @@
         }
 
         .pillars-grid {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
         }
 
         .pillar-card {
@@ -85,58 +86,44 @@
             color: #4b5563;
         }
 
-         
-        .upcoming-workshops {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .heritage-section-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
         }
 
-        .upcoming-workshops > h3 {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+        .heritage-card {
+            padding: 0;
+            text-align: left;
+        }
+
+        .heritage-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
             color: #1f2937;
-        }
-
-        .upcoming-workshops > h3 i {
-            color: #2563eb;
-        }
-
-        .workshop-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .workshop-item:hover {
-            background: #f8fafc;
-        }
-
-        .workshop-info h4 {
-            font-size: 1.125rem;
             margin-bottom: 0.5rem;
-            color: #1f2937;
+            font-family: sans-serif;
         }
 
-        .workshop-info p {
+        .heritage-card p {
             color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
             margin-bottom: 0.5rem;
         }
 
-        .workshop-info a {
+        .heritage-btn {
             color: #2563eb;
             text-decoration: underline;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
         }
 
-        .workshop-info a:hover {
+        .heritage-btn:hover {
             color: #1d4ed8;
         }
 
@@ -177,17 +164,15 @@
 
         @media (max-width: 768px) {
             .pillars-grid {
-                flex-direction: column;
+                grid-template-columns: 1fr;
             }
 
             .workshop-types {
                 flex-direction: column;
             }
 
-            .workshop-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+            .heritage-section-grid {
+                grid-template-columns: 1fr;
             }
 
             .button-group {
@@ -262,6 +247,19 @@
 
         .section-row-description:nth-child(even) .row-description-image {
             margin-left: -140px;
+        }
+
+        .short-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .short-description p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
         }
 
         .text-box {
@@ -383,27 +381,33 @@
         </div>
     </header>
 
-    <section class="pillars">
-        <div class="container">
+    <section class="pillars pillars-grid">
+        <div class="container short-description">
             <div class="section-title">
                 <h2>Be a Part of the Conversation on AI</h2>
             </div>
-            <p>The AI Safety Awareness Project serves as a holds trainings for a variety of community groups and public institutions including law enforcement agencies, libraries, churches, universities, as well as the general public.</p>
-            <div class="pillars-grid">
-                <div class="pillar-card">
-                    <h3>Awareness</h3>
-                    <p>For the general public to understand risks and benefits of frontier AI research</p>
+            <p>We firmly believe that a safe AI future is one where the traditional pillars of U.S. society have a seat at the table in deciding the direction of AI. We want to be there for the first step: education and skills-building, so that Americans have the necessary expertise and awareness to direct our AI future.</p>
+            <p>We run workshops and education programs for a variety of community groups and public institutions including law enforcement agencies, libraries, churches, universities, as well as the general public.</p>
+        </div>
+            <div class="heritage-section-grid">
+                <div class="heritage-card">
+                    <h3>UPCOMING WORKSHOPS</h3>
+                    <p>Look at our calendar of future workshops and other events</p>
+                    <a href="https://luma.com/aisap" class="heritage-btn">View Calendar</a>
                 </div>
-                <div class="pillar-card">
-                    <h3>Skills</h3>
-                    <p>To participate in modern AI discussion and development</p>
+
+                <div class="heritage-card">
+                    <h3>SIGN UP FOR OUR MAILING LIST</h3>
+                    <p>Get notified about new developments</p>
+                    <a href="/signup-for-mailing-list/" class="heritage-btn">Express Interest</a>
                 </div>
-                <div class="pillar-card">
-                    <h3>Prediction</h3>
-                    <p>Understanding what AI developments might be coming before they arrive</p>
+
+                <div class="heritage-card">
+                    <h3>PAST WORKSHOPS</h3>
+                    <p>Check out previous workshops</p>
+                    <a href="/workshops/" class="heritage-btn">View Past Workshops</a>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="section-row-description">
@@ -414,16 +418,16 @@
             <h2>Situational Awareness</h2>
             <p>We partner with industry experts to inform organizations about frontier AI research and developments. This includes topics as diverse as workforce augmentation and displacement, AI agents and companions, cybercrime, AGI (Artificial General Intelligence), and loss of control risk.</p>
             <p>Whether you're concerned or excited about these topics, we strongly believe organizations need to have situational awareness of what's going on to have a seat at the table in deciding our AI future.</p>
-            <a href="#" class="btn">Browse Collection</a>
+            <a href="#" class="btn">Learn More</a>
         </div>
     </section>
 
-    <section class="section-row-description dark">
+    <section class="section-row-description dark pillars-grid">
         <div class="text-box">
             <h2>Hands-On Skills</h2>
             <p>We have a variety of AI safety seminars and workshops aimed at individuals and organizations of all different levels of AI sophistication.</p>
             <p>Maybe you're someone who has no experience with AI, are already an AI researcher yourself, or don't even want to use AI. No matter what, we want you walking out of a session with the knowledge and confidence to help guide your community on how you should or shouldn't use AI.</p>
-            <a href="#" class="btn">Browse Collection</a>
+            <a href="#" class="btn">Learn More</a>
         </div>
         <div class="image-box">
             <img class="row-description-image" src="/pillars-background.jpg"/>
@@ -438,7 +442,7 @@
             <h2>Proactive Decision Making</h2>
             <p>Having a voice in shaping our AI future fundamentally requires a proactive stance towards understanding AI. We equip organizations to understand not just where AI is today, but where it's going over the next few years.</p>
             <p>We help organizations build internal expertise and capacity to have an independent view on how AI might evolve, and how to anticipate its future developments</p>
-            <a href="#" class="btn">Browse Collection</a>
+            <a href="#" class="btn">Learn More</a>
         </div>
     </section>
 
@@ -447,56 +451,8 @@
             <div class="section-title">
                 <h2>Our Workshop Programs</h2>
             </div>
+            <p>We'd love to hear from you!</p>
 
-            <div class="workshop-types">
-                <div class="workshop-card">
-                    <h3><i class="fas fa-chart-line"></i> AI Safety Forecasting</h3>
-                    <p>An introductory workshop exploring AI development timelines and their implications for safety</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-scale-balanced"></i> AI Legislation Deep Dive</h3>
-                    <p>Analyze real AI safety legislation, review their pros and cons, and understand the importance of balanced regulatory approaches</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-microchip"></i> Malicious Agents</h3>
-                    <p>Hands-on technical workshop exploring how reinforcement learning agents can develop unexpected behaviors</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-magnifying-glass"></i> LLM Interpretability</h3>
-                    <p>Advanced technical workshop on understanding large language model behavior through mechanistic interpretability</p>
-                </div>
-            </div>
-
-            <div class="upcoming-workshops">
-                <h3><i class="fas fa-calendar"></i>Upcoming Workshops</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Look at our calendar of future workshops and other events: </p>
-                    </div>
-                    <div class="button-group">
-                        <a href="https://luma.com/aisap" class="btn btn-secondary">Go to Our Luma.com Calendar</a>
-                    </div>
-                </div>
-
-                <h3><i class="fas fa-bell"></i>Sign Up for Our Mailing List</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Get notified about new developments: </p>
-                    </div>
-                    <div class="button-group">
-                        <a href="/signup-for-mailing-list/" class="btn btn-secondary">Express Interest</a>
-                    </div>
-                </div>
-                <h3><i class="fas fa-history"></i>Past Workshops</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Check out previous workshops</p>
-                    </div>
-                    <div class="button-group">
-                        <a href="/workshops/" class="btn btn-secondary">View Past Workshops</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
