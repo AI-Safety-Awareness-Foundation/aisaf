@@ -18,7 +18,7 @@
 
         .pillars-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 3fr 2fr;
             gap: 3rem;
             align-items: start;
         }
@@ -87,35 +87,34 @@
         }
 
 
-        .heritage-section-grid {
+        .quick-links-grid {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            margin-top: 2rem;
+            margin: 2rem;
         }
 
-        .heritage-card {
+        .quick-link-item {
             padding: 0;
             text-align: left;
         }
 
-        .heritage-card h3 {
+        .quick-link-item h3 {
             font-size: 1.1rem;
             font-weight: 700;
             letter-spacing: 0.05em;
             color: #1f2937;
             margin-bottom: 0.5rem;
-            font-family: sans-serif;
         }
 
-        .heritage-card p {
+        .quick-link-item p {
             color: #4b5563;
             font-size: 0.95rem;
             line-height: 1.6;
             margin-bottom: 0.5rem;
         }
 
-        .heritage-btn {
+        .quick-link {
             color: #2563eb;
             text-decoration: underline;
             font-size: 0.95rem;
@@ -123,11 +122,38 @@
             transition: color 0.3s ease;
         }
 
-        .heritage-btn:hover {
+        .quick-link:hover {
             color: #1d4ed8;
         }
 
-         
+        .next-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .next-step-item {
+            padding: 0;
+            text-align: left;
+        }
+
+        .next-step-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .next-step-item p {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+
         .workshop-tag {
             display: inline-block;
             padding: 0.25rem 0.75rem;
@@ -171,7 +197,11 @@
                 flex-direction: column;
             }
 
-            .heritage-section-grid {
+            .quick-links-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .next-steps-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -389,23 +419,23 @@
             <p>We firmly believe that a safe AI future is one where the traditional pillars of U.S. society have a seat at the table in deciding the direction of AI. We want to be there for the first step: education and skills-building, so that Americans have the necessary expertise and awareness to direct our AI future.</p>
             <p>We run workshops and education programs for a variety of community groups and public institutions including law enforcement agencies, libraries, churches, universities, as well as the general public.</p>
         </div>
-            <div class="heritage-section-grid">
-                <div class="heritage-card">
+            <div class="quick-links-grid">
+                <div class="quick-link-item">
                     <h3>UPCOMING WORKSHOPS</h3>
                     <p>Look at our calendar of future workshops and other events</p>
-                    <a href="https://luma.com/aisap" class="heritage-btn">View Calendar</a>
+                    <a href="https://luma.com/aisap" class="quick-link">View Calendar</a>
                 </div>
 
-                <div class="heritage-card">
+                <div class="quick-link-item">
                     <h3>SIGN UP FOR OUR MAILING LIST</h3>
                     <p>Get notified about new developments</p>
-                    <a href="/signup-for-mailing-list/" class="heritage-btn">Express Interest</a>
+                    <a href="/signup-for-mailing-list/" class="quick-link">Express Interest</a>
                 </div>
 
-                <div class="heritage-card">
+                <div class="quick-link-item">
                     <h3>PAST WORKSHOPS</h3>
                     <p>Check out previous workshops</p>
-                    <a href="/workshops/" class="heritage-btn">View Past Workshops</a>
+                    <a href="/workshops/" class="quick-link">View Past Workshops</a>
                 </div>
             </div>
     </section>
@@ -447,12 +477,35 @@
     </section>
 
     <section class="workshops">
-        <div class="container">
+        <div class="container short-description">
             <div class="section-title">
-                <h2>Our Workshop Programs</h2>
+                <h2>Get Involved</h2>
             </div>
-            <p>We'd love to hear from you!</p>
+            <div class="next-steps-grid">
+                <div class="next-step-item">
+                    <h3>ATTEND A WORKSHOP</h3>
+                    <p>Join one of our upcoming workshops to learn about AI safety and how it affects your community.</p>
+                    <a href="https://luma.com/aisap" class="quick-link">View Upcoming Events</a>
+                </div>
 
+                <div class="next-step-item">
+                    <h3>BRING US TO YOUR ORGANIZATION</h3>
+                    <p>Interested in hosting a workshop for your organization? We'd love to partner with you.</p>
+                    <a href="/contact/" class="quick-link">Contact Us</a>
+                </div>
+
+                <div class="next-step-item">
+                    <h3>STAY INFORMED</h3>
+                    <p>Subscribe to our mailing list for updates on new workshops, resources, and AI safety developments.</p>
+                    <a href="/signup-for-mailing-list/" class="quick-link">Sign Up</a>
+                </div>
+
+                <div class="next-step-item">
+                    <h3>TAKE THE NEXT STEP</h3>
+                    <p>Already attended a workshop? Explore personalized next steps based on your interests and available time to get more involved in AI safety.</p>
+                    <a href="/next-steps/" class="quick-link">Explore Options</a>
+                </div>
+            </div>
         </div>
     </section>
 
