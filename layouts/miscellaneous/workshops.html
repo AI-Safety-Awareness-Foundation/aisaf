@@ -116,26 +116,16 @@
 
                 <div class="workshops-section">
                     <h2><i class="fas fa-calendar"></i> Upcoming Workshops</h2>
-                    {{ $futureWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "future" }}
-                    {{ $sortedFutureWorkshops := sort $futureWorkshops ".Params.listindex" "desc" }}
-                    {{ range $sortedFutureWorkshops }}
-                      <div class="workshop-item">
-                        <div class="workshop-info">
-                          <h4>{{ .Title }}</h4>
-                          <p>{{ .Params.workshopdate }}</p>
-                          <p>{{ .Params.workshoplocation }}</p>
-                        </div>
-                        {{ if ne .Params.detailstobedetermined true }}
-                          <a href="{{ .RelPermalink }}" class="btn btn-register">Click here for details</a>
-                        {{ else }}
-                          <div class="details-text">Details coming soon</div>
-                        {{ end }}
-                      </div>
-                    {{ end }}
+                    <p>See our <a href="https://luma.com/aisap?k=c">Luma page here for our current schedule of workshops open to the general public.</a>.</p>
+                    <p>We also have a variety of workshops that we have done that are for specific organizations and audiences with custom content. If you would like access, please <a href="/contact/">contact us</a>.<p>
                 </div>
 
                 <div class="workshops-section">
                     <h2><i class="fas fa-history"></i> Past Workshops</h2>
+                    See our <a href="https://luma.com/aisap?k=c&period=past">Luma past workshop listings</a> for past workshops open to the general public.
+
+                </div>
+                <p>For previous workshops for the general public we did not use Luma to organize, please see the below.<p>
 
                     {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
                     {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "desc" }}
