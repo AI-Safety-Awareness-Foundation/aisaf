@@ -30,10 +30,6 @@ footer {
 
 /* END */
 
-a:visited {
-    color: inherit;
-}
-
 .announcement-banner {
     position: sticky;
     top: 0;
@@ -230,9 +226,9 @@ footer a:hover {
 }
 
 .nav-header {
-    background: rgb(240, 220, 200);
+    background: #1a2942;
     padding: 1rem 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
@@ -244,7 +240,7 @@ footer a:hover {
 .nav-logo {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #1e3a8a;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -254,13 +250,13 @@ footer a:hover {
 }
 
 .nav-links a {
-    color: #4b5563;
+    color: #e0e7ff;
     text-decoration: none;
     font-weight: 500;
 }
 
 .nav-links a:hover {
-    color: #1e3a8a;
+    color: #93c5fd;
 }
 
 @media (max-width: 768px) {
