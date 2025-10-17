@@ -13,8 +13,9 @@
 {{ define "main" }}
     <header>
         <div class="container">
-            <h1><span class="blue-text">Transformative AI</span> might be coming soon.<br>And we aren't ready.</h1>
-              <p>The AI Safety Awareness Project is a 501(c)(3) nonprofit dedicated to raising awareness about modern AI, highlighting its benefits and risks, and letting the public know how they can help.</p>
+          <div style="max-width: 800px; background-color: rgba(0, 0, 0, 0.6); padding: 30px;">
+            <h1>If AI is going to affect society then <span class="blue-text">society should have a voice.</span></h1>
+              <p>The AI Safety Awareness Project is a 501(c)(3) nonprofit that equips traditional American societal pillars to take an active role in shaping AI for a flourishing human future.</p>
 	    <script type="text/javascript" defer src="//app.sgwidget.com/js/sg-widget-v2.js"></script>
             <style>.sendgrid-subscription-widget input { padding: .5em .5em .55em; font-size: .8em; font-family: sans-serif } .sendgrid-subscription-widget .sg_signup_first_name, .sendgrid-subscription-widget .sg_signup_last_name { margin-right: .5em } .sendgrid-subscription-widget .sendgrid-subscription-widget .sendgrid-subscription-widget .response { display: none; font-family: sans-serif; font-size: .8em } .sendgrid-subscription-widget .success { color: #99FF99; margin: 10px; } .sendgrid-subscription-widget .error, .sendgrid-subscription-widget .sg-consent-text a { color: #FF9999; margin: 10px; } .sendgrid-subscription-widget .sg-consent-text { font-size: .9em } .sendgrid-subscription-widget .sg-consent-text label { font-weight: 400 } .sendgrid-subscription-widget .required { outline: 1px solid #f00; } .sendgrid-subscription-widget .sg_custom { margin-left: 5px; } .sendgrid-subscription-widget .checkbox_label { padding-left: 3px; } </style>
              <div class="sendgrid-subscription-widget widget-3007" data-emailerror="Please enter a valid email address" data-nameerror="Please enter your name" data-checkboxerror="Please tick the box to accept our conditions">
@@ -24,84 +25,103 @@
                      <input type="submit" class="cta-button sg-submit-btn" style="margin-left: 20px; padding: 10px; outline:none; border:none; font-size: 16px;" id="widget-3007" value="Join Our Mailing List">
                  </form>
              </div> 
+           </div>
         </div>
     </header>
 
-    <section class="pillars">
-        <div class="container">
-            <div class="pillars-grid">
-                <div class="pillar-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Awareness</h3>
-                    <p>For the general public to understand risks and benefits of frontier AI research</p>
+    <section class="pillars pillars-grid">
+        <div class="container short-description">
+            <div class="section-title">
+                <h2>Be a Part of the Conversation on AI</h2>
+            </div>
+            <p>We firmly believe that a safe AI future is one where the traditional pillars of U.S. society have a seat at the table in deciding the direction of AI. We want to be there for the first step: education and skills-building, so that Americans have the necessary expertise and awareness to direct our AI future.</p>
+            <p>We run workshops and education programs for a variety of community groups and public institutions including law enforcement agencies, libraries, churches, universities, as well as the general public.</p>
+        </div>
+            <div class="quick-links-grid">
+                <div class="quick-link-item">
+                    <h3>UPCOMING WORKSHOPS</h3>
+                    <p>Look at our calendar of future workshops and other events</p>
+                    <a href="https://luma.com/aisap" class="quick-link">View Calendar</a>
                 </div>
-                <div class="pillar-card">
-                    <i class="fas fa-brain"></i>
-                    <h3>Skills</h3>
-                    <p>To participate in modern AI discussion and development</p>
+
+                <div class="quick-link-item">
+                    <h3>SIGN UP FOR OUR MAILING LIST</h3>
+                    <p>Get notified about new developments</p>
+                    <a href="/signup-for-mailing-list/" class="quick-link">Express Interest</a>
                 </div>
-                <div class="pillar-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Prediction</h3>
-                    <p>Understanding what AI developments might be coming before they arrive</p>
+
+                <div class="quick-link-item">
+                    <h3>PAST WORKSHOPS</h3>
+                    <p>Check out previous workshops</p>
+                    <a href="/workshops/" class="quick-link">View Past Workshops</a>
                 </div>
             </div>
+    </section>
+
+    <section class="section-row-description">
+        <div class="image-box">
+            <img class="row-description-image" src="/whiteboard.avif"/>
+        </div>
+        <div class="text-box">
+            <h2>Situational Awareness</h2>
+            <p>We partner with industry experts to inform organizations about frontier AI research and developments. This includes topics as diverse as workforce augmentation and displacement, AI agents and companions, cybercrime, AGI (Artificial General Intelligence), and loss of control risk.</p>
+            <p>Whether you're concerned or excited about these topics, we strongly believe organizations need to have situational awareness of what's going on to have a seat at the table in deciding our AI future.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="section-row-description dark pillars-grid">
+        <div class="text-box">
+            <h2>Hands-On Skills</h2>
+            <p>We have a variety of AI safety seminars and workshops aimed at individuals and organizations of all different levels of AI sophistication ranging from no AI background to cutting-edge AI researchers.</p>
+            <p>Regardless of starting technical background, our workshops provide everyone with a clear vision of the current and future AI landscape.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="image-box">
+            <img class="row-description-image" src="/pillars-background.jpg"/>
+        </div>
+    </section>
+
+    <section class="section-row-description">
+        <div class="image-box">
+            <img class="row-description-image" src="/row-description-image-0.avif"/>
+        </div>
+        <div class="text-box">
+            <h2>Proactive Decision Making</h2>
+            <p>Having a voice in shaping our AI future fundamentally requires a proactive stance towards understanding AI. We equip organizations to understand not just where AI is today, but where it's going over the next few years.</p>
+            <p>We help organizations build internal expertise and capacity to have an independent view on how AI might evolve, and how to anticipate its future developments</p>
+            <a href="#" class="btn">Learn More</a>
         </div>
     </section>
 
     <section class="workshops">
-        <div class="container">
+        <div class="container short-description">
             <div class="section-title">
-                <h2>Our Workshop Programs</h2>
+                <h2>Get Involved</h2>
             </div>
-
-            <div class="workshop-types">
-                <div class="workshop-card">
-                    <h3><i class="fas fa-chart-line"></i> AI Safety Forecasting</h3>
-                    <p>An introductory workshop exploring AI development timelines and their implications for safety</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-scale-balanced"></i> AI Legislation Deep Dive</h3>
-                    <p>Analyze real AI safety legislation, review their pros and cons, and understand the importance of balanced regulatory approaches</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-microchip"></i> Malicious Agents</h3>
-                    <p>Hands-on technical workshop exploring how reinforcement learning agents can develop unexpected behaviors</p>
-                </div>
-                <div class="workshop-card">
-                    <h3><i class="fas fa-magnifying-glass"></i> LLM Interpretability</h3>
-                    <p>Advanced technical workshop on understanding large language model behavior through mechanistic interpretability</p>
-                </div>
-            </div>
-
-            <div class="upcoming-workshops">
-                <h3><i class="fas fa-calendar"></i>Upcoming Workshops</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Look at our calendar of future workshops and other events: </p>
-                    </div>
-                    <div class="button-group">
-                        <a href="https://luma.com/aisap" class="btn btn-secondary">Go to Our Luma.com Calendar</a>
-                    </div>
+            <div class="next-steps-grid">
+                <div class="next-step-item">
+                    <h3>ATTEND A WORKSHOP</h3>
+                    <p>Join one of our upcoming workshops to learn about AI safety and how it affects your community.</p>
+                    <a href="https://luma.com/aisap" class="quick-link">View Upcoming Events</a>
                 </div>
 
-                <h3><i class="fas fa-bell"></i>Sign Up for Our Mailing List</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Get notified about new developments: </p>
-                    </div>
-                    <div class="button-group">
-                        <a href="/signup-for-mailing-list/" class="btn btn-secondary">Express Interest</a>
-                    </div>
+                <div class="next-step-item">
+                    <h3>BRING US TO YOUR ORGANIZATION</h3>
+                    <p>Interested in hosting a workshop for your organization? We'd love to partner with you.</p>
+                    <a href="/contact/" class="quick-link">Contact Us</a>
                 </div>
-                <h3><i class="fas fa-history"></i>Past Workshops</h3>
-                <div class="workshop-item">
-                    <div class="workshop-info">
-                        <p>Check out previous workshops</p>
-                    </div>
-                    <div class="button-group">
-                        <a href="/workshops/" class="btn btn-secondary">View Past Workshops</a>
-                    </div>
+
+                <div class="next-step-item">
+                    <h3>STAY INFORMED</h3>
+                    <p>Subscribe to our mailing list for updates on new workshops, resources, and AI safety developments.</p>
+                    <a href="/signup-for-mailing-list/" class="quick-link">Sign Up</a>
+                </div>
+
+                <div class="next-step-item">
+                    <h3>TAKE THE NEXT STEP</h3>
+                    <p>Already attended a workshop? Explore personalized next steps based on your interests and available time to get more involved in AI safety.</p>
+                    <a href="/next-steps/" class="quick-link">Explore Options</a>
                 </div>
             </div>
         </div>

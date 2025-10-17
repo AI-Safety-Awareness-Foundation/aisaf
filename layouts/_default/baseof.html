@@ -8,16 +8,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="stylesheet" href="/styles.css">
     <style>
-        /* Page-specific styles */
         .pillars {
             padding: 4rem 0;
-            background: #f9fafb;
+            background: rgb(240, 220, 200);
         }
 
         .pillars-grid {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 3rem;
+            align-items: start;
         }
 
         .pillar-card {
@@ -25,12 +25,11 @@
             min-width: 300px;
             background: white;
             padding: 1.5rem;
-            border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .pillar-card i {
-            color: #2563eb;
+            color: rgb(200, 150, 150);
             font-size: 2rem;
             margin-bottom: 1rem;
         }
@@ -45,10 +44,10 @@
             color: #4b5563;
         }
 
-        /* Workshop Section */
+         
         .workshops {
             padding: 4rem 0;
-            background: #eff6ff;
+            background: rgb(240, 220, 200);
         }
 
         .workshop-types {
@@ -84,62 +83,74 @@
             color: #4b5563;
         }
 
-        /* Upcoming Workshops */
-        .upcoming-workshops {
-            background: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .quick-links-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem;
         }
 
-        .upcoming-workshops > h3 {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
+        .quick-link-item {
+            padding: 0;
+            text-align: left;
+        }
+
+        .quick-link-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
             color: #1f2937;
-        }
-
-        .upcoming-workshops > h3 i {
-            color: #2563eb;
-        }
-
-        .workshop-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .workshop-item:hover {
-            background: #f8fafc;
-        }
-
-        .workshop-info h4 {
-            font-size: 1.125rem;
             margin-bottom: 0.5rem;
-            color: #1f2937;
         }
 
-        .workshop-info p {
+        .quick-link-item p {
             color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
             margin-bottom: 0.5rem;
         }
 
-        .workshop-info a {
-            color: #2563eb;
+        .quick-link {
+            color: #000000;
             text-decoration: underline;
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
         }
 
-        .workshop-info a:hover {
-            color: #1d4ed8;
+        .quick-link:hover {
+            color: #333333;
         }
 
-        /* Workshop Tags - Reordered to ensure private-tag overrides workshop-tag */
+        .next-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .next-step-item {
+            padding: 0;
+            text-align: left;
+        }
+
+        .next-step-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .next-step-item p {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+
         .workshop-tag {
             display: inline-block;
             padding: 0.25rem 0.75rem;
@@ -150,7 +161,7 @@
         }
 
         .private-tag {
-            background: #fee2e2 !important;  /* Added !important to ensure override */
+            background: #fee2e2 !important;   
             color: #991b1b !important;
         }
 
@@ -159,7 +170,7 @@
             gap: 0.75rem;
         }
 
-        /* Added gray button variant */
+         
         .btn-secondary {
             background: #dcdfe6;
             color: #000000;
@@ -176,21 +187,178 @@
 
         @media (max-width: 768px) {
             .pillars-grid {
-                flex-direction: column;
+                grid-template-columns: 1fr;
             }
 
             .workshop-types {
                 flex-direction: column;
             }
 
-            .workshop-item {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+            .quick-links-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .next-steps-grid {
+                grid-template-columns: 1fr;
             }
 
             .button-group {
                 margin-top: 0.5rem;
+            }
+        }
+
+        .section-row-description {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            min-height: 450px;
+            position: relative;
+        }
+
+        .section-row-description:nth-child(even) {
+            grid-template-columns: 3fr 2fr;
+        }
+
+        .section-row-description .image-box {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .section-row-description .text-box {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .section-row-description:nth-child(even) .image-box {
+            grid-column: 2;
+        }
+
+        .section-row-description:nth-child(even) .text-box {
+            grid-column: 1;
+        }
+
+        .image-box {
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            position: relative;
+        }
+
+        .section-row-description:nth-child(odd) .image-box {
+            padding-right: 60px;
+        }
+
+        .section-row-description:nth-child(even) .image-box {
+            padding-left: 60px;
+        }
+
+        .row-description-image {
+            width: 120%;
+            height: 100%;
+            object-fit: cover;
+            background: linear-gradient(135deg, #c8b8a8 0%, #a89888 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f5f5f0;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-row-description:nth-child(odd) .row-description-image {
+            margin-right: -140px;
+        }
+
+        .section-row-description:nth-child(even) .row-description-image {
+            margin-left: -140px;
+        }
+
+        .short-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .short-description p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .text-box {
+            padding: 80px 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(215, 205, 205);
+        }
+
+        .text-box h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .text-box p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #2d3e2e;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+            align-self: flex-start;
+        }
+
+        .btn:hover {
+            background-color: #1f2b1f;
+        }
+
+        .section-row-description.dark .text-box {
+            background-color: rgb(60, 60, 80);
+            color: #f5f5f0;
+        }
+
+        .section-row-description.dark .text-box h2 {
+            color: #f5f5f0;
+        }
+
+        .section-row-description.dark .text-box p {
+            color: #d4d4d0;
+        }
+
+        @media (max-width: 768px) {
+            .section-row-description,
+            .section-row-description:nth-child(even) {
+                grid-template-columns: 1fr;
+            }
+
+            .image-box {
+                display: none;
+            }
+
+            .text-box {
+                padding: 40px 30px;
+                grid-column: 1;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .text-box h2 {
+                font-size: 1.6rem;
             }
         }
 
