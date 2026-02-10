@@ -2,7 +2,7 @@
 title: "Organize AI Safety Workshops"
 ---
 
-# Organize AI Safety Workshops 🎓
+# Host AI Safety Workshops 🎓
 
 *Effort Level: ●●●○○ (3 - 10 hours)*  
 *Areas: Community, Technical, Policy*
