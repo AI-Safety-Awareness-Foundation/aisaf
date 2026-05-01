@@ -119,34 +119,6 @@
                     See our <a href="https://luma.com/aisap?k=c&period=past">Luma past workshop listings</a> for past workshops open to the general public.
 
                 </div>
-                <p>For previous workshops for the general public we did not use Luma to organize, please see the below.<p>
-
-                    {{ $pastWorkshops := where (where .Site.Pages "Section" "workshops") ".Params.temporalstatus" "past" }}
-                    {{ $sortedPastWorkshops := sort $pastWorkshops ".Params.listindex" "desc" }}
-                    {{ range $sortedPastWorkshops }}
-                      <div class="workshop-item">
-                        <div class="workshop-info">
-                          <h4>{{ .Title }}</h4>
-                          <p>{{ .Params.workshopdate }}</p>
-                          <p>{{ .Params.workshoplocation }}</p>
-                        </div>
-                        {{ if ne .Params.detailstobedetermined true }}
-                          <a href="{{ .RelPermalink }}" class="btn btn-register">Click here for details</a>
-                        {{ else }}
-                          <div class="details-text">Details coming soon</div>
-                        {{ end }}
-                      </div>
-                    {{ end }}
-
-                </div>
-
-                <div class="workshops-section">
-                    <h2><i class="fas fa-bell"></i> Stay Updated</h2>
-                    <p>Join our mailing list for updates about new workshops and other events:</p>
-                    <div class="button-group" style="margin-top: 1rem;">
-                        <a href="/signup-for-mailing-list/" class="btn btn-register">Join Mailing List</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
