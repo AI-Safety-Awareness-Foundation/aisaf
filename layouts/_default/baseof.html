@@ -360,6 +360,7 @@
                 <a href="/next-steps/">Next Steps</a>
                 <a href="/about/">About</a>
                 <a href="/contact/">Contact</a>
+                {{ with site.Params.donateURL }}<a href="{{ . }}" class="nav-donate">Donate</a>{{ end }}
             </div>
         </div>
     </nav>

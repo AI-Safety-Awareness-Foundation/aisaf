@@ -3,3 +3,7 @@ languageCode = 'en-us'
 title = 'AI Safety Awareness Project'
 disableKinds = ['taxonomy', 'term']
 security.allowContent = ['.*']
+
+[params]
+  # PayPal donate link. The Donate button in the nav only renders once this is set.
+  donateURL = ''
