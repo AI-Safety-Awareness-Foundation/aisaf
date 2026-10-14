@@ -6,4 +6,4 @@ security.allowContent = ['.*']
 
 [params]
   # PayPal donate link. The Donate button in the nav only renders once this is set.
-  donateURL = ''
+  donateURL = 'https://www.paypal.com/donate/?hosted_button_id=23G7J8R4F8NVG'
