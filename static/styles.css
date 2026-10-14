@@ -76,12 +76,24 @@ p {
     text-decoration: underline;
 }
 
+.banner-short {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .announcement-banner {
         position: static;
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
         line-height: 1.4;
+    }
+
+    .banner-long {
+        display: none;
+    }
+
+    .banner-short {
+        display: inline;
     }
 }
 
