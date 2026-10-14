@@ -270,7 +270,6 @@ footer a:hover {
 
 .nav-links {
     display: flex;
-    align-items: center;
     gap: 1.5rem;
 }
 
@@ -282,19 +281,6 @@ footer a:hover {
 
 .nav-links a:hover {
     color: #93c5fd;
-}
-
-.nav-links a.nav-donate {
-    background: #3b82f6;
-    color: #ffffff;
-    padding: 0.4rem 1rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.2s;
-}
-
-.nav-links a.nav-donate:hover {
-    background: #2563eb;
-    color: #ffffff;
 }
 
 @media (max-width: 768px) {
