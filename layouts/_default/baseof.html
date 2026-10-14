@@ -355,16 +355,16 @@
     <nav class="nav-header">
         <div class="container nav-container">
             <a href="/" class="nav-logo">AI Safety Awareness Project</a>
-            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-                <i class="fa-solid fa-bars"></i>
-            </button>
             <div class="nav-links" id="nav-links">
                 <a href="/workshops/">Workshops</a>
                 <a href="/next-steps/">Next Steps</a>
                 <a href="/about/">About</a>
                 <a href="/contact/">Contact</a>
-                {{ with site.Params.donateURL }}<a href="{{ . }}">Donate</a>{{ end }}
             </div>
+            {{ with site.Params.donateURL }}<a href="{{ . }}" class="nav-donate">Donate</a>{{ end }}
+            <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
     <script>

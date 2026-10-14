@@ -268,6 +268,7 @@ footer a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .nav-logo {
@@ -275,6 +276,7 @@ footer a:hover {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+    margin-right: auto;
 }
 
 .nav-links {
@@ -282,13 +284,13 @@ footer a:hover {
     gap: 1.5rem;
 }
 
-.nav-links a {
+.nav-links a, .nav-donate {
     color: #e0e7ff;
     text-decoration: none;
     font-weight: 500;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-donate:hover {
     color: #93c5fd;
 }
 
@@ -310,12 +312,13 @@ footer a:hover {
 
     .nav-container {
         flex-wrap: wrap;
+        gap: 0 1rem;
         width: auto;
         padding: 0 1rem;
     }
 
     .nav-logo {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 
     .nav-toggle {
@@ -324,6 +327,7 @@ footer a:hover {
 
     .nav-links {
         display: none;
+        order: 1;
         flex-direction: column;
         gap: 0;
         width: 100%;
